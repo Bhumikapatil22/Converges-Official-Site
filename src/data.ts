@@ -67,6 +67,9 @@ export const slides = [
       src: '/images/2.jpg',
       
     },
+    {
+      src:'/images/1.jpg'
+    }
     
 
   ]
