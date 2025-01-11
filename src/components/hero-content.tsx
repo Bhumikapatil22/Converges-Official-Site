@@ -34,9 +34,11 @@ export function HeroContent() {
         {/* <Button size="lg" className="bg-sky-700 hover:bg-sky-900">
           Explore Events
         </Button> */}
+         <a href="#events">
         <Button size="lg" variant="outline" className="border-sky-500 hover:bg-sky-500/10">
           Explore Events
         </Button>
+        </a>
       </motion.div>
     </div>
   );

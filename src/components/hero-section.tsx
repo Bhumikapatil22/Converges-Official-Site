@@ -26,7 +26,7 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
 
       <VideoBackground
-        
+
       />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
 
