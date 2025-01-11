@@ -22,7 +22,7 @@ export function VideoBackground() {
       </video>
 
       {/* Overlay Content */}
-      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center bg-black/60">
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center bg-black/10">
         {/* Navbar */}
 
         

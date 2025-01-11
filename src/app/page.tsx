@@ -1,64 +1,41 @@
+"use client";
 import { HeroSection } from '../components/hero-section';
 import { AboutSection } from '../components/about-section';
 import { EventsSection } from '../components/sections/events';
 import { DirectorsMessage } from '../components/sections/directors-message';
-import { Gallery } from '../components/sections/gallery';
-import EventTimline from '../components/EventTimline';
+import Images from '@/components/sections/gallery';  // Ensure the import is correct
+import { Footer } from '../components/footer';
+import { ContactSection } from '../components/contact';
+import { Timeline } from '@/components/eventTimeline';
+import { MapSection } from '@/components/map-section';
+import { slides } from '@/data'; // Ensure this file exists and is structured correctly
+import { useState } from 'react';
+import { events } from '@/data/timeline';
 
 export default function Home() {
-  const events = [
-    {
-      time: "09:00 AM",
-      title: "Opening Ceremony",
-      description: "Welcome address and inauguration of Converges TecFest 2023"
-    },
-  
-  {
-    time: "10:30 AM",
-    title: "Keynote Speaker",
-    description: "Inspiring talk on the future of technology by industry leader"
-  },
-  {
-    time: "12:00 PM",
-    title: "Hackathon Kickoff",
-    description: "Start of the 24-hour coding challenge"
-  },
-  {
-    time: "02:00 PM",
-    title: "AI Workshop",
-    description: "Hands-on session on latest AI technologies and applications"
-  },
-  {
-    time: "04:30 PM",
-    title: "Tech Quiz",
-    description: "Test your knowledge in this exciting tech trivia competition"
-  },
-  {
-    time: "07:00 PM",
-    title: "Networking Dinner",
-    description: "Connect with fellow tech enthusiasts over a delicious meal"
-  },
-  {
-    time: "09:00 PM",
-    title: "Late Night Coding Session",
-    description: "Continuation of hackathon with mentorship support"
-  }
-];
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
- 
-   return (
+  const handleImageClick = (index: number) => {
+    setSelectedIndex(index);
+    console.log(Selected Image Index: ${index});
+  };
+
+  return (
     <main className="min-h-screen bg-background">
-      
       <HeroSection />
       <AboutSection />
-      {/* <CardDisplay /> */}
-     
       <EventsSection />
-      <DirectorsMessage />
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <EventTimline events={events} />
-    </main>
-      <Gallery />
+      
+      <div>
+        <h1>Image Gallery</h1>
+        {/* Passing props to the Images component */}
+        <Images data={slides} onClick={handleImageClick} />
+        {selectedIndex !== null && <p>Selected Image Index: {selectedIndex}</p>}
+      </div>
+      <Timeline timelineData={events} />
+      <MapSection />
+      <ContactSection />
+      <Footer />
     </main>
   );
 }
