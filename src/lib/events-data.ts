@@ -1,7 +1,7 @@
 export const eventsData = [
   {
       id:1,
-      logo:"/utils/ds.png",
+      logo:"/utils/1.jpeg.jpg",
       name: "Stranger Code",
       year: "2024",
       department: "Data Science",
@@ -37,7 +37,7 @@ export const eventsData = [
     }
 ,     {
   id:2,
-  logo:"https://i.pinimg.com/originals/ef/f6/16/eff616bf1a4b4396a602ed54011272ec.png",
+  logo:"/utils/2.jpeg.jpg",
   name: "Detective’s Return",
   year: "2024",
   department: "Computer Engineering",
@@ -75,21 +75,22 @@ export const eventsData = [
   registrationLink: "https://unstop.com/competitions/detectives-returns-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-897805?lb=jOvn68re&fbclid=PAY2xjawHrsXZleHRuA2FlbQIxMQABpshJctFK9ypL5vUubkf8T_3doQsAjPjzWC-BX_KgQytX_HWBp3AI4tf-AQ_aem_HhPLRfzQBb6pDiqbXQezAQ"
 },
 {
-  "id": 3,
-  "name": "Path Breaker",
-  "year": "2024",
-  "department": "E&TC",
-  "description": "The challenge is to build your own wireless or wired bot within the specified dimensions to achieve maximum speed and navigate obstacles on the given track.",
-  "teamSize": "1-4 Members",
-  "entryFee": "200/-", 
-  "rounds": [
+  id: 3,
+  logo:"/utils/3.jpeg.jpg",
+  name: "Path Breaker",
+  year: "2024",
+  department: "E&TC",
+  description: "The challenge is to build your own wireless or wired bot within the specified dimensions to achieve maximum speed and navigate obstacles on the given track.",
+  teamSize: "1-4 Members",
+  entryFee: "200/-", 
+  rounds: [
     {
-      "name": "Offline Round",
-      "description": "Participants compete to build and operate bots to complete the track with maximum speed while navigating obstacles.",
+      name: "Offline Round",
+      description: "Participants compete to build and operate bots to complete the track with maximum speed while navigating obstacles.",
       
     }
   ],
-  "rules": [
+  rules: [
     "Bot must fit inside a box of 30cm length, 30cm width, and 20cm height at any point in time.",
     "Maximum bot weight is 5kgs with a tolerance of 5%.",
     "Electric voltage must not exceed 12V DC anywhere in the machine.",
@@ -110,12 +111,13 @@ export const eventsData = [
       { name: "", contact: "" }
     ]
   },
-  "registrationLink": "https://unstop.com/events/path-breaker-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-896957" ,
+  registrationLink: "https://unstop.com/events/path-breaker-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-896957" ,
 },
 
   {
     id: 4,
-    name: "Tech Expo",
+    logo:"/utils/4.jpeg.jpg"
+    ,name: "Tech Expo",
     year: "2024",
     department: "E&TC",
     description: "Innovations aim at cultivating the skills amongst the youth and all the technical aspirants by offering a robust platform to showcase your ideas and get recognized.  ",
@@ -153,6 +155,7 @@ export const eventsData = [
   },
     {
       id: 5,
+      logo:"/utils/5.jpeg.jpg",
       name: "Civil Quiz",
       year: "2024",
       department: "Civil Engineering",
@@ -190,6 +193,7 @@ export const eventsData = [
     },
     {
       id: 6,
+      logo:"/utils/6.jpeg.jpg",
       name: "Water Rocket Challenge",
       year: "2024",
       department: "Mechanical Engineering",
@@ -227,6 +231,7 @@ export const eventsData = [
     },
     {
       id: 7,
+      logo:"/utils/7.jpeg",
       name: "Boat Float",
       year: "2024",
       department: "Civil Engineering",
@@ -262,6 +267,7 @@ export const eventsData = [
     },
     {
       id: 8,
+      logo:"/utils/8.jpeg",
       name: "Bridgominia",
       year: "2024",
       department: "Civil Engineering",
@@ -297,6 +303,7 @@ export const eventsData = [
 ,    
 {
   id: 9,
+  logo:"/utils/9.jpeg",
   name: "Codecraze",
   year: "2024",
   department: "GDSC RCPIT",
@@ -329,7 +336,7 @@ export const eventsData = [
 },
 {
   id: 10,
-  logo:"/utils/electrax.webp",
+  logo:"/utils/10.jpeg",
   name: "Waste-to-Watt",
   year: "2024",
   department: "Electrical Engineering",
@@ -364,7 +371,7 @@ export const eventsData = [
 },
 {
   id: 11,
-  logo:"/utils/electrax.webp",
+  logo:"/utils/11.jpeg",
   name: "ElectroToy Making",
   year: "2024",
   department: "Electrical Engineering",
@@ -402,6 +409,7 @@ export const eventsData = [
 },
 {
   id: 12,
+  logo:"/utils/12.jpeg",
   name: "Trade Tech",
   year: "2024",
   department: "Civil Engineering",
@@ -445,7 +453,7 @@ export const eventsData = [
 
   {
     id: 13,
-    logo:"",
+    logo:"/utils/13.jpeg",
     name: "Innovation Challenge",
     year: "2023",
     department: "",
@@ -475,10 +483,11 @@ export const eventsData = [
   },
   {
     id: 14,
+    logo:"/utils/14.jpeg",
     name: "Play with Drawing",
     year: "2023",
     department: "Civil Engineering",
-    description: "Play with drawing is the civil engineering drawing competition in which individual participant can be participate. This competition is held in 2 rounds.",
+    description: "Play with drawing is the civil engineering drawing competition in which individual participant can be participate. This competition is held in 2 rounds.",
     teamSize: "2-4",
     entryFee: "₹50/-",
     rounds: [
@@ -493,7 +502,7 @@ export const eventsData = [
     ],
     rules: [
       "Participants will be given 45 minutes time. All participants have to draw plan on given area. Plan will be satisfied all functional requirements.The selected participants will reach next round.",
-      "Selected participants have to draw the plan on AutoCAD. Also participants have to draw the 3d elevation on the AutoCAD software. For this participant will be given 1hr 15 minutes time. The best plan and elevation will be declare as winner of competition"
+      "Selected participants have to draw the plan on AutoCAD. Also participants have to draw the 3d elevation on the AutoCAD software. For this participant will be given 1hr 15 minutes time. The best plan and elevation will be declare as winner of competition"
 
     ],
     coordinators: {
@@ -509,7 +518,7 @@ export const eventsData = [
   },
   {
     id: 15,
-    logo:"",
+    logo:"/utils/15.jpeg",
     name: "The Detective's Dilemma",
     year: "2023",
     department: "Computer Engineering",
@@ -548,7 +557,7 @@ export const eventsData = [
   },
   {
     id: 16, 
-    logo:"",
+    logo:"/utils/16.jpeg",
     name: "Ideathon",
     year: "2023",
     department: "Electrical Engineering",
@@ -585,7 +594,7 @@ export const eventsData = [
   },
   {
     id: 17,
-    logo:"/utils/ds.png",
+    logo:"/utils/17.jpeg",
     name: "Brain Heist",
     year: "2023",
     department: "Data Science",
@@ -606,7 +615,7 @@ export const eventsData = [
         description: "Participants will be provided with a clue/riddle to find the problem statement."
       }
     ],
-    rules: ["In case no participant solves the given problem statement, the team with the most correct answers in Round 1 and the least time taken in Round 2 will be declared winner and the runner up will be decided similarly.","If any participant is caught cheating or doing any kind of malpractices they will be disqualified immediately.","The decision of the organising team will be final and binding."], // Rules not explicitly mentioned
+    rules: ["In case no participant solves the given problem statement, the team with the most correct answers in Round 1 and the least time taken in Round 2 will be declared winner and the runner up will be decided similarly.","If any participant is caught cheating or doing any kind of malpractices they will be disqualified immediately.","The decision of the organising team will be final and binding."], // Rules not explicitly mentioned
     coordinators: {
       student: [
         { name: "Uday Bhartiya", contact: "8956601549" },
@@ -619,7 +628,7 @@ export const eventsData = [
   ,
   {
     id: 18,
-    logo:"",
+    logo:"/utils/18.jpeg",
     name: "Mad for Cad",
     year: "2023",
     department: "Mechanical Department",
@@ -648,7 +657,7 @@ export const eventsData = [
   },
   {
     id: 19,
-    logo:"",
+    logo:"/utils/19.jpeg",
     name: "Robo Fest",
     year: "2023",
     department: "E&TC Department",
@@ -679,8 +688,4 @@ export const eventsData = [
     },
     registrationLink: "./docs/ROBO.pdf"
   }
-  
-  
-  
-  
 ];
