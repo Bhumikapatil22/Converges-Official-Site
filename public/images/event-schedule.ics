@@ -1,0 +1,42 @@
+BEGIN:VEVENT
+SUMMARY:Opening Ceremony
+DESCRIPTION:Welcome address and inauguration of Converges TecFest 2023
+LOCATION:Unknown
+DTSTART:09:00 AM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Keynote Speaker
+DESCRIPTION:Inspiring talk on the future of technology by industry leader
+LOCATION:Unknown
+DTSTART:10:30 AM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hackathon Kickoff
+DESCRIPTION:Start of the 24-hour coding challenge
+LOCATION:Unknown
+DTSTART:12:00 PM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:AI Workshop
+DESCRIPTION:Hands-on session on latest AI technologies and applications
+LOCATION:Unknown
+DTSTART:02:00 PM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tech Quiz
+DESCRIPTION:Test your knowledge in this exciting tech trivia competition
+LOCATION:Unknown
+DTSTART:04:30 PM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Networking Dinner
+DESCRIPTION:Connect with fellow tech enthusiasts over a delicious meal
+LOCATION:Unknown
+DTSTART:07:00 PM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Late Night Coding Session
+DESCRIPTION:Continuation of hackathon with mentorship support
+LOCATION:Unknown
+DTSTART:09:00 PM
+END:VEVENT
