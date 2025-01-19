@@ -71,7 +71,7 @@ export function EventCard({
         {/* View Details Button */}
         <button
           onClick={(e) => {
-            e.stopPropagation(); // Prevent card click action
+            e.stopPropagation();
             router.push(`/events/${id}`);
           }}
           className="border border-sky-500 px-4 py-1 rounded-sm text-white hover:bg-sky-500/10 transition-all duration-300"
