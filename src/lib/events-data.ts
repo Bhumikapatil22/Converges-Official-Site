@@ -303,7 +303,9 @@ export const eventsData = [
 ,    
 {
   id: 9,
-  logo:"/utils/9.jpeg.jpg",
+
+  logo:"/utils/9.jpeg",
+
   name: "Codecraze",
   year: "2024",
   department: "GDSC RCPIT",
@@ -336,7 +338,9 @@ export const eventsData = [
 },
 {
   id: 10,
-  logo:"/utils/10.jpeg.jpg",
+
+  logo:"/utils/10.jpeg",
+
   name: "Waste-to-Watt",
   year: "2024",
   department: "Electrical Engineering",
@@ -371,7 +375,7 @@ export const eventsData = [
 },
 {
   id: 11,
-  logo:"/utils/11.jpeg.jpg",
+  logo:"/utils/11.jpeg",
   name: "ElectroToy Making",
   year: "2024",
   department: "Electrical Engineering",
@@ -409,7 +413,7 @@ export const eventsData = [
 },
 {
   id: 12,
-  logo:"/utils/12.jpeg.jpg",
+  logo:"/utils/12.jpeg",
   name: "Trade Tech",
   year: "2024",
   department: "Civil Engineering",
@@ -453,7 +457,7 @@ export const eventsData = [
 
   {
     id: 13,
-    logo:"/utils/13.jpeg.jpg",
+    logo:"/utils/13.jpeg",
     name: "Innovation Challenge",
     year: "2023",
     department: "",
@@ -483,7 +487,7 @@ export const eventsData = [
   },
   {
     id: 14,
-    logo:"/utils/14.jpeg.jpg",
+    logo:"/utils/14.jpeg",
     name: "Play with Drawing",
     year: "2023",
     department: "Civil Engineering",
@@ -518,7 +522,7 @@ export const eventsData = [
   },
   {
     id: 15,
-    logo:"/utils/15.jpeg.jpg",
+    logo:"/utils/15.jpeg",
     name: "The Detective's Dilemma",
     year: "2023",
     department: "Computer Engineering",
@@ -557,7 +561,7 @@ export const eventsData = [
   },
   {
     id: 16, 
-    logo:"/utils/16.jpeg.jpg",
+    logo:"/utils/16.jpeg",
     name: "Ideathon",
     year: "2023",
     department: "Electrical Engineering",
@@ -594,7 +598,7 @@ export const eventsData = [
   },
   {
     id: 17,
-    logo:"/utils/17.jpeg.jpg",
+    logo:"/utils/17.jpeg",
     name: "Brain Heist",
     year: "2023",
     department: "Data Science",
@@ -628,7 +632,7 @@ export const eventsData = [
   ,
   {
     id: 18,
-    logo:"/utils/18.jpeg.jpg",
+    logo:"/utils/18.jpeg",
     name: "Mad for Cad",
     year: "2023",
     department: "Mechanical Department",
@@ -657,7 +661,7 @@ export const eventsData = [
   },
   {
     id: 19,
-    logo:"/utils/19.jpeg.jpg",
+    logo:"/utils/19.jpeg",
     name: "Robo Fest",
     year: "2023",
     department: "E&TC Department",
@@ -688,8 +692,4 @@ export const eventsData = [
     },
     registrationLink: "./docs/ROBO.pdf"
   }
-  
-  
-  
-  
 ];
