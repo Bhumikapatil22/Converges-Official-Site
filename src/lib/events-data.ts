@@ -1,123 +1,126 @@
 export const eventsData = [
   {
-      id:1,
-      logo:"/utils/1.jpeg.jpg",
-      name: "Stranger Code",
-      year: "2024",
-      department: "Data Science",
-      description: "Welcome to the electrifying realm of 'Stranger Code,' where technology collides with the supernatural in an adventure inspired by the hit series 'Stranger Things.' ",
-      teamSize: "1-4",
-      entryFee: "Rs 150/-",
-      rounds: [
-        {
-          name: "Demogorgon Code Quest",
-          description: "Participants will be assigned a computer with the screen turned off and given a problem statement. They will need to write the code within 30 minutes. Lifelines are available with penalties for reviewing and modifying code. The fastest and most accurate code will qualify for the next round."
-        },
-        {
-          name: "GPT Hunt",
-          description: "Participants will solve clues/riddles to reach a problem statement and then build a GUI using GPTs. The task must be completed in 60 minutes, with lifelines available. The final code must be submitted before time ends, and the first three teams to complete it will be the winners."
-        }
-      ],
-      rules: [
-        "Round 1 – Demogorgon Code Quest: Participants will be assigned a computer with the screen turned off. Time duration: 30 minutes. Penalties for using lifelines.",
-        "Round 2 – GPT Hunt: Solve clues to reach the problem statement, build a GUI using GPTs. Time duration: 60 minutes. Penalties for using lifelines.",
-        "Both rounds are language independent (C, C++, Java, Python).",
-        "Smart gadgets are not allowed, and teams violating rules will be disqualified."
-      ],
-      coordinators: {
-        student: [
-          { name: "", contact: "" },
-          { name: "", contact: "" }
-        ],
-        faculty: [
-          { name: "", contact: "" }
-        ]
+    id: 1,
+    logo: "/utils/1.jpeg.jpg",
+    name: "Stranger Code",
+    slug: "stranger-code",
+    year: "2024",
+    department: "Data Science",
+    description: "Welcome to the electrifying realm of 'Stranger Code,' where technology collides with the supernatural in an adventure inspired by the hit series 'Stranger Things.' ",
+    teamSize: "1-4",
+    entryFee: "Rs 150/-",
+    rounds: [
+      {
+        name: "Demogorgon Code Quest",
+        description: "Participants will be assigned a computer with the screen turned off and given a problem statement. They will need to write the code within 30 minutes. Lifelines are available with penalties for reviewing and modifying code. The fastest and most accurate code will qualify for the next round."
       },
-      registrationLink: "https://unstop.com/hackathons/stranger-code-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-895713?lb=jOvn68re&fbclid=PAY2xjawHrouZleHRuA2FlbQIxMQABpv4KBT6Le8n8vKhtzhHHHxdRJ8BbFDaMJU6lU-s-i4ZCs9BMhZCuHNBGZQ_aem_kzOlcjsHtZkqbryrfCSjLw"
-    }
-,     {
-  id:2,
-  logo:"/utils/2.jpeg.jpg",
-  name: "Detective’s Return",
-  year: "2024",
-  department: "Computer Engineering",
-  description: "An engaging event testing communication, technical, and frontend development skills through innovative rounds.",
-  teamSize: "1-4",
-  entryFee: "200/-",
-  rounds: [
-    {
-      name: "Chromatic Blast",
-      description: "Test communication skills, teamwork, and quick thinking by blasting balloons while avoiding neutral and opposing team balloons. Includes hidden cheats with codes for the next round."
-    },
-    {
-      name: "PDF Safari",
-      description: "Test technical prowess and problem-solving skills by unlocking password-protected PDFs containing clues for the next stage."
-    },
-    {
-      name: "Grand Finale - The Unfinished Business",
-      description: "Showcase frontend development skills using HTML, CSS, React.js, and API handling to replicate a detective’s website."
-    }
-  ],
-  rules: [
-    "Score 100+ points in Chromatic Blast and PDF Safari to qualify for the Grand Finale.",
-    "Top 15 teams advance to the final round.",
-    "Points for Grand Finale are earned by strategically buying components and maximizing UI quality."
-  ],
-  coordinators: {
-    student: [
-      { name: "Pruthviraj Chaudhari", contact: "+91 8080511069" },
-      { name: "Vedant Deshmukh", contact: "+91 8624042640" }
+      {
+        name: "GPT Hunt",
+        description: "Participants will solve clues/riddles to reach a problem statement and then build a GUI using GPTs. The task must be completed in 60 minutes, with lifelines available. The final code must be submitted before time ends, and the first three teams to complete it will be the winners."
+      }
     ],
-    faculty: [
-      { name: "Prof. M. M. Mahajan", contact: "+91 " }
-    ]
-  },
-  registrationLink: "https://unstop.com/competitions/detectives-returns-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-897805?lb=jOvn68re&fbclid=PAY2xjawHrsXZleHRuA2FlbQIxMQABpshJctFK9ypL5vUubkf8T_3doQsAjPjzWC-BX_KgQytX_HWBp3AI4tf-AQ_aem_HhPLRfzQBb6pDiqbXQezAQ"
-},
-{
-  id: 3,
-  logo:"/utils/3.jpeg.jpg",
-  name: "Path Breaker",
-  year: "2024",
-  department: "E&TC",
-  description: "The challenge is to build your own wireless or wired bot within the specified dimensions to achieve maximum speed and navigate obstacles on the given track.",
-  teamSize: "1-4 Members",
-  entryFee: "200/-", 
-  rounds: [
-    {
-      name: "Offline Round",
-      description: "Participants compete to build and operate bots to complete the track with maximum speed while navigating obstacles.",
-      
-    }
-  ],
-  rules: [
-    "Bot must fit inside a box of 30cm length, 30cm width, and 20cm height at any point in time.",
-    "Maximum bot weight is 5kgs with a tolerance of 5%.",
-    "Electric voltage must not exceed 12V DC anywhere in the machine.",
-    "The robot can be autonomous or manually controlled using remote or DPDT systems.",
-    "Robots must move in all directions and should not be ready-made.",
-    "Failing to meet specifications leads to disqualification.",
-    "Only two members are allowed to handle and operate the bot.",
-    "Bots causing arena damage will be disqualified immediately.",
-    "Participants have five minutes to prepare their bots.",
-    "Referee's decisions are final."
-  ],
-  coordinators: {
-    student: [
-      { name: "Ganesh", contact: "+91 9325662197" },
-      { name: "Manas", contact: "+91 7757035819" }
+    rules: [
+      "Round 1 – Demogorgon Code Quest: Participants will be assigned a computer with the screen turned off. Time duration: 30 minutes. Penalties for using lifelines.",
+      "Round 2 – GPT Hunt: Solve clues to reach the problem statement, build a GUI using GPTs. Time duration: 60 minutes. Penalties for using lifelines.",
+      "Both rounds are language independent (C, C++, Java, Python).",
+      "Smart gadgets are not allowed, and teams violating rules will be disqualified."
     ],
-    faculty: [
-      { name: "", contact: "" }
-    ]
+    coordinators: {
+      student: [
+        { name: "", contact: "" },
+        { name: "", contact: "" }
+      ],
+      faculty: [
+        { name: "", contact: "" }
+      ]
+    },
+    registrationLink: "https://unstop.com/hackathons/stranger-code-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-895713?lb=jOvn68re&fbclid=PAY2xjawHrouZleHRuA2FlbQIxMQABpv4KBT6Le8n8vKhtzhHHHxdRJ8BbFDaMJU6lU-s-i4ZCs9BMhZCuHNBGZQ_aem_kzOlcjsHtZkqbryrfCSjLw"
+  }, 
+  {
+    id: 2,
+    logo: "/utils/2.jpeg.jpg",
+    name: "Detective’s Return",
+    slug: "detectives-return",
+    year: "2024",
+    department: "Computer Engineering",
+    description: "An engaging event testing communication, technical, and frontend development skills through innovative rounds.",
+    teamSize: "1-4",
+    entryFee: "200/-",
+    rounds: [
+      {
+        name: "Chromatic Blast",
+        description: "Test communication skills, teamwork, and quick thinking by blasting balloons while avoiding neutral and opposing team balloons. Includes hidden cheats with codes for the next round."
+      },
+      {
+        name: "PDF Safari",
+        description: "Test technical prowess and problem-solving skills by unlocking password-protected PDFs containing clues for the next stage."
+      },
+      {
+        name: "Grand Finale - The Unfinished Business",
+        description: "Showcase frontend development skills using HTML, CSS, React.js, and API handling to replicate a detective’s website."
+      }
+    ],
+    rules: [
+      "Score 100+ points in Chromatic Blast and PDF Safari to qualify for the Grand Finale.",
+      "Top 15 teams advance to the final round.",
+      "Points for Grand Finale are earned by strategically buying components and maximizing UI quality."
+    ],
+    coordinators: {
+      student: [
+        { name: "Pruthviraj Chaudhari", contact: "+91 8080511069" },
+        { name: "Vedant Deshmukh", contact: "+91 8624042640" }
+      ],
+      faculty: [
+        { name: "Prof. M. M. Mahajan", contact: "+91 " }
+      ]
+    },
+    registrationLink: "https://unstop.com/competitions/detectives-returns-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-897805?lb=jOvn68re&fbclid=PAY2xjawHrsXZleHRuA2FlbQIxMQABpshJctFK9ypL5vUubkf8T_3doQsAjPjzWC-BX_KgQytX_HWBp3AI4tf-AQ_aem_HhPLRfzQBb6pDiqbXQezAQ"
   },
-  registrationLink: "https://unstop.com/events/path-breaker-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-896957" ,
-},
+  {
+    id: 3,
+    logo: "/utils/3.jpeg.jpg",
+    name: "Path Breaker",
+    slug: "path-breaker",
+    year: "2024",
+    department: "E&TC",
+    description: "The challenge is to build your own wireless or wired bot within the specified dimensions to achieve maximum speed and navigate obstacles on the given track.",
+    teamSize: "1-4 Members",
+    entryFee: "200/-",
+    rounds: [
+      {
+        name: "Offline Round",
+        description: "Participants compete to build and operate bots to complete the track with maximum speed while navigating obstacles.",
 
+      }
+    ],
+    rules: [
+      "Bot must fit inside a box of 30cm length, 30cm width, and 20cm height at any point in time.",
+      "Maximum bot weight is 5kgs with a tolerance of 5%.",
+      "Electric voltage must not exceed 12V DC anywhere in the machine.",
+      "The robot can be autonomous or manually controlled using remote or DPDT systems.",
+      "Robots must move in all directions and should not be ready-made.",
+      "Failing to meet specifications leads to disqualification.",
+      "Only two members are allowed to handle and operate the bot.",
+      "Bots causing arena damage will be disqualified immediately.",
+      "Participants have five minutes to prepare their bots.",
+      "Referee's decisions are final."
+    ],
+    coordinators: {
+      student: [
+        { name: "Ganesh", contact: "+91 9325662197" },
+        { name: "Manas", contact: "+91 7757035819" }
+      ],
+      faculty: [
+        { name: "", contact: "" }
+      ]
+    },
+    registrationLink: "https://unstop.com/events/path-breaker-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-896957",
+  },
   {
     id: 4,
-    logo:"/utils/4.jpeg.jpg"
-    ,name: "Tech Expo",
+    logo: "/utils/4.jpeg.jpg",
+    name: "Tech Expo",
+    slug: "tech-expo",
     year: "2024",
     department: "E&TC",
     description: "Innovations aim at cultivating the skills amongst the youth and all the technical aspirants by offering a robust platform to showcase your ideas and get recognized.  ",
@@ -145,7 +148,7 @@ export const eventsData = [
     coordinators: {
       student: [
         { name: "Prathamesh Mali", contact: "+91 9922552891" },
-        
+
       ],
       faculty: [
         { name: "", contact: "" }
@@ -153,312 +156,307 @@ export const eventsData = [
     },
     registrationLink: "https://unstop.com/events/tech-expo-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-898837?lb=jOvn68re",
   },
-    {
-      id: 5,
-      logo:"/utils/5.jpeg.jpg",
-      name: "Civil Quiz",
-      year: "2024",
-      department: "Civil Engineering",
-      description: "Civil Quiz will allow participants to showcase their knowledge in a competitive manner. It will enhance the competitive skillsets of the students and help them withstand.",
-      teamSize: "3-4 Members",
-      entryFee: "200/-",
-      rounds: [
-        {
-          name: "Elimination Round",
-          description: "Participants will go through 50 questions on papers provided by the organizers. They will get 45 minutes to complete the round. The top 5 groups with maximum marks will be selected for the next round. In case of a tie, a tie-breaker will be conducted."
-        },
-        {
-          name: "Buzzer Round",
-          description: "Questions will be displayed on the screen, and participants must answer within the given time limit. Correct answers earn 1 point, and wrong answers result in a deduction of ½ point. Winners will be announced based on the points earned."
-        }
-      ],
-      rules: [
-        "Teams must have 3-4 members.",
-        "Participants will have 45 minutes for the Elimination Round.",
-        "The top 5 groups with maximum marks will advance to the Buzzer Round.",
-        "Tie-breakers will be conducted in case of ties for the top 5 positions.",
-        "For every correct answer in the Buzzer Round, 1 point will be awarded, and ½ point will be deducted for every wrong answer."
-      ],
-      coordinators: {
-        student: [
-          { name: "Kunal Sonar", contact: "+91 9922598096" },
-          { name: "Sojwal Solanki", contact: "+91 9158260432" },
-          
-        ],
-        faculty: [
-          { name: "", contact: "" }
-        ]
+  {
+    id: 5,
+    logo: "/utils/5.jpeg.jpg",
+    name: "Civil Quiz",
+    slug: "civil-quiz",
+    year: "2024",
+    department: "Civil Engineering",
+    description: "Civil Quiz will allow participants to showcase their knowledge in a competitive manner. It will enhance the competitive skillsets of the students and help them withstand.",
+    teamSize: "3-4 Members",
+    entryFee: "200/-",
+    rounds: [
+      {
+        name: "Elimination Round",
+        description: "Participants will go through 50 questions on papers provided by the organizers. They will get 45 minutes to complete the round. The top 5 groups with maximum marks will be selected for the next round. In case of a tie, a tie-breaker will be conducted."
       },
-      registrationLink: "https://unstop.com/quiz/civista-civil-quiz-challenge-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-897473"
+      {
+        name: "Buzzer Round",
+        description: "Questions will be displayed on the screen, and participants must answer within the given time limit. Correct answers earn 1 point, and wrong answers result in a deduction of ½ point. Winners will be announced based on the points earned."
+      }
+    ],
+    rules: [
+      "Teams must have 3-4 members.",
+      "Participants will have 45 minutes for the Elimination Round.",
+      "The top 5 groups with maximum marks will advance to the Buzzer Round.",
+      "Tie-breakers will be conducted in case of ties for the top 5 positions.",
+      "For every correct answer in the Buzzer Round, 1 point will be awarded, and ½ point will be deducted for every wrong answer."
+    ],
+    coordinators: {
+      student: [
+        { name: "Kunal Sonar", contact: "+91 9922598096" },
+        { name: "Sojwal Solanki", contact: "+91 9158260432" },
+
+      ],
+      faculty: [
+        { name: "", contact: "" }
+      ]
     },
-    {
-      id: 6,
-      logo:"/utils/6.jpeg.jpg",
-      name: "Water Rocket Challenge",
-      year: "2024",
-      department: "Mechanical Engineering",
-      description: "Competitors need to design and build a water rocket within the specified dimensions robust enough to withstand the pressure. ",
-      teamSize: "2-4 Members",
-      entryFee: "200/-",
-      rounds: [
-        {
-          name: "Offline Round",
-          description: "Competitors design and build a water rocket to achieve maximum air time. They get two attempts, and the team with the highest air time wins. Event will be held on 17 Feb 2024 from 10:00 AM to 03:00 PM."
-        }
+    registrationLink: "https://unstop.com/quiz/civista-civil-quiz-challenge-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-897473"
+  },
+  {
+    id: 6,
+    logo: "/utils/6.jpeg.jpg",
+    name: "Water Rocket Challenge",
+    slug: "water-rocket-challenge",
+    year: "2024",
+    department: "Mechanical Engineering",
+    description: "Competitors need to design and build a water rocket within the specified dimensions robust enough to withstand the pressure. ",
+    teamSize: "2-4 Members",
+    entryFee: "200/-",
+    rounds: [
+      {
+        name: "Offline Round",
+        description: "Competitors design and build a water rocket to achieve maximum air time. They get two attempts, and the team with the highest air time wins. Event will be held on 17 Feb 2024 from 10:00 AM to 03:00 PM."
+      }
+    ],
+    rules: [
+      "The weight of an empty rocket must not exceed 0.5 kg.",
+      "The maximum allowed total height of the rocket is 76.0 cm.",
+      "The rocket must be made of low-density materials like paper, plastic, duct tape, and glue.",
+      "Use of metal, ceramics, or other high-density materials is prohibited.",
+      "Ready-made rocket kits are not allowed; teams found using them will be disqualified.",
+      "Water-fuel tanks must be plastic soda bottles, not exceeding 2.5 liters in size.",
+      "Air pressure must not exceed 70 psi.",
+      "The maximum time for setup and launch is 5 minutes.",
+      "The rocket must land within the marked field area (50x50 meters); otherwise, it will score null.",
+      "Teams will get 2 chances to launch their rocket and achieve the maximum air time.",
+      "Unsafe rockets, as judged by coordinators, will be disqualified."
+    ],
+    coordinators: {
+      student: [
+        { name: "Ninad Patil", contact: "+91 9579776916" }
       ],
-      rules: [
-        "The weight of an empty rocket must not exceed 0.5 kg.",
-        "The maximum allowed total height of the rocket is 76.0 cm.",
-        "The rocket must be made of low-density materials like paper, plastic, duct tape, and glue.",
-        "Use of metal, ceramics, or other high-density materials is prohibited.",
-        "Ready-made rocket kits are not allowed; teams found using them will be disqualified.",
-        "Water-fuel tanks must be plastic soda bottles, not exceeding 2.5 liters in size.",
-        "Air pressure must not exceed 70 psi.",
-        "The maximum time for setup and launch is 5 minutes.",
-        "The rocket must land within the marked field area (50x50 meters); otherwise, it will score null.",
-        "Teams will get 2 chances to launch their rocket and achieve the maximum air time.",
-        "Unsafe rockets, as judged by coordinators, will be disqualified."
-      ],
-      coordinators: {
-        student: [
-          { name: "Ninad Patil", contact: "+91 9579776916" }
-        ],
-        faculty: [
-          { name: "Tilok Bhandari", contact: "+91 9420583249" }
-        ]
-      },
-      registrationLink: "https://unstop.com/o/npPFzGt?lb=jOvn68re"
+      faculty: [
+        { name: "Tilok Bhandari", contact: "+91 9420583249" }
+      ]
     },
-    {
-      id: 7,
-      logo:"/utils/7.jpeg",
-      name: "Boat Float",
-      year: "2024",
-      department: "Civil Engineering",
-      description: "Participants design and build a boat model to support a specific weight without sinking, enhancing understanding of buoyancy and floatation principles in practical applications.",
-      teamSize: "3-4",
-      entryFee: "200/-",
-      rounds: [
-        {
-          name: "Boat Building Round",
-          description: "Participants will design and build their boat model on the event day using materials provided by the college. The models will be assessed by faculty on the result day."
-        }
+    registrationLink: "https://unstop.com/o/npPFzGt?lb=jOvn68re"
+  },
+  {
+    id: 7,
+    logo: "/utils/7.jpeg",
+    name: "Boat Float",
+    slug: "boat-float",
+    year: "2024",
+    department: "Civil Engineering",
+    description: "Participants design and build a boat model to support a specific weight without sinking, enhancing understanding of buoyancy and floatation principles in practical applications.",
+    teamSize: "3-4",
+    entryFee: "200/-",
+    rounds: [
+      {
+        name: "Boat Building Round",
+        description: "Participants will design and build their boat model on the event day using materials provided by the college. The models will be assessed by faculty on the result day."
+      }
+    ],
+    rules: [
+      "The decision made by judges and coordinators will be considered final in case of any dispute.",
+      "No refund fees will be provided for cancellation of registration.",
+      "Participants must carry their college ID cards.",
+      "Any misbehavior or disrespectful conduct towards event coordinators or volunteers will not be tolerated.",
+      "Avoid damaging institute property during the event; if found, it will result in immediate disqualification.",
+      "All necessary materials, including thermocol, will be provided by the college.",
+      "Participants must construct their models on the event day itself within the event premises.",
+      "No extra materials, apart from those provided by the college, are allowed."
+    ],
+    coordinators: {
+      student: [
+        { name: "Kunal Sonar", contact: "+91 9922598096" },
+        { name: "Sojwal Solanki", contact: "+91 9158260432" },
       ],
-      rules: [
-        "The decision made by judges and coordinators will be considered final in case of any dispute.",
-        "No refund fees will be provided for cancellation of registration.",
-        "Participants must carry their college ID cards.",
-        "Any misbehavior or disrespectful conduct towards event coordinators or volunteers will not be tolerated.",
-        "Avoid damaging institute property during the event; if found, it will result in immediate disqualification.",
-        "All necessary materials, including thermocol, will be provided by the college.",
-        "Participants must construct their models on the event day itself within the event premises.",
-        "No extra materials, apart from those provided by the college, are allowed."
-      ],
-      coordinators: {
-        student: [
-          { name: "Kunal Sonar", contact: "+91 9922598096" },
-          { name: "Sojwal Solanki", contact: "+91 9158260432" },
-        ],
-        faculty: [
-          { name: "Not Provided", contact: "Not Provided" }
-        ]
-      },
-      registrationLink: "https://unstop.com/competitions/civista-boat-float-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-897465"
+      faculty: [
+        { name: "Not Provided", contact: "Not Provided" }
+      ]
     },
-    {
-      id: 8,
-      logo:"/utils/8.jpeg",
-      name: "Bridgominia",
-      year: "2024",
-      department: "Civil Engineering",
-      description: "An ice cream stick bridge-building competition where participants use creativity and engineering skills to construct a bridge that withstands maximum weight.",
-      teamSize: "3-4",
-      entryFee: "200/-",
-      rounds: [
-        {
-          name: "Bridge Construction Round",
-          description: "Participants design and build their bridge model on the event day using provided materials. Models will be tested for breaking points by applying weights."
-        }
+    registrationLink: "https://unstop.com/competitions/civista-boat-float-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-897465"
+  },
+  {
+    id: 8,
+    logo: "/utils/8.jpeg",
+    name: "Bridgominia",
+    slug: "bridgominia",
+    year: "2024",
+    department: "Civil Engineering",
+    description: "An ice cream stick bridge-building competition where participants use creativity and engineering skills to construct a bridge that withstands maximum weight.",
+    teamSize: "3-4",
+    entryFee: "200/-",
+    rounds: [
+      {
+        name: "Bridge Construction Round",
+        description: "Participants design and build their bridge model on the event day using provided materials. Models will be tested for breaking points by applying weights."
+      }
+    ],
+    rules: [
+      "Participants are not allowed to bring any external material to improve the strength of the model. Any violation will result in disqualification.",
+      "No sandwiching of sticks more than 3 if used as a joint or 2 if used as a beam.",
+      "All necessary materials, including 150 sticks, will be provided by the college.",
+      "Participants must construct their models on the event day itself within the event premises.",
+      "The bridge must span at least 13 inches (33.02 cm) in length but must not exceed 15 inches (38.1 cm).",
+      "The model will be assessed by faculty on the result day."
+    ],
+
+    coordinators: {
+      student: [
+        { name: "Kunal Sonar", contact: "+91 9922598096" },
+        { name: "Sojwal Solanki", contact: "+91 9158260432" },
       ],
-      rules: [
-        "Participants are not allowed to bring any external material to improve the strength of the model. Any violation will result in disqualification.",
-        "No sandwiching of sticks more than 3 if used as a joint or 2 if used as a beam.",
-        "All necessary materials, including 150 sticks, will be provided by the college.",
-        "Participants must construct their models on the event day itself within the event premises.",
-        "The bridge must span at least 13 inches (33.02 cm) in length but must not exceed 15 inches (38.1 cm).",
-        "The model will be assessed by faculty on the result day."
+      faculty: [
+        { name: "Not Provided", contact: "Not Provided" }
+      ]
+    },
+    registrationLink: "https://unstop.com/competitions/civista-bridgominia-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-897437"
+  },
+  {
+    id: 9,
+    logo: "/utils/9.jpeg",
+    name: "Codecraze",
+    slug: "codecraze",
+    year: "2024",
+    department: "GDSC RCPIT",
+    description: "A dynamic two-day event organized by GDSC RCPIT and Fetch.ai, featuring a 24-hour hackathon, workshops, and competitions that encourage innovation, creativity.",
+    teamSize: "1-4",
+    entryFee: "200/-",
+    rounds: [
+      {
+        name: "24-Hour Hackathon",
+        description: "Teams develop original projects aligned with the event theme or challenge, concluding with a presentation or demo of their work."
+      }
+    ],
+    rules: [
+      "Participants must be enrolled students in any academic institution.",
+      "Teams of 4 must register in advance via the official website or portal.",
+      "All projects must align with the given theme or challenge and avoid copyright violations.",
+      "Bring personal laptops and chargers to the venue.",
+      "Complete project submissions within the designated 24-hour timeframe.",
+      "Adhere to a respectful and professional code of conduct throughout the event."
+    ],
+    coordinators: {
+      student: [
+        { name: "Gopal Patil", contact: "+91 9021386468" }
       ],
-       
-      coordinators: {
-        student: [
-          { name: "Kunal Sonar", contact: "+91 9922598096" },
-          { name: "Sojwal Solanki", contact: "+91 9158260432" },
-        ],
-        faculty: [
-          { name: "Not Provided", contact: "Not Provided" }
-        ]
-      },
-      registrationLink: "https://unstop.com/competitions/civista-bridgominia-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-897437"
-    }
-,    
-{
-  id: 9,
-
-  logo:"/utils/9.jpeg",
-
-  name: "Codecraze",
-  year: "2024",
-  department: "GDSC RCPIT",
-  description: "A dynamic two-day event organized by GDSC RCPIT and Fetch.ai, featuring a 24-hour hackathon, workshops, and competitions that encourage innovation, creativity.",
-  teamSize: "1-4",
-  entryFee: "200/-",
-  rounds: [
-    {
-      name: "24-Hour Hackathon",
-      description: "Teams develop original projects aligned with the event theme or challenge, concluding with a presentation or demo of their work."
-    }
-  ],
-  rules: [
-    "Participants must be enrolled students in any academic institution.",
-    "Teams of 4 must register in advance via the official website or portal.",
-    "All projects must align with the given theme or challenge and avoid copyright violations.",
-    "Bring personal laptops and chargers to the venue.",
-    "Complete project submissions within the designated 24-hour timeframe.",
-    "Adhere to a respectful and professional code of conduct throughout the event."
-  ],
-  coordinators: {
-    student: [
-      { name: "Gopal Patil", contact: "+91 9021386468" }
-    ],
-    faculty: [
-      { name: "Nikesh", contact: "+91 9307101041" }
-    ]
+      faculty: [
+        { name: "Nikesh", contact: "+91 9307101041" }
+      ]
+    },
+    registrationLink: "https://unstop.com/hackathons/codecraze-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-895331?lb=jOvn68re&fbclid=PAZXh0bgNhZW0CMTEAAabDwVgfDMoup7q98zWmfj9ls0QW9Gifc5lg0shVpYfi_YMBdVegZ_EHmAg_aem_C3oHVOaxBxwCOVUSNvz-9Q"
   },
-  registrationLink: "https://unstop.com/hackathons/codecraze-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-895331?lb=jOvn68re&fbclid=PAZXh0bgNhZW0CMTEAAabDwVgfDMoup7q98zWmfj9ls0QW9Gifc5lg0shVpYfi_YMBdVegZ_EHmAg_aem_C3oHVOaxBxwCOVUSNvz-9Q"
-},
-{
-  id: 10,
-
-  logo:"/utils/10.jpeg",
-
-  name: "Waste-to-Watt",
-  year: "2024",
-  department: "Electrical Engineering",
-  description: "The Waste-to-Watt technical event invites engineering students to showcase innovative and sustainable solutions by converting waste materials into usable energy.",
-  teamSize: "1-2",
-  entryFee: "200/-",
-  rounds: [
-    {
-      "name": "Waste-to-Watt Presentation",
-      "description": "Participants present their project, focusing on energy conversion from waste materials, followed by a Q&A session."
-    }
-  ],
-  rules: [
-    "Participants must be engineering students with a team size of up to 2 members.",
-    "Projects must focus on converting waste materials into usable energy, using eco-friendly methods (no hazardous waste materials).",
-    "Participants can create a prototype model or digital poster (A3 size: 29.7 cm x 42 cm) to represent their idea.",
-    "The presentation time is 8 minutes for the explanation and 2 minutes for Q&A.",
-    "Teams should be prepared to demonstrate the functionality of their waste-to-watt system.",
-    "Participants must carry their college ID card (physical or soft copy).",
-    "Misbehavior with event coordinators or volunteers will lead to disqualification.",
-    "Damaging institute property will lead to immediate disqualification."
-  ],
-  coordinators: {
-    student: [
-      { name: "Not Provided", "contact": "Not Provided" }
+  {
+    id: 10,
+    logo: "/utils/10.jpeg",
+    name: "Waste-to-Watt",
+    slug: "waste-to-watt",
+    year: "2024",
+    department: "Electrical Engineering",
+    description: "The Waste-to-Watt technical event invites engineering students to showcase innovative and sustainable solutions by converting waste materials into usable energy.",
+    teamSize: "1-2",
+    entryFee: "200/-",
+    rounds: [
+      {
+        "name": "Waste-to-Watt Presentation",
+        "description": "Participants present their project, focusing on energy conversion from waste materials, followed by a Q&A session."
+      }
     ],
-    faculty: [
-      { name: "Not Provided", "contact": "Not Provided" }
-    ]
-  },
-  registrationLink: "https://unstop.com/competitions/elektrax-waste-to-watt-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-897012"
-},
-{
-  id: 11,
-  logo:"/utils/11.jpeg",
-  name: "ElectroToy Making",
-  year: "2024",
-  department: "Electrical Engineering",
-  description: "The ElectroToy Making event introduces participants to the fundamentals of electrical and electronic circuits through hands-on experience, encouraging creativity.",
-  teamSize: "2-4",
-  entryFee: "200/-",
-  rounds: [
-    {
-      name: "ElectroToy Creation",
-      description: "Participants create electrical or electronic toys within a 90-minute duration, followed by a presentation on the functionality and features of the toys."
-    }
-  ],
-  rules: [
-    "Participants must form teams of up to 4 members.",
-    "Safety gear must be provided to participants, and safety standards must be adhered to.",
-    "Participants must arrange their own materials for making the toys.",
-    "The time duration for making the toy is 90 minutes, and no additional time will be provided.",
-    "The toy must align with electrical and electronics fields.",
-    "Participants must present their electric toys' functionality and features to judges and attendees.",
-    "No refund fees will be given for cancellation of registration.",
-    "Participants must carry their college ID card (physical or soft copy).",
-    "Misbehavior with event coordinators or volunteers will lead to disqualification.",
-    "Damaging institute property will lead to immediate disqualification."
-  ],
-  coordinators: {
-    student: [
-      { name: "Pratamesh Patil", contact: "" },
-      { name: " Jay Kumar", contact: "" }
+    rules: [
+      "Participants must be engineering students with a team size of up to 2 members.",
+      "Projects must focus on converting waste materials into usable energy, using eco-friendly methods (no hazardous waste materials).",
+      "Participants can create a prototype model or digital poster (A3 size: 29.7 cm x 42 cm) to represent their idea.",
+      "The presentation time is 8 minutes for the explanation and 2 minutes for Q&A.",
+      "Teams should be prepared to demonstrate the functionality of their waste-to-watt system.",
+      "Participants must carry their college ID card (physical or soft copy).",
+      "Misbehavior with event coordinators or volunteers will lead to disqualification.",
+      "Damaging institute property will lead to immediate disqualification."
     ],
-    faculty: [
-      { name: "", contact: "" }
-    ]
+    coordinators: {
+      student: [
+        { name: "Not Provided", "contact": "Not Provided" }
+      ],
+      faculty: [
+        { name: "Not Provided", "contact": "Not Provided" }
+      ]
+    },
+    registrationLink: "https://unstop.com/competitions/elektrax-waste-to-watt-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-897012"
   },
-  registrationLink: "https://unstop.com/competitions/elektrax-electrotoy-making-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-897372"
-},
-{
-  id: 12,
-  logo:"/utils/12.jpeg",
-  name: "Trade Tech",
-  year: "2024",
-  department: "Civil Engineering",
-  description: "Trade Tech is an event aimed at spreading financial literacy among students by allowing them to trade virtual stocks in the NIFTY 500 index.",
-  teamSize: "Individual",
-  entryFee: "50/-",
-  rounds: [
-    {
-      name: "Stock Market Trading",
-      description: "Participants trade virtual money in their Stockgro wallet during market hours (09:15 AM – 03:30 PM on Friday), aiming to generate the highest ROI through NIFTY 500 stocks."
-    }
-  ],
-  rules: [
-    "Participants must register individually.",
-    "Virtual money (INR 10 Lakh) will be provided for trading in the Stockgro wallet.",
-    "Trading will occur within the market hours (09:15 AM – 03:30 PM on Friday).",
-    "Participants must create a portfolio by trading NIFTY 500 stocks. Short selling is allowed.",
-    "Only EQUITY trading is allowed; F&O is not available.",
-    "Ranking depends on the percentage-wise ROI generated from the portfolio.",
-    "Misbehavior towards volunteers will lead to immediate disqualification.",
-    "Winners will be announced on the event's Instagram handles."
-  ],
-  coordinators: {
-    student: [
-      { name: "Tushar khairnar", contact: "" }
+  {
+    id: 11,
+    logo: "/utils/11.jpeg",
+    name: "ElectroToy Making",
+    slug: "electrotoy-making",
+    year: "2024",
+    department: "Electrical Engineering",
+    description: "The ElectroToy Making event introduces participants to the fundamentals of electrical and electronic circuits through hands-on experience, encouraging creativity.",
+    teamSize: "2-4",
+    entryFee: "200/-",
+    rounds: [
+      {
+        name: "ElectroToy Creation",
+        description: "Participants create electrical or electronic toys within a 90-minute duration, followed by a presentation on the functionality and features of the toys."
+      }
     ],
-    faculty: [
-      { name: "", contact: "" }
-    ]
+    rules: [
+      "Participants must form teams of up to 4 members.",
+      "Safety gear must be provided to participants, and safety standards must be adhered to.",
+      "Participants must arrange their own materials for making the toys.",
+      "The time duration for making the toy is 90 minutes, and no additional time will be provided.",
+      "The toy must align with electrical and electronics fields.",
+      "Participants must present their electric toys' functionality and features to judges and attendees.",
+      "No refund fees will be given for cancellation of registration.",
+      "Participants must carry their college ID card (physical or soft copy).",
+      "Misbehavior with event coordinators or volunteers will lead to disqualification.",
+      "Damaging institute property will lead to immediate disqualification."
+    ],
+    coordinators: {
+      student: [
+        { name: "Pratamesh Patil", contact: "" },
+        { name: " Jay Kumar", contact: "" }
+      ],
+      faculty: [
+        { name: "", contact: "" }
+      ]
+    },
+    registrationLink: "https://unstop.com/competitions/elektrax-electrotoy-making-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-897372"
   },
-  registrationLink: "https://unstop.com/competitions/trade-tech-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-895497"
-}
-,
-    
-      
-
-
-
-
-
-
+  {
+    id: 12,
+    logo: "/utils/12.jpeg",
+    name: "Trade Tech",
+    slug: "trade-tech",
+    year: "2024",
+    department: "Civil Engineering",
+    description: "Trade Tech is an event aimed at spreading financial literacy among students by allowing them to trade virtual stocks in the NIFTY 500 index.",
+    teamSize: "Individual",
+    entryFee: "50/-",
+    rounds: [
+      {
+        name: "Stock Market Trading",
+        description: "Participants trade virtual money in their Stockgro wallet during market hours (09:15 AM – 03:30 PM on Friday), aiming to generate the highest ROI through NIFTY 500 stocks."
+      }
+    ],
+    rules: [
+      "Participants must register individually.",
+      "Virtual money (INR 10 Lakh) will be provided for trading in the Stockgro wallet.",
+      "Trading will occur within the market hours (09:15 AM – 03:30 PM on Friday).",
+      "Participants must create a portfolio by trading NIFTY 500 stocks. Short selling is allowed.",
+      "Only EQUITY trading is allowed; F&O is not available.",
+      "Ranking depends on the percentage-wise ROI generated from the portfolio.",
+      "Misbehavior towards volunteers will lead to immediate disqualification.",
+      "Winners will be announced on the event's Instagram handles."
+    ],
+    coordinators: {
+      student: [
+        { name: "Tushar khairnar", contact: "" }
+      ],
+      faculty: [
+        { name: "", contact: "" }
+      ]
+    },
+    registrationLink: "https://unstop.com/competitions/trade-tech-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-895497"
+  },
   {
     id: 13,
-    logo:"/utils/13.jpeg",
+    logo: "/utils/13.jpeg",
     name: "Innovation Challenge",
+    slug: "innovation-challenge",
     year: "2023",
     department: "",
     description: "The Innovation Challenge invites creative thinkers to develop groundbreaking solutions for real-world problems.",
@@ -487,8 +485,9 @@ export const eventsData = [
   },
   {
     id: 14,
-    logo:"/utils/14.jpeg",
+    logo: "/utils/14.jpeg",
     name: "Play with Drawing",
+    slug: "play-with-drawing",
     year: "2023",
     department: "Civil Engineering",
     description: "Play with drawing is the civil engineering drawing competition in which individual participant can be participate. This competition is held in 2 rounds.",
@@ -522,8 +521,9 @@ export const eventsData = [
   },
   {
     id: 15,
-    logo:"/utils/15.jpeg",
+    logo: "/utils/15.jpeg",
     name: "The Detective's Dilemma",
+    slug: "the-detectives-dilemma",
     year: "2023",
     department: "Computer Engineering",
     description: "A detective (Identity: Anonymous) is the best of the best. He is a no-nonsense specialist in the field of criminal investigation and is renowned for his problem-solving skills.",
@@ -544,9 +544,9 @@ export const eventsData = [
       }
     ],
     rules: [
-      " Whole team (1 Hostage & other Saviours) will participate in this round."," A limited amount of time will be given to the Hostage and Saviours for explanation of task and implementation of code",
+      " Whole team (1 Hostage & other Saviours) will participate in this round.", " A limited amount of time will be given to the Hostage and Saviours for explanation of task and implementation of code",
       "Teams will score points based on their performance.",
-      
+
     ],
     coordinators: {
       student: [
@@ -560,9 +560,10 @@ export const eventsData = [
     registrationLink: "https://forms.google.com/cyber-security-workshop"
   },
   {
-    id: 16, 
-    logo:"/utils/16.jpeg",
+    id: 16,
+    logo: "/utils/16.jpeg",
     name: "Ideathon",
+    slug: "ideathon",
     year: "2023",
     department: "Electrical Engineering",
     description: "IDEATHON provides an opportunity to represent creativity and ideas about green energy. Participants work in teams, using design thinking and innovative learning.",
@@ -598,8 +599,9 @@ export const eventsData = [
   },
   {
     id: 17,
-    logo:"/utils/17.jpeg",
+    logo: "/utils/17.jpeg",
     name: "Brain Heist",
+    slug: "brain-heist",
     year: "2023",
     department: "Data Science",
     description: "Get ready to put your grey matter to the test with three thrilling rounds. The Buzzer Quiz, will test quick-wittedness. Debug Code, will assess coding skills and debugging.",
@@ -619,7 +621,7 @@ export const eventsData = [
         description: "Participants will be provided with a clue/riddle to find the problem statement."
       }
     ],
-    rules: ["In case no participant solves the given problem statement, the team with the most correct answers in Round 1 and the least time taken in Round 2 will be declared winner and the runner up will be decided similarly.","If any participant is caught cheating or doing any kind of malpractices they will be disqualified immediately.","The decision of the organising team will be final and binding."], // Rules not explicitly mentioned
+    rules: ["In case no participant solves the given problem statement, the team with the most correct answers in Round 1 and the least time taken in Round 2 will be declared winner and the runner up will be decided similarly.", "If any participant is caught cheating or doing any kind of malpractices they will be disqualified immediately.", "The decision of the organising team will be final and binding."], // Rules not explicitly mentioned
     coordinators: {
       student: [
         { name: "Uday Bhartiya", contact: "8956601549" },
@@ -628,17 +630,17 @@ export const eventsData = [
       faculty: [] // Faculty coordinators not mentioned
     },
     registrationLink: ""
-  }
-  ,
+  },
   {
     id: 18,
-    logo:"/utils/18.jpeg",
+    logo: "/utils/18.jpeg",
     name: "Mad for Cad",
+    slug: "mad-for-cad",
     year: "2023",
     department: "Mechanical Department",
     description: "An event for solo participants involving the creation of 2D drawings using AutoCAD software.",
     teamSize: "1", // Solo participant
-    entryFee: "100/-", 
+    entryFee: "100/-",
     rounds: [
       {
         name: "2D Drawing (Moderate Level)",
@@ -661,8 +663,9 @@ export const eventsData = [
   },
   {
     id: 19,
-    logo:"/utils/19.jpeg",
+    logo: "/utils/19.jpeg",
     name: "Robo Fest",
+    slug: "robo-fest",
     year: "2023",
     department: "E&TC Department",
     description: "An event featuring multiple challenges involving robots, including Robo Wars, Robo Race, and Fastest Line Follower.",
