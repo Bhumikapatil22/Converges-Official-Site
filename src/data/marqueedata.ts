@@ -32,7 +32,7 @@ export const reviews = [
   },
   {
     name: "Sakshi Bari",
-    username: "@sakshi",
+    username: "@sakshibari",
     body: "Tech Expo was inspiring! So many innovative projects to explore and learn from.",
     img: "sakshi bari.png",
   },
@@ -136,7 +136,7 @@ export const reviews = [
     },
     {
       name: "Sakshi Patil",
-      username: "@sakshi",
+      username: "@sakshipatil",
       body: "CodeCraze was electrifying! Competing against top coders was a great experience.",
       img: "sakshi patil.jpg",
     },

@@ -27,6 +27,7 @@ import { reviews } from '@/data/marqueedata';
 // import { MapSection } from "@/components/map-section";
 // import { slides } from "@/data";
 import { useState } from "react";
+import HighlightsSection from '@/components/HighlightsSection';
 // import { events } from "@/data/timeline";
 // import HighlightsSection from "@/components/HighlightsSection";
 
@@ -71,18 +72,18 @@ return (
           <EventsSection />
           <Timeline timelineData={events} />
           {/* <EventTimeline events={events} /> */}
-          <Gallery
+          {/* <Gallery
             images={slides}
             title="Our Gallery"
             subTitle="Explore our amazing collection of images"
-          />
+          /> */}
 
         </div>
       </div>
 
-      <EventsSection />
-      {/* /*<HighlightsSection items={highlights} />*/ }
-      <Timeline timelineData={events} />
+      {/* <EventsSection /> */}
+      <HighlightsSection items={highlights} />
+      {/* <Timeline timelineData={events} /> */}
       <MapSection />
       <MarqueeDemo reviews={reviews} />
       <ContactSection />
