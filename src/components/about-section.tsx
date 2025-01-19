@@ -32,9 +32,9 @@ export function AboutSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="text-3xl md:text-4xl font-bold mb-8 text-center"
+            className="text-4xl md:text-5xl font-bold mb-8 text-center"
           >
-            About <span className="text-sky-500">
+            About <span className="text-sky-400">
               Converges
             </span>
           </motion.h2>

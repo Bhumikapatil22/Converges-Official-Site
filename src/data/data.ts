@@ -1,0 +1,20 @@
+export const slides = [
+  '/images/3.jpg',
+  '/images/14.jpeg',
+  '/images/13.jpeg',
+  '/images/11.jpeg',
+  '/images/12.jpeg',
+  '/images/17.jpeg',
+  '/images/16.jpeg',
+  '/images/20.jpeg',
+  '/images/21.jpg',
+  '/images/22.jpg',
+  '/images/8.jpg',
+  '/images/9.jpg',
+  '/images/7.jpg',
+  '/images/5.jpg',
+  '/images/4.jpg',
+  '/images/3.jpg',
+  '/images/2.jpg',
+  '/images/1.jpg'
+];

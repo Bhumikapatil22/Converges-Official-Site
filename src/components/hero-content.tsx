@@ -13,7 +13,7 @@ export function HeroContent() {
         className="  inset-0 z-30 space-y-2"
       >
         <div className="flex justify-center">
-        <img className="w-3/4 md:w-1/5 m-4" src="/utils/converges_white.png" alt="RCPIT Logo" />
+        <img className="w-3/4 md:w-1/5 m-4 box-s" src="/utils/converges_white.png" alt="RCPIT Logo" />
         </div>
         {/* Title and Subtitle */}
         <h1 className="text-2xl md:text-4xl font-bold text-white">

@@ -1,11 +1,11 @@
 "use client";
 
 import Link from 'next/link';
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, X, Instagram, Linkedin, Mail, Phone, MapPin, Youtube } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="bg-background border-t">
+    <footer className="bg-transparent ">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and Institute Info */}
@@ -61,10 +61,11 @@ export function Footer() {
             <h3 className="text-xl font-semibold">Follow Us</h3>
             <div className="flex space-x-4">
               {[
-                { icon: Facebook, link: 'https://facebook.com' },
-                { icon: Twitter, link: 'https://twitter.com' },
-                { icon: Instagram, link: 'https://instagram.com' },
-                { icon: Linkedin, link: 'https://linkedin.com' }
+                { icon: Facebook, link: 'https://www.facebook.com/shirpurrcpit' },
+                { icon: X, link: 'https://x.com/shirpurrcpit' },
+                { icon: Instagram, link: 'https://www.instagram.com/rcpitshirpur/' },
+                { icon: Linkedin, link: "https://www.linkedin.com/school/ses's-r.c.patel-institute-of-technology-shirpur/" },
+                { icon: Youtube, link: "https://www.youtube.com/channel/UCbM3lCvA3VXS0rfQie0SjPw" }
               ].map(({ icon: Icon, link }, index) => (
                 <a
                   key={index}
@@ -82,7 +83,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t text-center text-muted-foreground">
-          <p>© Copyright Converges2k23. All Rights Reserved</p>
+          <p>© Copyright Converges2k25. All Rights Reserved</p>
         </div>
       </div>
     </footer>

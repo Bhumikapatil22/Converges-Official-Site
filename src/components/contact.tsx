@@ -12,7 +12,7 @@ export function ContactSection() {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -20,9 +20,9 @@ export function ContactSection() {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mx-auto space-y-12"
         >
-          <h2 className="text-4xl font-bold text-center mb-12">Contact Us</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-sky-400 p-1 text-center mb-12">Contact Us</h2>
 
-          <div className="bg-card p-6 rounded-lg flex items-start space-x-4">
+          <div className="border border-sky-500 bg-card p-6 rounded-lg flex items-start space-x-4">
             <MapPin className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
             <div>
               <h3 className="font-semibold mb-2">Address</h3>
@@ -42,15 +42,15 @@ export function ContactSection() {
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="bg-card p-4 rounded-lg space-y-3"
+                  className="border border-sky-500 bg-card p-4 rounded-lg space-y-3"
                 >
                   <h4 className="font-semibold">{coordinator.name}</h4>
                   <div className="flex items-center space-x-2 text-muted-foreground">
-                    <Phone className="w-4 h-4" />
+                    <Phone className="w-4 h-4 text-sky-500 " />
                     <span>{coordinator.phone}</span>
                   </div>
                   <div className="flex items-center space-x-2 text-muted-foreground">
-                    <Mail className="w-4 h-4" />
+                    <Mail className="w-4 h-4 text-sky-500 " />
                     <a 
                       href={`mailto:${coordinator.email}`}
                       className="hover:text-primary transition-colors"

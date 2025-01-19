@@ -37,8 +37,10 @@ export function EventDetails({ event }: EventDetailsProps) {
       transition={{ duration: 0.6 }}
       className="max-w-4xl mx-auto p-6 space-y-8 bg-transparent"
     >
-      
-      <EventHeader name={event.name} department={event.department}logo={event.logo} />
+       <div className="flex justify-center">
+        <img className="w-3/4 md:w-1/4 box-s" src="/utils/converges_white.png" alt="RCPIT Logo" />
+        </div>
+      <EventHeader name={event.name} department={event.department} />
       <EventInfo description={event.description} teamSize={event.teamSize} entryFee={event.entryFee} />
       <RoundDetails rounds={event.rounds} />
       <RulesSection rules={event.rules} />

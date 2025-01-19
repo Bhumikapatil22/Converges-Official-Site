@@ -1,48 +1,84 @@
 "use client";
 
-import { motion } from 'framer-motion';
-import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Calendar, Users, Info } from 'lucide-react';
-import { useRouter } from 'next/navigation';
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 interface EventCardProps {
   id: number;
   name: string;
   department: string;
   description: string;
-  year: string;
+  registrationLink: string;
+  logo: string;
 }
 
-export function EventCard({ id, name, department, description, year }: EventCardProps) {
+export function EventCard({
+  id,
+  name,
+  department,
+  description,
+  registrationLink,
+  logo,
+}: EventCardProps) {
   const router = useRouter();
 
-  const handleViewDetails = () => {
-    router.push(`/events/${id}`);
-  };
-
   return (
-    <motion.div
-      whileHover={{ scale: 1.09, rotateY: 5 }}
-      transition={{ type: "spring", stiffness: 300 }}
-    >
-      <Card className="p-6 h-80 flex flex-col">
-        <h3 className="text-2xl font-bold mb-2">{name}</h3>
-        <div className="flex items-center text-muted-foreground mb-2">
-          <Users className="w-4 h-4 mr-2" />
-          <span>{department}</span>
+    <div className="w-full mt-10">
+      <motion.div
+        className="relative h-[290px] w-full group cursor-pointer overflow-hidden"
+        whileHover={{ scale: 1.02 }}
+        transition={{ duration: 0.2 }}
+      >
+        {/* Card Background */}
+        <div className="absolute inset-0 bg-[#020617] rounded-lg overflow-hidden">
+          <Image
+            src={logo}
+            alt="Event background"
+            fill
+            priority
+            className="object-cover transition-all duration-300 group-hover:opacity-20"
+          />
         </div>
-        
-        <p className="text-muted-foreground flex-grow">{description}</p>
-        <Button 
-          className="mt-4 w-full" 
-          variant="secondary"
-          onClick={handleViewDetails}
+
+        {/* Title and Department */}
+        <div className="absolute inset-0 p-4 flex flex-col justify-between">
+          <div className="bg-black bg-opacity-50 text-center">
+            <h3 className="text-xl font-bold">{name}</h3>
+            <p className="text-sm">{department}</p>
+          </div>
+        </div>
+
+        {/* Description Sliding In */}
+        <div className="absolute bottom-0 left-0 w-full p-4 bg-black/50 backdrop-blur-sm rounded-b-lg transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
+          <p className="text-gray-200 text-sm text-center">{description}</p>
+        </div>
+      </motion.div>
+
+      {/* Buttons Below Card */}
+      <div className="mt-4 flex justify-center gap-4">
+        {/* Register Button */}
+        <button
+          onClick={(e) => {
+            e.stopPropagation(); // Prevent card click action
+            router.push(registrationLink); // Use the passed registration link
+          }}
+          className=" bg-sky-500/60 text-white px-4 py-1 rounded-sm hover:bg-sky-500/10 transition-all duration-300"
         >
-          <Info className="w-4 h-4 mr-2" />
+          Register
+        </button>
+
+        {/* View Details Button */}
+        <button
+          onClick={(e) => {
+            e.stopPropagation(); // Prevent card click action
+            router.push(`/events/${id}`);
+          }}
+          className="border border-sky-500 px-4 py-1 rounded-sm text-white hover:bg-sky-500/10 transition-all duration-300"
+        >
           View Details
-        </Button>
-      </Card>
-    </motion.div>
+        </button>
+      </div>
+    </div>
   );
 }
