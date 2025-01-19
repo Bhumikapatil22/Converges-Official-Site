@@ -1,9 +1,9 @@
 'use client';
 
+import { cn } from '@/lib/utils';
 import * as React from 'react';
 import * as RechartsPrimitive from 'recharts';
 
-import { cn } from '@/src/lib/utils';
 
 // Format: { THEME_NAME: CSS_SELECTOR }
 const THEMES = { light: '', dark: '.dark' } as const;
@@ -69,6 +69,7 @@ ChartContainer.displayName = 'Chart';
 
 const ChartStyle = ({ id, config }: { id: string; config: ChartConfig }) => {
   const colorConfig = Object.entries(config).filter(
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     ([_, config]) => config.theme || config.color
   );
 

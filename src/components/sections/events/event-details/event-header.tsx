@@ -1,7 +1,6 @@
 "use client";
-
 import { motion } from 'framer-motion';
-import { Trophy } from 'lucide-react';
+
 interface EventHeaderProps {
   name: string;
   department: string;

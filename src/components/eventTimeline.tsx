@@ -1,6 +1,5 @@
 "use client";
 import { motion } from 'framer-motion';
-import { Clock, Coffee, Trophy, AlertCircle } from 'lucide-react';
 import { JSX } from 'react';
 
 interface TimelineItem {

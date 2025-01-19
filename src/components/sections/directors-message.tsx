@@ -19,7 +19,7 @@ export function DirectorsMessage() {
               transition={{ duration: 0.6 }}
               className="text-3xl md:text-4xl font-bold mb-4"
             >
-              Director's Message
+              Director&apos;s Message
             </motion.h2>
           </div>
 
@@ -40,7 +40,7 @@ export function DirectorsMessage() {
                 className="flex-1"
               >
                 <p className="text-lg mb-6 text-foreground/80">
-                  "Welcome to Converges 2024! Our annual tech fest represents the pinnacle of innovation and creativity..."
+                  Welcome to Converges 2024! Our annual tech fest represents the pinnacle of innovation and creativity...
                 </p>
                 <div className="text-primary font-semibold">
                   <p>Dr. Jane Smith</p>

@@ -7,6 +7,7 @@ import { cn } from "../lib/utils"
 import { Button } from "./ui/button"
 import { Menu } from 'lucide-react'
 import { useZoom } from "../contexts/ZoomContext"
+import Image from "next/image"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -57,7 +58,7 @@ export function Navigation() {
       <nav className="container mx-auto px-4 py-4" ref={navRef}>
         <div className="flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold">
-            <img className="h-12" src="/utils/logo.png" alt="Logo" />
+            <Image className="h-12" src="/utils/logo.png" alt="Logo" />
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
