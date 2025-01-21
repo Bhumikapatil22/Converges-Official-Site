@@ -1,8 +1,8 @@
 "use client"
 
 import { notFound } from 'next/navigation';
-import { EventDetails } from 'components/sections/events/event-details';
-import { eventsData } from 'lib/events-data';
+import { EventDetails } from '@/components/sections/events/event-details';
+import { eventsData } from '@/lib/events-data';
 
 export default function EventPage({ params }: { params: { slug: string } }) {
   const slug = params.slug;
