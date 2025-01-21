@@ -1,5 +1,6 @@
 "use client"
 
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 const data = [
@@ -78,10 +79,16 @@ const data = [
   },
 ];
 
-const Card = ({ title,club, description, icon }: { title: string; club:string; description: string; icon: string }) => (
+const Card = ({ title,club }: { title: string; club:string; description: string; icon: string }) => (
   <div className="flex flex-col h-72 items-center align-center bg-gray-950  text-white p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
    <div > 
-      <img  className="h-10 mb-8" src="https://i.pinimg.com/originals/ef/f6/16/eff616bf1a4b4396a602ed54011272ec.png"></img>
+      <Image  
+      className="h-10 mb-8" 
+      src="https://i.pinimg.com/originals/ef/f6/16/eff616bf1a4b4396a602ed54011272ec.png"
+      alt='logo'
+      width={100}
+      height={100}
+      ></Image>
   </div>
   
     <h3 className="text-center text-2xl font-bold mb-2">{title}</h3>

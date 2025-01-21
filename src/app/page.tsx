@@ -3,14 +3,11 @@
 import { HeroSection } from '../components/hero-section';
 import { AboutSection } from '../components/about-section';
 import { EventsSection } from '../components/sections/events';
-import { DirectorsMessage } from '../components/sections/directors-message';
 import { Footer } from '../components/footer';
 import { ContactSection } from '../components/contact';
 import { Timeline } from '@/components/eventTimeline';
 import { MapSection } from '@/components/map-section';
-import { slides } from '@/data/data';
 import { events } from '@/data/timeline';
-import Gallery from '@/components/sections/gallery';
 import { MarqueeDemo } from '@/components/Marquee';
 import { reviews } from '@/data/marqueedata';
 // import EventTimeline from '@/components/EventTimline';
@@ -26,13 +23,11 @@ import { reviews } from '@/data/marqueedata';
 // import { Timeline } from "@/components/eventTimeline";
 // import { MapSection } from "@/components/map-section";
 // import { slides } from "@/data";
-import { useState } from "react";
 import HighlightsSection from '@/components/HighlightsSection';
 // import { events } from "@/data/timeline";
 // import HighlightsSection from "@/components/HighlightsSection";
 
 export default function Home() {
-  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const highlights: { type: "photo" | "photo"; src: string; title: string }[] =
     [

@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 interface HighlightItem {
   type: "photo" | "video";
@@ -79,7 +80,7 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({
             }}
           >
             {item.type === "photo" ? (
-              <img
+              <Image
                 src={item.src}
                 alt={item.title}
                 className="w-full h-full object-cover"
@@ -140,7 +141,7 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({
               onClick={(e) => e.stopPropagation()}
             >
               {selectedItem.type === "photo" ? (
-                <img
+                <Image
                   src={selectedItem.src}
                   alt={selectedItem.title}
                   className="w-full h-auto rounded-md"

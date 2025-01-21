@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
+import Image from "next/image";
 
 export function HeroContent() {
   return (
@@ -13,7 +14,12 @@ export function HeroContent() {
         className="  inset-0 z-30 space-y-2"
       >
         <div className="flex justify-center">
-        <img className="w-3/4 md:w-1/5 m-4 box-s" src="/utils/converges_white.png" alt="RCPIT Logo" />
+        <Image className="w-3/4 md:w-1/5 m-4 box-s" 
+        src="/utils/converges_white.png" 
+        alt="RCPIT Logo"
+        // width={100}
+        // height={100}
+        />
         </div>
         {/* Title and Subtitle */}
         <h1 className="text-2xl md:text-4xl font-bold text-white">
