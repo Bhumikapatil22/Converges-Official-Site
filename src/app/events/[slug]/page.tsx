@@ -1,22 +1,13 @@
+"use client"
+
 import { notFound } from 'next/navigation';
 import { EventDetails } from '@/components/sections/events/event-details';
 import { eventsData } from '@/lib/events-data';
 
-interface EventPageParams {
-  params: {
-    id: string;
-  };
-}
+export default function EventPage({ params }: { params: { slug: string } }) {
+  const slug = params.slug;
 
-export function generateStaticParams() {
-  return eventsData.map((event) => ({
-    id: event.id.toString(),
-  }));
-}
-
-export default function EventPage({ params }: EventPageParams) {
-  const eventId = Number(params.id);
-  const event = eventsData.find((e) => e.id === eventId);
+  const event = eventsData.find((e) => e.slug === slug);
 
   if (!event) {
     return notFound();

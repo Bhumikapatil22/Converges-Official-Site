@@ -7,6 +7,7 @@ import { RoundDetails } from './round-details';
 import { RulesSection } from './rules-section';
 import { CoordinatorInfo } from './coordinator-info';
 import { RegisterButton } from './register-button';
+import Image from 'next/image';
 
 export interface EventDetailsProps {
   event: {
@@ -38,7 +39,7 @@ export function EventDetails({ event }: EventDetailsProps) {
       className="max-w-4xl mx-auto p-6 space-y-8 bg-transparent"
     >
        <div className="flex justify-center">
-        <img className="w-3/4 md:w-1/4 box-s" src="/utils/converges_white.png" alt="RCPIT Logo" />
+        <Image className="w-3/4 md:w-1/4 box-s" src="/utils/converges_white.png" alt="RCPIT Logo" />
         </div>
       <EventHeader name={event.name} department={event.department} />
       <EventInfo description={event.description} teamSize={event.teamSize} entryFee={event.entryFee} />

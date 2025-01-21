@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 interface EventCardProps {
-  id: number;
+  slug: string;
   name: string;
   department: string;
   description: string;
@@ -14,7 +14,7 @@ interface EventCardProps {
 }
 
 export function EventCard({
-  id,
+  slug,
   name,
   department,
   description,
@@ -71,8 +71,8 @@ export function EventCard({
         {/* View Details Button */}
         <button
           onClick={(e) => {
-            e.stopPropagation();
-            router.push(`/events/${id}`);
+            e.stopPropagation(); // Prevent card click action
+            router.push(`/events/${slug}`);
           }}
           className="border border-sky-500 px-4 py-1 rounded-sm text-white hover:bg-sky-500/10 transition-all duration-300"
         >
