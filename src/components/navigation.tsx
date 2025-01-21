@@ -57,9 +57,15 @@ export function Navigation() {
     >
       <nav className="container mx-auto px-4 py-4" ref={navRef}>
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold">
-            <Image className="h-12" src="/utils/logo.png" alt="Logo" />
-          </Link>
+        <Link href="/" className="text-2xl font-bold">
+  <Image 
+    
+    src="/utils/logo.png" 
+    width={70} 
+    height={50} 
+    alt="Logo" 
+  />
+</Link>
 
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (

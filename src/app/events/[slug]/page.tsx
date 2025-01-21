@@ -6,7 +6,7 @@ import { eventsData } from '@/lib/events-data';
 
 export default function EventPage({ params }: { params: { slug: string } }) {
   const slug = params.slug;
-
+  
   const event = eventsData.find((e) => e.slug === slug);
 
   // If the event is not found, return a 404 page using the `notFound` function
