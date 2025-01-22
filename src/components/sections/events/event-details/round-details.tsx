@@ -33,7 +33,7 @@ export function RoundDetails({ rounds }: RoundDetailsProps) {
             transition={{ duration: 0.4, delay: index * 0.1 }}
             className="flex items-start space-x-4 card-background p-4 rounded-lg"
           >
-            <Target className="w-6 h-6 text-primary mt-1" />
+            <Target className="w-6 h-6 text-green-600 mt-1" />
             <div>
               <h3 className="font-semibold text-lg text-justify">
                 Round {index + 1}: {round.name}

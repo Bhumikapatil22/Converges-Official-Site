@@ -14,22 +14,9 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
   title,
   description,
   isLeft,
-<<<<<<< HEAD
-}) => (
-  <div
-    className={`mb-8 flex justify-between items-center w-full ${
-      isLeft ? "flex-row-reverse" : "flex-row"
-    }`}
-  >
-    <div className="order-1 w-5/12"></div>
-    <div className="z-20 flex items-center order-1 bg-grey-800 shadow-xl w-8 h-8 rounded-full">
-      <h1 className="mx-auto font-mono text-lg text-white">
-        <Clock className="w-5 h-5" />
-      </h1>
-=======
   icon,
 }) => {
-  const isPastEvent = new Date(time) < new Date();
+  const isPastEvent = new Date(time) < new Date(); // Check if the event time has passed
 
   return (
     <div
@@ -64,7 +51,6 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
           {description}
         </p>
       </div>
->>>>>>> 57cbc432aeaae23d79a25af6b268f89dc016ae80
     </div>
   );
 };

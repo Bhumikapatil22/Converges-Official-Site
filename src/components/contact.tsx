@@ -12,7 +12,7 @@ export function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-background">
+    <section id="contact" className="font-mono py-20 bg-background">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -23,7 +23,7 @@ export function ContactSection() {
           <h2 className="text-4xl md:text-5xl font-mono text-green-400 p-1 text-center mb-12">Contact Us</h2>
 
           <div className="border border-green-500 bg-card p-6 rounded-lg flex items-start space-x-4">
-            <MapPin className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+            <MapPin className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" />
             <div>
               <h3 className="font-mono mb-2">Address</h3>
               <p className="text-muted-foreground font-mono">
@@ -53,7 +53,7 @@ export function ContactSection() {
                     <Mail className="w-4 h-4 text-green-500 " />
                     <a 
                       href={`mailto:${coordinator.email}`}
-                      className="hover:text-primary transition-colors"
+                      className="hover:text-green-600 transition-colors"
                     >
                       {coordinator.email}
                     </a>

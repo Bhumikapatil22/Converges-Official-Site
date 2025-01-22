@@ -27,7 +27,7 @@ export function RulesSection({ rules }: RulesSectionProps) {
               transition={{ duration: 0.4, delay: index * 0.1 }}
               className="flex items-start space-x-3 text-justify"
             >
-              <AlertCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
+              <AlertCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
               <span>{rule}</span>
             </motion.li>
           ))}

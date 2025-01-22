@@ -78,15 +78,15 @@ export function AboutSection() {
             <div className="flex ">
               <div className="space-y-1">
                 <div className="flex items-center gap-3">
-                  <MapPin className="w-5 h-5 text-primary" />
+                  <MapPin className="w-5 h-5 text-green-600" />
                   <span>R. C. Patel Institute of Technology, Shirpur</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Calendar className="w-5 h-5 text-primary" />
+                  <Calendar className="w-5 h-5 text-green-600" />
                   <span>February 15-17, 2025</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Clock className="w-5 h-5 text-primary" />
+                  <Clock className="w-5 h-5 text-green-600" />
                   <span>9:00 AM - 5:00 PM</span>
                 </div>
               </div>

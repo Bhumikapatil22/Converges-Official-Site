@@ -77,7 +77,7 @@ const Gallery: React.FC<GalleryProps> = ({ images, title, subTitle }) => {
         <div className="text-center mt-8">
           <motion.button
             onClick={loadMore}
-            className="border border-green-500 bg-green-500/10 hover:bg-green-600 text-white font-mono py-2 px-4 rounded"
+            className="border border-green-500 bg-green-500/10 hover:bg-green-600 text-black font-mono py-2 px-4 rounded"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

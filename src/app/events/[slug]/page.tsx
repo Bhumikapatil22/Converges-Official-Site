@@ -18,20 +18,20 @@ export default function EventPage({ params }: { params: { slug: string } }) {
     <main className="relative min-h-screen">
       {/* Fixed Video Background */}
       <video
-        className="fixed top-0 left-0 w-full h-full object-cover -z-10"
+        className="fixed top-0 left-0 w-full font-mono h-full object-cover -z-10"
         autoPlay
         loop
         muted
         playsInline
       >
-        <source src="/utils/video3 (1).mp4" type="video/mp4" />
+        <source src="/utils/codeplayback.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       {/* Overlay for better text visibility */}
-      <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 -z-5"></div>
+      <div className="fixed top-0 left-0 w-full h-full font-mono bg-black bg-opacity-80 -z-5"></div>
 
       {/* Scrolling Content */}
-      <div className="relative z-10 container mx-auto px-4 pt-20 pb-12">
+      <div className="relative z-10 container  font-mono mx-auto px-4 pt-20 pb-12">
         <EventDetails event={event} /> {/* Assuming EventDetails expects an event prop */}
       </div>
     </main>
