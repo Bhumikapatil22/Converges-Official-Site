@@ -22,11 +22,13 @@ export function EventsSection() {
   const filteredEvents = eventsData.filter(
     (event) => event.year === currentYear
   );
+
   const handleNext = () => {
     if (currentIndex < years.length - 1) {
       setCurrentYear(years[currentIndex + 1]);
     }
   };
+
   const handlePrevious = () => {
     if (currentIndex > 0) {
       setCurrentYear(years[currentIndex - 1]);
@@ -79,7 +81,7 @@ export function EventsSection() {
                   className={`px-4 py-2 rounded-full cursor-pointer ${
                     currentYear === year
                       ? "bg-green-950 text-white"
-                      : "bg-green-600 text-green-300 hover:bg-green-700 hover:text-gren"
+                      : "bg-green-600 text-green-300 hover:bg-green-700 hover:text-green-100"
                   }`}
                   onClick={() => setCurrentYear(year)}
                 >
