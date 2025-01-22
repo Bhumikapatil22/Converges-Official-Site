@@ -16,7 +16,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
   isLeft,
   icon,
 }) => {
-  const isPastEvent = new Date(time) < new Date();
+  const isPastEvent = new Date(time) < new Date(); // Check if the event time has passed
 
   return (
     <div

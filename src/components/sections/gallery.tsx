@@ -38,7 +38,7 @@ const Gallery: React.FC<GalleryProps> = ({ images, title, subTitle }) => {
   return (
     <section id="gallery" className="container mx-auto px-4 py-16">
       <motion.h2
-        className="text-4xl md:text-5xl text-sky-400 m-10 font-bold text-center mb-2"
+        className="text-4xl md:text-5xl text-green-400 m-10 font-bold text-center mb-2"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}  
         transition={{ duration: 0.5 }}
@@ -77,7 +77,7 @@ const Gallery: React.FC<GalleryProps> = ({ images, title, subTitle }) => {
         <div className="text-center mt-8">
           <motion.button
             onClick={loadMore}
-            className="border border-sky-500 bg-blue-500/10 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded"
+            className="border border-green-500 bg-green-500/10 hover:bg-green-600 text-black font-mono py-2 px-4 rounded"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

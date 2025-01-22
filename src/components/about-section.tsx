@@ -1,9 +1,10 @@
 "use client";
 
-import { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { Calendar, Clock, MapPin } from 'lucide-react';
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { Calendar, Clock, MapPin } from "lucide-react";
+import { Typewriter } from "react-simple-typewriter";
 
 export function AboutSection() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -20,7 +21,15 @@ export function AboutSection() {
   });
 
   return (
+<<<<<<< HEAD
     <section id="about" ref={containerRef} className="to-black min-h-screen relative py-20">
+=======
+    <section
+      id="about"
+      ref={containerRef}
+      className="to-black min-h-screen relative py-20"
+    >
+>>>>>>> b11072f2f5f5a0018a297d07d4dad5a9fabb6cfc
       <div className="container mx-auto px-4">
         <motion.div
           ref={ref}
@@ -33,8 +42,17 @@ export function AboutSection() {
             transition={{ duration: 0.6 }}
             className="text-4xl md:text-5xl font-mono mb-8 text-center"
           >
-            About <span className="text-green-400 font-mono">
-              Converges
+            <span>About </span>
+            <span className="text-green-400" style={{ fontFamily: "Orbitron" }}>
+              <Typewriter
+                words={["Converges...", "Innovations...", "Technologies...", "Creativity..."]}
+                loop={0}
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1500}
+              />
             </span>
           </motion.h2>
 
@@ -45,12 +63,41 @@ export function AboutSection() {
             className="space-y-6 font-mono text-slate-300 text-lg text-foreground/80"
           >
             <p className="text-justify">
-              Over the last few decades we are witnessing remarkable advances and explosive growth in new technologies that are changing the world very fast.
-
-              Electronics & Tele-communication, Mechanical, Computer and Information Technology sectors are indeed playing a significant role in facing the technological challenges of the 21st century.
-
-              A number of Engineering colleges, Universities and Research Institutes are promoting all aspects of academics at national and international levels. Still it is felt that there is a strong need to give a new dimension to our efforts to catch up the rapid strides being made in technology.
+              Over the last few decades we are witnessing remarkable advances
+              and explosive growth in new technologies that are changing the
+              world very fast.
+              <br />
+              <br />
+              Electronics & Tele-communication, Mechanical, Computer, and
+              Information Technology sectors are indeed playing a significant
+              role in facing the technological challenges of the 21st century.
+              <br />
+              <br />
+              A number of Engineering colleges, Universities, and Research
+              Institutes are promoting all aspects of academics at national and
+              international levels. Still, it is felt that there is a strong
+              need to give a new dimension to our efforts to catch up with the
+              rapid strides being made in technology.
             </p>
+<<<<<<< HEAD
+=======
+            <div className="flex ">
+              <div className="space-y-1">
+                <div className="flex items-center gap-3">
+                  <MapPin className="w-5 h-5 text-green-600" />
+                  <span>R. C. Patel Institute of Technology, Shirpur</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Calendar className="w-5 h-5 text-green-600" />
+                  <span>February 15-17, 2025</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Clock className="w-5 h-5 text-green-600" />
+                  <span>9:00 AM - 5:00 PM</span>
+                </div>
+              </div>
+            </div>
+>>>>>>> b11072f2f5f5a0018a297d07d4dad5a9fabb6cfc
           </motion.div>
 
           <motion.div

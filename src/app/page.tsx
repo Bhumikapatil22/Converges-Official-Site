@@ -86,7 +86,7 @@ return (
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed z-0"
         style={{
-          backgroundImage: 'url("/utils/image.png")',
+          backgroundImage: 'url("/utils/bg.png")',
         }}
       >
         {/* Overlay for Opacity Effect */}

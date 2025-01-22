@@ -42,7 +42,7 @@ export function DirectorsMessage() {
                 <p className="text-lg mb-6 text-foreground/80">
                   Welcome to Converges 2024! Our annual tech fest represents the pinnacle of innovation and creativity...
                 </p>
-                <div className="text-primary font-semibold">
+                <div className="text-green-600 font-semibold">
                   <p>Dr. Jane Smith</p>
                   <p className="text-sm text-foreground/60">Director, Institute of Technology</p>
                 </div>

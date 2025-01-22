@@ -37,10 +37,10 @@ const ReviewCard = ({
       <div className="flex flex-row items-center gap-2">
         <Image className="rounded-full" width="32" height="32" alt="" src={img} />
         <div className="flex flex-col">
-          <figcaption className="text-sm font-medium dark:text-white">
+          <figcaption className="text-sm font-mono dark:text-white">
             {name}
           </figcaption>
-          <p className="text-xs font-medium dark:text-white/40">{username}</p>
+          <p className="text-xs font-mono dark:text-white/40">{username}</p>
         </div>
       </div>
       <blockquote className="mt-2 text-sm">{body}</blockquote>
@@ -52,9 +52,9 @@ export function MarqueeDemo({ reviews }: MarqueeDemoProps) {
     const secondRow = reviews.slice(reviews.length / 2);
   
     return (
-      <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg  bg-background md:shadow-xl">
-        <h1 className="text-4xl md:text-5xl font-bold text-sky-400 p-1">Student Reviews</h1>
-        <p className=" text-sky-200 mb-4">Exciting reviews by the Students</p>
+      <div className=" font-mono relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg  bg-background md:shadow-xl">
+        <h1 className="text-4xl md:text-5xl font- text-green-400 p-1">Student Reviews</h1>
+        <p className=" font-mono text-red-200 mb-4">Exciting reviews by the Students</p>
         <Marquee pauseOnHover className="[--duration:20s]">
           {firstRow.map((review) => (
             <ReviewCard key={review.username} {...review} />
@@ -65,7 +65,7 @@ export function MarqueeDemo({ reviews }: MarqueeDemoProps) {
             <ReviewCard key={review.username} {...review} />
           ))}
         </Marquee>
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
+        <div className=" font-mono pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
       </div>
     );
