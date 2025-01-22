@@ -31,9 +31,9 @@ export function AboutSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="text-4xl md:text-5xl font-bold mb-8 text-center"
+            className="text-4xl md:text-5xl font-mono mb-8 text-center"
           >
-            About <span className="text-sky-400">
+            About <span className="text-green-400 font-mono">
               Converges
             </span>
           </motion.h2>
@@ -42,7 +42,7 @@ export function AboutSection() {
             initial={{ opacity: 0, y: 40 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="space-y-6 text-slate-300 text-lg text-foreground/80"
+            className="space-y-6 font-mono text-slate-300 text-lg text-foreground/80"
           >
             <p className="text-justify">
               Over the last few decades we are witnessing remarkable advances and explosive growth in new technologies that are changing the world very fast.
@@ -77,18 +77,18 @@ export function AboutSection() {
             initial={{ opacity: 0, y: 40 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
+            className="mt-12 grid grid-cols-1  font-mono md:grid-cols-3 gap-8 text-center"
           >
             <div className="p-6 rounded-lg bg-gradient-to-b from-slate-950">
-              <h3 className="text-2xl font-bold mb-2">10+</h3>
+              <h3 className="text-2xl font-mono mb-2">10+</h3>
               <p className="text-foreground/60">Years of Excellence</p>
             </div>
             <div className="p-6 rounded-lg bg-gradient-to-b from-slate-950">
-              <h3 className="text-2xl font-bold mb-2">50+</h3>
+              <h3 className="text-2xl font-mono mb-2">50+</h3>
               <p className="text-foreground/60">Events & Workshops</p>
             </div>
             <div className="p-6 rounded-lg bg-gradient-to-b from-slate-950">
-              <h3 className="text-2xl font-bold mb-2">5000+</h3>
+              <h3 className="text-2xl font-mono mb-2">5000+</h3>
               <p className="text-foreground/60">Annual Participants</p>
             </div>
           </motion.div>
