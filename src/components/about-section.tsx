@@ -21,21 +21,9 @@ export function AboutSection() {
   });
 
   return (
-<<<<<<< HEAD
     <section id="about" ref={containerRef} className="to-black min-h-screen relative py-20">
-=======
-    <section
-      id="about"
-      ref={containerRef}
-      className="to-black min-h-screen relative py-20"
-    >
->>>>>>> b11072f2f5f5a0018a297d07d4dad5a9fabb6cfc
       <div className="container mx-auto px-4">
-        <motion.div
-          ref={ref}
-          style={{ opacity }}
-          className="max-w-5xl mx-auto"
-        >
+        <motion.div ref={ref} style={{ opacity }} className="max-w-5xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -79,8 +67,6 @@ export function AboutSection() {
               need to give a new dimension to our efforts to catch up with the
               rapid strides being made in technology.
             </p>
-<<<<<<< HEAD
-=======
             <div className="flex ">
               <div className="space-y-1">
                 <div className="flex items-center gap-3">
@@ -97,7 +83,6 @@ export function AboutSection() {
                 </div>
               </div>
             </div>
->>>>>>> b11072f2f5f5a0018a297d07d4dad5a9fabb6cfc
           </motion.div>
 
           <motion.div
