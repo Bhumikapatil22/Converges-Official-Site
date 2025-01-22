@@ -297,7 +297,7 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({
         {visibleCount < items.length && (
           <button
             onClick={handleLoadMore}
-            className="bg-transparent border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white shadow-md shadow-blue-500/50 hover:shadow-lg hover:shadow-blue-600/60 transition-all py-2 px-4 rounded flex items-center justify-center"
+            className="bg-transparent border border-green-500 text-green-500 hover:bg-green-500 font-mono hover:text-black shadow-md shadow-green-500/50 hover:shadow-lg hover:shadow-green-600/60 transition-all py-2 px-4 rounded flex items-center justify-center"
           >
             Load More
           </button>

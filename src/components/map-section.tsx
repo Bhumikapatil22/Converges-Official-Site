@@ -13,10 +13,16 @@ export function MapSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-sky-400 mb-4">
+          {/* Apply Orbitron font here */}
+          <h2
+            className="text-4xl md:text-5xl text-green-400 mb-4"
+            style={{ fontFamily: "'Orbitron', sans-serif" }}
+          >
             Our Campus
           </h2>
-          <p className="text-sky-200">Visit us at our state-of-the-art campus</p>
+          <p className="text-red-200 font-mono">
+            Visit us at our state-of-the-art campus
+          </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-8 items-start">
@@ -45,7 +51,7 @@ export function MapSection() {
             transition={{ duration: 0.6 }}
             className="space-y-6"
           >
-            <div className="relative p-6 text-justify rounded-lg shadow-lg border border-border overflow-hidden z-0 trnsform">
+            <div className="relative p-6 text-justify rounded-lg shadow-lg border border-border overflow-hidden z-0">
               {/* Background Image */}
               <div
                 className="absolute inset-0 bg-cover bg-center"
@@ -61,13 +67,13 @@ export function MapSection() {
               <div className="relative flex items-start gap-4">
                 <Building className="md:w-5 md:h-5 text-primary mt-1 flex-shrink-0" />
                 <div>
-                  <h3 className="text-xl md:text-2xl font-bold mb-2">
+                  <h3 className="text-xl md:text-2xl font-mono mb-2">
                     R. C. Patel Institute of Technology, Shirpur
                   </h3>
-                  <p className="text-gray-200 text-lg  mb-4">
+                  <p className="text-gray-200 text-lg mb-4">
                     An Autonomous Institute
                   </p>
-                  <p className="text-gray-200 leading-relaxed">
+                  <p className="text-gray-200 font-mono leading-relaxed">
                     Institute was set up as a part of the self-powered plans of
                     Shirpur Education Society in 2001 with the objective to
                     erect a truly world-class institute in the rural part where
@@ -77,7 +83,6 @@ export function MapSection() {
                 </div>
               </div>
             </div>
-
 
             <div className="grid sm:grid-cols-2 gap-4">
               <motion.div
@@ -102,10 +107,12 @@ export function MapSection() {
                 <div className="relative flex text-justify items-start gap-3">
                   <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="text-xl md:text-2xl font-bold mb-2">Location</h4>
-                    <p className="text-sm text-gray-200">
-                      Near Nimzari Naka, Shahada Road, Shirpur, Dist. Dhule (M.S.)
-                      Maharashtra, India - 425405
+                    <h4 className="text-xl md:text-2xl font-mono mb-2">
+                      Location
+                    </h4>
+                    <p className="text-sm font-mono text-gray-200">
+                      Near Nimzari Naka, Shahada Road, Shirpur, Dist. Dhule
+                      (M.S.) Maharashtra, India - 425405
                     </p>
                   </div>
                 </div>
@@ -133,20 +140,20 @@ export function MapSection() {
                 <div className="relative flex text-justify items-start gap-3">
                   <GraduationCap className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="text-xl md:text-2xl font-bold mb-2">Recognition</h4>
-                    <p className="text-sm text-gray-200">
-                      AICTE Approved | NBA Accredited | Autonomous Institute under UGC Act
+                    <h4 className="text-xl md:text-2xl font-mono mb-2">
+                      Recognition
+                    </h4>
+                    <p className="text-sm font-mono text-gray-200">
+                      AICTE Approved | NBA Accredited | Autonomous Institute
+                      under UGC Act
                     </p>
                   </div>
                 </div>
               </motion.div>
-
-
-
             </div>
           </motion.div>
         </div>
       </div>
-    </section >
+    </section>
   );
 }

@@ -39,9 +39,9 @@ export function AboutSection() {
             className="text-4xl md:text-5xl font-mono mb-8 text-center"
           >
             <span>About </span>
-            <span className="text-red-400 font-mono">
+            <span className="text-green-400" style={{ fontFamily: "Orbitron" }}>
               <Typewriter
-                words={["Converges", "Innovations", "Technology"]}
+                words={["Converges...", "Innovations...", "Technologies...", "Creativity..."]}
                 loop={0}
                 cursor
                 cursorStyle="_"
