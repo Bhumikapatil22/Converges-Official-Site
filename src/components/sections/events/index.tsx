@@ -55,7 +55,7 @@ export function EventsSection() {
           <button
             onClick={handlePrevious}
             disabled={currentIndex === 0}
-            className={`w-10 h-10 flex items-center justify-center rounded-full bg-cyan-950 text-sky-300 ${
+            className={`w-10 h-10 flex items-center justify-center rounded-full bg-cyan-950 text-sky-300 mr-4 ${
               currentIndex === 0
                 ? "opacity-50 cursor-not-allowed"
                 : "hover:bg-cyan-800"
@@ -63,28 +63,18 @@ export function EventsSection() {
           >
             <ChevronLeft size={20} />
           </button>
-          <div className="flex items-center gap-4 mx-6 overflow-x-auto">
-            {years.map((year, index) => (
-              <motion.div
-                key={year}
-                initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className={`px-4 py-2 rounded-full cursor-pointer ${
-                  currentYear === year
-                    ? "bg-cyan-950 text-white"
-                    : "bg-sky-800 text-sky-300 hover:bg-sky-700 hover:text-white"
-                }`}
-                onClick={() => setCurrentYear(year)}
-              >
-                {year}
-              </motion.div>
-            ))}
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.6 }}
+            className="px-4 py-2 rounded-full bg-cyan-950 text-white"
+          >
+            {currentYear}
+          </motion.div>
           <button
             onClick={handleNext}
             disabled={currentIndex === years.length - 1}
-            className={`w-10 h-10 flex items-center justify-center rounded-full bg-cyan-950 text-sky-300 ${
+            className={`w-10 h-10 flex items-center justify-center rounded-full bg-cyan-950 text-sky-300 ml-4 ${
               currentIndex === years.length - 1
                 ? "opacity-50 cursor-not-allowed"
                 : "hover:bg-cyan-800"

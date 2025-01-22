@@ -82,7 +82,10 @@
 //     </div>
 //   );
 // }
-"use client";
+
+
+
+
 
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -151,25 +154,25 @@ export function EventCard({
 
       {/* Buttons Below Card */}
       <div className="mt-4 flex justify-center gap-4">
-        {/* Register Button */}
-        <button
+        {/* Register Button with Shining Effect */}
+        <motion.button
           onClick={handleRegisterClick}
-          className="bg-sky-500/60 text-white px-4 py-1 rounded-sm hover:bg-sky-500/10 transition-all duration-300"
+          className="relative text-green-500 border-2 border-green-500 px-4 py-2 rounded-full bg-transparent overflow-hidden transition-all duration-300 hover:scale-105 hover:text-green-600 focus:outline-none"
         >
-          Register
-        </button>
+          <span className="absolute inset-0 border-2 border-green-500 rounded-full animate-pulse opacity-30"></span>
+          <span className="relative z-10">Register</span>
+        </motion.button>
 
-        {/* View Details Button */}
-        <button
-          onClick={(e) => {
-            e.stopPropagation(); // Prevent card click action
-            router.push(`/events/${slug}`);
-          }}
-          className="border border-sky-500 px-4 py-1 rounded-sm text-white hover:bg-sky-500/10 transition-all duration-300"
+        {/* View Details Button with Shining Effect */}
+        <motion.button
+          onClick={handleViewDetailsClick}
+          className="relative text-green-500 border-2 border-green-500 px-4 py-2 rounded-full bg-transparent overflow-hidden transition-all duration-300 hover:scale-105 hover:text-green-600 focus:outline-none"
         >
-          View Details
-        </button>
+          <span className="absolute inset-0 border-2 border-green-500 rounded-full animate-pulse opacity-30"></span>
+          <span className="relative z-10">View Details</span>
+        </motion.button>
       </div>
     </div>
   );
 }
+
