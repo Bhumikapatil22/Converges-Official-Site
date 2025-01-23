@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 // import { Button } from '@/src/components/ui/button';
-import { ChevronDown } from "lucide-react";
+// import { ChevronDown } from "lucide-react";
 // import { AnimatedBackground } from './three/animated-background';
 import { HeroContent } from "./hero-content";
 
@@ -45,7 +45,7 @@ export function HeroSection() {
         }}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex justify-center items-center"
       >
-        <ChevronDown className="h-8 w-8 text-green-600/80" />
+        {/* <ChevronDown className="h-8 w-8 text-green-600/80" /> */}
       </motion.div>
     </div>
   );

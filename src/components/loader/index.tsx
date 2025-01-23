@@ -61,7 +61,7 @@ const LoadingPage = ({ loading }: { loading: boolean }) => {
       <style jsx global>{`
         @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap");
       `}</style>
-      ;
+      
       <video
         className="absolute -z-10 top-0 left-0 w-full h-full object-cover"
         autoPlay
@@ -70,7 +70,7 @@ const LoadingPage = ({ loading }: { loading: boolean }) => {
         playsInline
       >
         <source
-          src="https://res.cloudinary.com/dkoxvg4cc/video/upload/v1737572135/hjr1fjwht69fwk1mrqwt.mp4"
+          //src="https://res.cloudinary.com/dkoxvg4cc/video/upload/v1737572135/hjr1fjwht69fwk1mrqwt.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.
