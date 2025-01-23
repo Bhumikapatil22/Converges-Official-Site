@@ -6,6 +6,7 @@ import { EventCard } from "./event-card";
 import { useState } from "react";
 import { eventsData } from "@/lib/events-data";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function EventsSection() {
   const [ref, inView] = useInView({
@@ -39,7 +40,7 @@ export function EventsSection() {
     <>
       {/* Include Google Fonts */}
       <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap");
       `}</style>
 
       <section id="events" className="relative bg-transparent py-20">
@@ -76,7 +77,9 @@ export function EventsSection() {
                 <motion.div
                   key={year}
                   initial={{ opacity: 0, y: 20 }}
-                  animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                  animate={
+                    inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+                  }
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className={`px-4 py-2 rounded-full cursor-pointer ${
                     currentYear === year
@@ -89,7 +92,7 @@ export function EventsSection() {
                 </motion.div>
               ))}
             </div>
-            <button
+            <Button
               onClick={handleNext}
               disabled={currentIndex === years.length - 1}
               className={`w-10 h-10 flex items-center justify-center rounded-full bg-green-950 text-green-500 ${
@@ -99,7 +102,7 @@ export function EventsSection() {
               }`}
             >
               <ChevronRight size={20} />
-            </button>
+            </Button>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {filteredEvents.map((event, index) => (

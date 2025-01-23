@@ -27,11 +27,7 @@ export function AboutSection() {
       className="to-black min-h-screen relative py-20"
     >
       <div className="container mx-auto px-4">
-        <motion.div
-          ref={ref}
-          style={{ opacity }}
-          className="max-w-5xl mx-auto"
-        >
+        <motion.div ref={ref} style={{ opacity }} className="max-w-5xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -41,7 +37,12 @@ export function AboutSection() {
             <span>About </span>
             <span className="text-green-400" style={{ fontFamily: "Orbitron" }}>
               <Typewriter
-                words={["Converges...", "Innovations...", "Technologies...", "Creativity..."]}
+                words={[
+                  "Converges...",
+                  "Innovations...",
+                  "Technologies...",
+                  "Creativity...",
+                ]}
                 loop={0}
                 cursor
                 cursorStyle="_"
@@ -68,8 +69,7 @@ export function AboutSection() {
               Information Technology sectors are indeed playing a significant
               role in facing the technological challenges of the 21st century.
               <br />
-              <br />
-              A number of Engineering colleges, Universities, and Research
+              <br />A number of Engineering colleges, Universities, and Research
               Institutes are promoting all aspects of academics at national and
               international levels. Still, it is felt that there is a strong
               need to give a new dimension to our efforts to catch up with the
@@ -78,15 +78,15 @@ export function AboutSection() {
             <div className="flex ">
               <div className="space-y-1">
                 <div className="flex items-center gap-3">
-                  <MapPin className="w-5 h-5 text-primary" />
+                  <MapPin className="w-5 h-5 text-green-500" />
                   <span>R. C. Patel Institute of Technology, Shirpur</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Calendar className="w-5 h-5 text-primary" />
+                  <Calendar className="w-5 h-5 text-green-500" />
                   <span>February 15-17, 2025</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Clock className="w-5 h-5 text-primary" />
+                  <Clock className="w-5 h-5 text-green-500" />
                   <span>9:00 AM - 5:00 PM</span>
                 </div>
               </div>
@@ -99,15 +99,15 @@ export function AboutSection() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="mt-12 grid grid-cols-1 font-mono md:grid-cols-3 gap-8 text-center"
           >
-            <div className="p-6 rounded-lg bg-gradient-to-b from-slate-950">
+            <div className="p-6 rounded-lg bg-gradient-to-b from-green-950">
               <h3 className="text-2xl font-mono mb-2">10+</h3>
               <p className="text-foreground/60">Years of Excellence</p>
             </div>
-            <div className="p-6 rounded-lg bg-gradient-to-b from-slate-950">
+            <div className="p-6 rounded-lg bg-gradient-to-b from-green-950">
               <h3 className="text-2xl font-mono mb-2">50+</h3>
               <p className="text-foreground/60">Events & Workshops</p>
             </div>
-            <div className="p-6 rounded-lg bg-gradient-to-b from-slate-950">
+            <div className="p-6 rounded-lg bg-gradient-to-b from-green-950">
               <h3 className="text-2xl font-mono mb-2">5000+</h3>
               <p className="text-foreground/60">Annual Participants</p>
             </div>

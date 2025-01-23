@@ -83,10 +83,7 @@
 //   );
 // }
 
-
-
-
-
+import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -155,24 +152,29 @@ export function EventCard({
       {/* Buttons Below Card */}
       <div className="mt-4 flex justify-center gap-4">
         {/* Register Button with Shining Effect */}
-        <motion.button
+        <Button
+          size="lg"
+          variant="outline"
+          style={{ fontFamily: "Orbitron" }}
           onClick={handleRegisterClick}
-          className="relative text-green-500 border-2 border-green-500 px-4 py-2 rounded-full bg-transparent overflow-hidden transition-all duration-300 hover:scale-105 hover:text-green-600 focus:outline-none"
+          className="border-green-800 hover:bg-sky-500/10 bg-transparent relative"
         >
-          <span className="absolute inset-0 border-2 border-green-500 rounded-full animate-pulse opacity-30"></span>
+          {/* <span className="absolute inset-0 border-2 border-green-500 rounded-full animate-pulse opacity-30"></span> */}
           <span className="relative z-10">Register</span>
-        </motion.button>
+        </Button>
 
         {/* View Details Button with Shining Effect */}
-        <motion.button
+        <Button
+          size="lg"
+          variant="outline"
+          style={{ fontFamily: "Orbitron" }}
           onClick={handleViewDetailsClick}
-          className="relative text-green-500 border-2 border-green-500 px-4 py-2 rounded-full bg-transparent overflow-hidden transition-all duration-300 hover:scale-105 hover:text-green-600 focus:outline-none"
+          className="border-green-800 hover:bg-sky-500/10 relative bg-transparent"
         >
-          <span className="absolute inset-0 border-2 border-green-500 rounded-full animate-pulse opacity-30"></span>
+          {/* <span className="absolute inset-0 border-2 border-green-500 rounded-full animate-pulse opacity-30"></span> */}
           <span className="relative z-10">View Details</span>
-        </motion.button>
+        </Button>
       </div>
     </div>
   );
 }
-

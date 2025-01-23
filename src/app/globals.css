@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
     --background: 0 0% 0%;
@@ -41,5 +40,18 @@ html {
 }
 
 .card-background {
-  @apply bg-black bg-opacity-30 backdrop-blur-sm ;
+  @apply bg-black bg-opacity-30 backdrop-blur-sm;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #16a34a;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--background);
 }

@@ -1,14 +1,30 @@
 "use client";
 
-import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { motion } from "framer-motion";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 export function ContactSection() {
   const studentCoordinators = [
-    { name: 'Om Patil', phone: '+91 9075827810', email: 'omrakeshpatil@gmail.com' },
-    { name: 'Pruthviraj Sharma', phone: '+91 9763807108', email: 'sharmapruthvi55@gmail.com' },
-    { name: 'Prathmesh Mali', phone: '+91 9922552891', email: 'pmsir2003@gmail.com' },
-    { name: 'Sachin Dabhade', phone: '+91 9325654147', email: 'datapolaris.cse.rcpit@gmail.com' }
+    {
+      name: "Om Patil",
+      phone: "+91 9075827810",
+      email: "omrakeshpatil@gmail.com",
+    },
+    {
+      name: "Pruthviraj Sharma",
+      phone: "+91 9763807108",
+      email: "sharmapruthvi55@gmail.com",
+    },
+    {
+      name: "Prathmesh Mali",
+      phone: "+91 9922552891",
+      email: "pmsir2003@gmail.com",
+    },
+    {
+      name: "Sachin Dabhade",
+      phone: "+91 9325654147",
+      email: "datapolaris.cse.rcpit@gmail.com",
+    },
   ];
 
   return (
@@ -20,14 +36,17 @@ export function ContactSection() {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mx-auto space-y-12"
         >
-          <h2 className="text-4xl md:text-5xl font-mono text-green-400 p-1 text-center mb-12">Contact Us</h2>
+          <h2 className="text-4xl md:text-5xl font-mono text-green-400 p-1 text-center mb-12">
+            Contact Us
+          </h2>
 
           <div className="border border-green-500 bg-card p-6 rounded-lg flex items-start space-x-4">
-            <MapPin className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+            <MapPin className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" />
             <div>
               <h3 className="font-mono mb-2">Address</h3>
               <p className="text-muted-foreground font-mono">
-                Near Nimzari Naka, Shahada Road,<br />
+                Near Nimzari Naka, Shahada Road,
+                <br />
                 Shirpur Dist. Dhule (M.S.) Maharashtra, India - 425405
               </p>
             </div>
@@ -47,13 +66,18 @@ export function ContactSection() {
                   <h4 className="font-semibold">{coordinator.name}</h4>
                   <div className="flex items-center space-x-2 text-muted-foreground">
                     <Phone className="w-4 h-4 text-green-500 " />
-                    <span>{coordinator.phone}</span>
+                    <a
+                      href={`callto:${coordinator.phone}`}
+                      className="hover:text-green-600 transition-colors"
+                    >
+                      {coordinator.phone}
+                    </a>
                   </div>
                   <div className="flex items-center space-x-2 text-muted-foreground">
                     <Mail className="w-4 h-4 text-green-500 " />
-                    <a 
+                    <a
                       href={`mailto:${coordinator.email}`}
-                      className="hover:text-primary transition-colors"
+                      className="hover:text-green-600 transition-colors"
                     >
                       {coordinator.email}
                     </a>

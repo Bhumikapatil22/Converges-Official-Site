@@ -65,7 +65,7 @@ export function MapSection() {
 
               {/* Content */}
               <div className="relative flex items-start gap-4">
-                <Building className="md:w-5 md:h-5 text-primary mt-1 flex-shrink-0" />
+                <Building className="md:w-5 md:h-5 text-green-600 mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="text-xl md:text-2xl font-mono mb-2">
                     R. C. Patel Institute of Technology, Shirpur
@@ -105,7 +105,7 @@ export function MapSection() {
 
                 {/* Content */}
                 <div className="relative flex text-justify items-start gap-3">
-                  <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
+                  <MapPin className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="text-xl md:text-2xl font-mono mb-2">
                       Location
@@ -138,7 +138,7 @@ export function MapSection() {
 
                 {/* Content */}
                 <div className="relative flex text-justify items-start gap-3">
-                  <GraduationCap className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                  <GraduationCap className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="text-xl md:text-2xl font-mono mb-2">
                       Recognition

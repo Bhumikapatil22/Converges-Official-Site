@@ -1,7 +1,6 @@
 import React from "react";
 
 export function VideoBackground() {
-
   return (
     <div className="relative h-screen w-screen overflow-hidden">
       {/* Responsive Video */}
@@ -12,25 +11,20 @@ export function VideoBackground() {
         muted
         playsInline
       >
-        {/* <source
-          src={mobileVideoSrc}
+        {/* <source src="/utils/codeplayback" type="video/mp4" /> */}
+        {/* Opted for cloudinary video */}
+        <source
+          src="https://res.cloudinary.com/dkoxvg4cc/video/upload/v1737572135/hjr1fjwht69fwk1mrqwt.mp4"
           type="video/mp4"
-          media="(max-width: 768px)"
-        /> */}
-        <source src="/utils/codeplayback.mp4" type="video/mp4" />
+        />
         Your browser does not support the video tag.
       </video>
-
       {/* Overlay Content */}
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center bg-black/5">
         {/* Navbar */}
-
-        
-        
-
       </div>
     </div>
   );
-};
+}
 
 export default VideoBackground;

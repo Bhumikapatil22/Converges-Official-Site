@@ -50,16 +50,14 @@ export function Timeline({ timelineData }: TimelineProps) {
                   className="relative"
                 >
                   {/* Timeline point */}
-                  <div className="absolute left-1/2 w-4 h-4  bg-green-500 bg-primary rounded-full -translate-x-1/2 z-10">
-                    <div className="absolute inset-0 bg-primary/20 rounded-full animate-ping" />
+                  <div className="absolute left-1/2 w-4 h-4 bg-green-500 rounded-full -translate-x-1/2 z-10">
+                    <div className="absolute inset-0 bg-green-600/20 rounded-full animate-ping" />
                   </div>
 
                   {/* Content wrapper */}
                   <div
                     className={`flex justify-center items-center gap-8 ${
-                      index % 2 === 0
-                        ? "flex-row"
-                        : "flex-row-reverse"
+                      index % 2 === 0 ? "flex-row" : "flex-row-reverse"
                     }`}
                   >
                     {/* Left/Right content */}
@@ -73,13 +71,11 @@ export function Timeline({ timelineData }: TimelineProps) {
                       <div className="bg-card p-1 md:p-4 rounded-lg shadow-md border border-green-500 transition-transform hover:scale-110">
                         <div
                           className={`flex items-center gap-2 mb-2 ${
-                            index % 2 === 0
-                              ? "justify-end"
-                              : "justify-start"
+                            index % 2 === 0 ? "justify-end" : "justify-start"
                           }`}
                         >
                           {index % 2 === 1 && item.icon}
-                          <span className="text-sm font-mono text-primary">
+                          <span className="text-sm font-mono text-green-500">
                             {item.time}
                           </span>
                           {index % 2 === 0 && item.icon}
@@ -89,9 +85,8 @@ export function Timeline({ timelineData }: TimelineProps) {
                         </h3>
                         {item.description && (
                           <div className="text-sm hidden font-mono md:block text-muted-foreground">
-                          {item.description}
-                        </div>
-                        
+                            {item.description}
+                          </div>
                         )}
                       </div>
                     </div>

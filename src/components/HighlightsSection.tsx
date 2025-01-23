@@ -75,17 +75,18 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({
     >
       {/* Main Heading */}
       <motion.h1
-        className="text-4xl font-extrabold mb-6 text-[#5FB63F] text-center"
+        className="text-4xl font-extrabold mb-6 text-[#5FB63F] text-center py-5"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 50 }}
         transition={{ duration: 0.5 }}
+        style={{ fontFamily: "'Orbitron', sans-serif" }}
       >
         {title}
       </motion.h1>
 
       {/* Description */}
-      <p className="text-lg text-[#5fb63f] mb-8 sm:max-w-3xl mx-auto px-4 font-light">
+      <p className="text-lg text-[#5fb63f] mb-8 sm:max-w-3xl mx-auto px-4 font-mono">
         Immerse in the energy of Converges, where innovation meets creativity!
       </p>
 
@@ -138,11 +139,7 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({
         {visibleCount < items.length && (
           <button
             onClick={handleLoadMore}
-<<<<<<< HEAD
             className="bg-transparent border border-green-500 text-green-500 hover:bg-green-500 font-mono hover:text-black shadow-md shadow-green-500/50 hover:shadow-lg hover:shadow-green-600/60 transition-all py-2 px-4 rounded flex items-center justify-center"
-=======
-            className="bg-gradient-to-r from-green-500 to-green-700 text-white hover:from-green-600 hover:to-green-800 shadow-md shadow-green-500/50 hover:shadow-lg hover:shadow-green-600/60 transition-all py-2 px-4 rounded flex items-center justify-center"
->>>>>>> 57cbc432aeaae23d79a25af6b268f89dc016ae80
           >
             Load More
           </button>
