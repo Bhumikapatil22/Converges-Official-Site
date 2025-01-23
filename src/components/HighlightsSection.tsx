@@ -262,7 +262,7 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({
     >
       {/* Main Heading */}
       <motion.h1
-        className="text-4xl font-extrabold mb-6 text-[#5FB63F] text-center py-5"
+        className="text-4xl font-extrabold mb-6  text-green-500 text-center py-5"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 50 }}
@@ -273,7 +273,7 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({
       </motion.h1>
 
       {/* Description */}
-      <p className="text-lg text-[#5fb63f] mb-8 sm:max-w-3xl mx-auto px-4 font-mono">
+      <p className="text-lg  text-green-500 mb-8 sm:max-w-3xl mx-auto px-4 font-mono">
         Immerse in the energy of Converges, where innovation meets creativity!
       </p>
 
