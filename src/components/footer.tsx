@@ -55,7 +55,7 @@ export function Footer() {
               alt="Converges logo"
               className="h-24 w-auto"
             />
-            <p className="text-muted-foreground">
+            <p className="font-mono space-y-3 text-muted-foreground">
               R. C. Patel Institute of Technology, Shirpur
               <br />
               (An Autonomous Institute)
@@ -64,14 +64,14 @@ export function Footer() {
 
           {/* Useful Links */}
           <div className="space-y-4">
-            <h3 className="text-xl font-semibold">Useful Links</h3>
+            <h3 className="text-xl font-mono">Useful Links</h3>
             <ul className="space-y-2">
               {["Home", "About us", "Events", "Schedule", "Contact"].map(
                 (link) => (
                   <li key={link}>
                     <Link
                       href={`/${link.toLowerCase().replace(" ", "-")}`}
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      className="text-muted-foreground hover:text-green-400 font-mono transition-colors"
                     >
                       {link}
                     </Link>
