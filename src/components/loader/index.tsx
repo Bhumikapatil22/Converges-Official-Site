@@ -84,17 +84,17 @@ const LoadingPage = ({ loading }: { loading: boolean }) => {
         className="transition-opacity"
       />
       <p
-        className="sm:text-4xl text-2xl mt-3 font-bold"
+        className="  sm:text-4xl text-2xl mt-3 font-bold"
         style={{ fontFamily: "Orbitron" }}
       >
         <Typewriter
-          words={["Unrevealing the Pulse of Next-Gen Tech"]}
+          words={["Unrevealing the Pulse of Next-Gen Tech..."]}
           loop={1}
           cursor
           cursorStyle
           typeSpeed={70}
           deleteSpeed={50}
-          delaySpeed={3000}
+          delaySpeed={2000}
         />
       </p>
       <div className="w-[50vw] mt-7 h-1 bg-transparent overflow-hidden">

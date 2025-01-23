@@ -52,10 +52,10 @@ export function EventsSection() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl md:text-5xl font-[Orbitron] mb-4 text-green-800">
+            <h2 className="text-4xl md:text-5xl font-[Orbitron] mb-4 text-green-500">
               Events
             </h2>
-            <p className="text-green-200 font-[Monospace] max-w-2xl mx-auto">
+            <p className="text-green-200 font-mono max-w-2xl mx-auto">
               Discover our exciting lineup of events designed to challenge and
               inspire.
             </p>

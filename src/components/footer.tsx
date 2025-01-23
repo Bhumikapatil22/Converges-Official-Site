@@ -65,7 +65,7 @@ export function Footer() {
           {/* Useful Links */}
           <div className="space-y-4">
             <h3 className="text-xl font-mono">Useful Links</h3>
-            <ul className="space-y-2">
+            <ul className=" font-mono space-y-2">
               {["Home", "About us", "Events", "Schedule", "Contact"].map(
                 (link) => (
                   <li key={link}>
@@ -85,7 +85,7 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-xl font-mono">Contact Us</h3>
             <div className=" font-mono space-y-3 text-muted-foreground">
-              <p className="flex items-start space-x-2">
+              <p className=" font-mono flex items-start space-x-2">
                 <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
                 <span>
                   Near Nimzari Naka, Shahada Road, Shirpur Dist. Dhule (M.S.)

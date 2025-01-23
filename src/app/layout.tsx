@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <title>Converges - Annual Tech Fest</title>
+        <title>Converges'25-RCPIT Tech Fest</title>
         <meta
           name="description"
           content="Experience the future of technology at Converges"

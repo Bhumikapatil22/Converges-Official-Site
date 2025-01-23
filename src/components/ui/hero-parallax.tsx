@@ -134,7 +134,7 @@ export const Header = () => {
       </div>
       <div className="mt-12 mx-12 grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
         <div className="p-6 rounded-lg bg-gradient-to-b from-slate-950">
-          <h3 className="text-2xl font-bold mb-2">10+</h3>
+          <h3 className="text-2xl font-mono mb-2">10+</h3>
           <p className="text-foreground/60">Years of Excellence</p>
         </div>
         <div className="p-6 rounded-lg bg-gradient-to-b from-slate-950">

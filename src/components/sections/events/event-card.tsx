@@ -138,14 +138,14 @@ export function EventCard({
         {/* Title and Department */}
         <div className="absolute inset-0 p-4 flex flex-col justify-between">
           <div className="bg-black bg-opacity-50 text-center">
-            <h3 className="text-xl font-bold">{name}</h3>
-            <p className="text-sm">{department}</p>
+            <h3 className="text-xl font-mono">{name}</h3>
+            <p className="text-sm font-mono">{department}</p>
           </div>
         </div>
 
         {/* Description Sliding In */}
         <div className="absolute bottom-0 left-0 w-full p-4 bg-black/50 backdrop-blur-sm rounded-b-lg transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
-          <p className="text-gray-200 text-sm text-center">{description}</p>
+          <p className="text-gray-200 font-mono text-sm text-center">{description}</p>
         </div>
       </motion.div>
 

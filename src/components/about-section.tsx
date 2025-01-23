@@ -26,6 +26,7 @@ export function AboutSection() {
       ref={containerRef}
       className="to-black min-h-screen relative py-20"
     >
+      
       <div className="container mx-auto px-4">
         <motion.div ref={ref} style={{ opacity }} className="max-w-5xl mx-auto">
           <motion.h2
