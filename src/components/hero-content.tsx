@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "./ui/button";
 import Image from "next/image";
 import { useState } from "react";
+import { Button } from "./ui/button";
 import { Typewriter } from "react-simple-typewriter";
 
 export function HeroContent() {
@@ -60,7 +60,7 @@ export function HeroContent() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.8 }}
-        className="inset-0 z-30 mt-4 flex gap-4"
+        className="inset-0 z-30 mt-4"
       >
         <a href="#events" aria-label="Explore Events">
           <Button

@@ -83,8 +83,8 @@ export function Footer() {
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-xl font-semibold">Contact Us</h3>
-            <div className="space-y-3 text-muted-foreground">
+            <h3 className="text-xl font-mono">Contact Us</h3>
+            <div className=" font-mono space-y-3 text-muted-foreground">
               <p className="flex items-start space-x-2">
                 <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
                 <span>
@@ -92,7 +92,7 @@ export function Footer() {
                   Maharashtra, India - 425405
                 </span>
               </p>
-              <p className="flex items-center space-x-2">
+              <p className="font-mono flex items-center space-x-2">
                 <Phone className="w-5 h-5" />
                 <a href="callto:02563259600">(02563) 259600, 801, 802</a>
               </p>
@@ -110,7 +110,7 @@ export function Footer() {
 
           {/* Social Links */}
           <div className="space-y-4">
-            <h3 className="text-xl font-semibold">Follow Us</h3>
+            <h3 className="text-xl font-mono">Follow Us</h3>
             <div className="flex space-x-4">
               {[
                 {

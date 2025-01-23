@@ -1,8 +1,8 @@
 "use client";
 
-import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { ExternalLink } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
 
 interface RegisterButtonProps {
   link: string;
@@ -18,8 +18,8 @@ export function RegisterButton({ link }: RegisterButtonProps) {
     >
       <Button
         size="lg"
-        className="text-lg group"
-        onClick={() => window.open(link, '_blank')}
+        className="text-lg group bg-green-600 text-black hover:bg-green-700 focus:ring-2 focus:ring-green-400"
+        onClick={() => window.open(link, "_blank")}
       >
         Register Now
         <ExternalLink className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />

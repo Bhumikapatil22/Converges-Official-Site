@@ -43,7 +43,7 @@ export function CoordinatorInfo({ coordinators }: CoordinatorInfoProps) {
         {hasStudentCoordinators && (
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <User className="w-5 h-5 text-primary" />
+              <User className="w-5 h-5 text-green-600" />
               <h3 className="font-semibold">Student Coordinators</h3>
             </div>
             {validStudentCoordinators.map((coordinator, index) => (
@@ -65,7 +65,7 @@ export function CoordinatorInfo({ coordinators }: CoordinatorInfoProps) {
         {hasFacultyCoordinators && (
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <GraduationCap className="w-5 h-5 text-primary" />
+              <GraduationCap className="w-5 h-5 text-green-600" />
               <h3 className="font-semibold">Faculty Coordinators</h3>
             </div>
             {validFacultyCoordinators.map((coordinator, index) => (

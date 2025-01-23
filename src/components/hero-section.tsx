@@ -43,7 +43,7 @@ export function HeroSection() {
           repeat: Infinity,
           repeatType: "reverse",
         }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex justify-center items-center"
       >
         <ChevronDown className="h-8 w-8 text-green-600/80" />
       </motion.div>

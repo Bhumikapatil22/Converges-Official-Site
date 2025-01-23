@@ -1,4 +1,6 @@
+/* eslint-disable @next/next/no-page-custom-font */
 "use client";
+
 import { motion } from "framer-motion";
 import Head from "next/head";
 import { JSX } from "react";
@@ -29,16 +31,16 @@ export function Timeline({ timelineData }: TimelineProps) {
         <div className="max-w-4xl mx-auto py-8 md:px-4">
           <div
             className="flex text-4xl md:text-5xl font-bold justify-center my-20 text-green-500"
-            style={{ fontFamily: "'Orbitron', sans-serif" }} // Apply Orbitron font
+            style={{ fontFamily: "'Orbitron', sans-serif" }}
           >
             <h1>Event Schedule</h1>
           </div>
 
           <div className="relative">
-            {/* Timeline line */}
+            {/* Timeline Line */}
             <div className="absolute left-1/2 h-full w-0.5 bg-border -translate-x-1/2" />
 
-            {/* Timeline items */}
+            {/* Timeline Items */}
             <div className="space-y-8">
               {timelineData.map((item, index) => (
                 <motion.div
@@ -49,18 +51,18 @@ export function Timeline({ timelineData }: TimelineProps) {
                   viewport={{ once: true }}
                   className="relative"
                 >
-                  {/* Timeline point */}
+                  {/* Timeline Point */}
                   <div className="absolute left-1/2 w-4 h-4 bg-green-500 rounded-full -translate-x-1/2 z-10">
-                    <div className="absolute inset-0 bg-green-600/20 rounded-full animate-ping" />
+                    <div className="absolute inset-0 bg-green-500/20 rounded-full animate-ping" />
                   </div>
 
-                  {/* Content wrapper */}
+                  {/* Content Wrapper */}
                   <div
                     className={`flex justify-center items-center gap-8 ${
                       index % 2 === 0 ? "flex-row" : "flex-row-reverse"
                     }`}
                   >
-                    {/* Left/Right content */}
+                    {/* Left/Right Content */}
                     <div
                       className={`w-[calc(50%-2rem)] ${
                         index % 2 === 0
@@ -68,7 +70,7 @@ export function Timeline({ timelineData }: TimelineProps) {
                           : "text-left md:pl-8"
                       }`}
                     >
-                      <div className="bg-card p-1 md:p-4 rounded-lg shadow-md border border-green-500 transition-transform hover:scale-110">
+                      <div className="bg-card p-1 md:p-4 rounded-lg shadow-md border border-red-500 transition-transform hover:scale-110">
                         <div
                           className={`flex items-center gap-2 mb-2 ${
                             index % 2 === 0 ? "justify-end" : "justify-start"
@@ -91,7 +93,7 @@ export function Timeline({ timelineData }: TimelineProps) {
                       </div>
                     </div>
 
-                    {/* Empty space for the other side */}
+                    {/* Empty Space for the Other Side */}
                     <div className="w-[calc(50%-2rem)]" />
                   </div>
                 </motion.div>

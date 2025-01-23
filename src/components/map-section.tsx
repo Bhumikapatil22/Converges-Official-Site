@@ -70,7 +70,7 @@ export function MapSection() {
                   <h3 className="text-xl md:text-2xl font-mono mb-2">
                     R. C. Patel Institute of Technology, Shirpur
                   </h3>
-                  <p className="text-gray-200 text-lg mb-4">
+                  <p className="text-gray- font-mono text-lg mb-4">
                     An Autonomous Institute
                   </p>
                   <p className="text-gray-200 font-mono leading-relaxed">

@@ -21,15 +21,15 @@ export function EventInfo({ description, teamSize, entryFee }: EventInfoProps) {
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="flex items-center space-x-3">
-          <Users className="w-5 h-5 text-primary" />
+          <Users className="w-5 h-5 text-green-600" />
           <div>
             <p className="font-medium">Team Size</p>
-            <p className="text-muted-foreground">{teamSize}</p>
+            <p className="cootext-muted-foreground">{teamSize}</p>
           </div>
         </div>
         
         <div className="flex items-center space-x-3">
-          <CreditCard className="w-5 h-5 text-primary" />
+          <CreditCard className="w-5 h-5 text-green-600" />
           <div>
             <p className="font-medium">Entry Fee</p>
             <p className="text-muted-foreground">{entryFee}</p>
