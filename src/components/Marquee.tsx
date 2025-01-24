@@ -54,7 +54,7 @@ export function MarqueeDemo({ reviews }: MarqueeDemoProps) {
     return (
       <div className=" font-mono relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg  bg-transparent md:shadow-xl">
         <h1 className="text-4xl md:text-5xl font-mono text-green-400 p-1">Student Reviews</h1>
-        <p className=" font-mono text-red-200 mb-4">Exciting reviews by the Students</p>
+        <p className=" font-mono text-white mb-4">Exciting reviews by the Students</p>
         <Marquee pauseOnHover className="[--duration:20s]">
           {firstRow.map((review) => (
             <ReviewCard key={review.username} {...review} />

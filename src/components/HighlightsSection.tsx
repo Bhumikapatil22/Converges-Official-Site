@@ -1,7 +1,7 @@
-import React, { useState, useRef, useEffect } from "react"; 
+import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "react-feather";
-import Image from "next/image";  // Import Image from next/image
+import Image from "next/image"; // Import Image from next/image
 
 interface HighlightItem {
   type: "photo" | "video";
@@ -13,7 +13,9 @@ interface HighlightsSectionProps {
   items: HighlightItem[];
 }
 
-export const HighlightsSection: React.FC<HighlightsSectionProps> = ({ items }) => {
+export const HighlightsSection: React.FC<HighlightsSectionProps> = ({
+  items,
+}) => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [title] = useState<string>("Highlights");
   const [batchCount, setBatchCount] = useState(1);
@@ -65,7 +67,6 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({ items }) =
   return (
     <motion.div
       className="p-4 text-center font-mono bg-transparent"
-     
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -84,7 +85,7 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({ items }) =
       </motion.h1>
 
       {/* Description */}
-      <p className="text-lg text-red-300 mb-8 sm:max-w-3xl mx-auto px-4">
+      <p className="text-lg text-white mb-8 sm:max-w-3xl mx-auto px-4">
         Immerse in the energy of Converges, where innovation meets creativity!
       </p>
 
@@ -100,8 +101,6 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({ items }) =
             whileHover={{
               scale: 1.05,
               boxShadow: "0px 15px 40px rgba(0, 0, 0, 0.8)",
-              background:
-                "linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.4))",
             }}
           >
             {item.type === "photo" ? (
@@ -109,7 +108,7 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({ items }) =
                 src={item.src}
                 alt={item.title}
                 layout="responsive"
-                width={500} // Specify width and height for better optimization
+                width={500}
                 height={500}
                 className="w-full h-full object-cover"
                 priority
@@ -117,13 +116,14 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({ items }) =
             ) : (
               <video
                 ref={(el) => {
-                  videoRefs.current[index] = el; // Assign video refs dynamically
+                  videoRefs.current[index] = el;
                 }}
                 className="w-full h-full object-cover"
                 muted
                 loop
                 playsInline
-                src={item.src} // Ensure video source is set
+                autoPlay
+                src={item.src}
               />
             )}
             <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-sm font-bold p-2">
@@ -138,15 +138,15 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({ items }) =
         {visibleCount < items.length && (
           <button
             onClick={handleLoadMore}
-            className="bg-transparent border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-all py-2 px-4 rounded"
+            className="bg-gradient-to-r from-green-500 to-green-700 text-black hover:from-green-600 hover:to-green-800 shadow-md shadow-green-500/50 hover:shadow-lg hover:shadow-green-600/60 transition-all py-2 px-4 rounded flex items-center justify-center"
           >
-            Load More
+            Load More...
           </button>
         )}
         {batchCount > 1 && (
           <button
             onClick={handleShowLess}
-            className="bg-transparent border border-red-500 text-red-500 hover:bg-red-500 hover:text-white transition-all py-2 px-4 rounded"
+            className="bg-gradient-to-r from-green-500 to-green-700 text-black hover:from-green-600 hover:to-green-800 shadow-md shadow-green-500/50 hover:shadow-lg hover:shadow-green-600/60 transition-all py-2 px-4 rounded flex items-center justify-center"
           >
             Show Less
           </button>
@@ -175,7 +175,7 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({ items }) =
                   src={selectedItem.src}
                   alt={selectedItem.title}
                   layout="responsive"
-                  width={500} // Specify width and height for better optimization
+                  width={500}
                   height={500}
                   className="w-full h-auto rounded-md"
                   priority
@@ -188,31 +188,34 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({ items }) =
                   className="w-full h-auto rounded-md"
                 />
               )}
-              <div className="absolute top-4 left-4 right-4 text-white text-lg bg-black bg-opacity-60 p-2 rounded-md text-center">
-                {selectedItem.title}
-              </div>
               <button
                 className="absolute top-2 right-2 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-xl"
                 onClick={closeModal}
               >
                 &times;
               </button>
-              <div className="absolute bottom-2 left-2 flex space-x-4">
-                <button
-                  className="bg-blue-500 text-white p-2 rounded-full"
-                  onClick={handlePrevious}
-                  disabled={selectedIndex === 0}
-                >
-                  <ChevronLeft />
-                </button>
-                <button
-                  className="bg-blue-500 text-white p-2 rounded-full"
-                  onClick={handleNext}
-                  disabled={selectedIndex === items.length - 1}
-                >
-                  <ChevronRight />
-                </button>
-              </div>
+              <button
+                className="absolute top-1/2 left-2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-transparent text-white hover:bg-black transition-all duration-200"
+                onClick={handlePrevious}
+                disabled={selectedIndex === 0}
+                style={{
+                  border: "2px solid rgba(255, 255, 255, 0.7)", // Optional border for visibility
+                  opacity: selectedIndex === 0 ? 0.5 : 1,
+                }}
+              >
+                <ChevronLeft />
+              </button>
+              <button
+                className="absolute top-1/2 right-2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-transparent text-white hover:bg-black transition-all duration-200"
+                onClick={handleNext}
+                disabled={selectedIndex === items.length - 1}
+                style={{
+                  border: "2px solid rgba(255, 255, 255, 0.7)", 
+                  opacity: selectedIndex === items.length - 1 ? 0.5 : 1,
+                }}
+              >
+                <ChevronRight />
+              </button>
             </motion.div>
           </motion.div>
         )}

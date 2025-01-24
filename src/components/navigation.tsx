@@ -84,7 +84,7 @@ export function Navigation() {
 
       <motion.header
         className={cn(
-          "fixed top-0 w-full transition-colors duration-300 navbar",
+          "fixed lg:px-10 top-0 w-full transition-colors duration-300 navbar",
           isScrolled
             ? "bg-background/80 backdrop-blur-md border-b"
             : "bg-transparent"
