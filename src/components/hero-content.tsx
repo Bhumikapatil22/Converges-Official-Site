@@ -34,8 +34,8 @@ export function HeroContent() {
         <div className="flex justify-center">
           <Image
             src="/utils/converges_white.png"
-            width={200}
-            height={300}
+            width={400}
+            height={600}
             alt="Converges Logo"
             priority
           />

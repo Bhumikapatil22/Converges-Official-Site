@@ -49,7 +49,7 @@ export function Footer() {
             <img
               src="/utils/converges_white.png"
               alt="Converges logo"
-              className="h-24 w-auto"
+              className="h-25 w-auto"
               ref={logoRef}
             />
             <p className="font-mono text-muted-foreground">
