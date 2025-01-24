@@ -105,7 +105,7 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
-      <h1 className="text-5xl md:text-7xl font-bold dark:text-white">
+      <h1 className="text-5xl md:text-7xl font-monobold dark:text-white">
         About <span className="text-blue-500">Converges</span>
       </h1>
       <p className="text-justify text-base md:text-xl mt-8 dark:text-neutral-200">
@@ -138,11 +138,11 @@ export const Header = () => {
           <p className="text-foreground/60">Years of Excellence</p>
         </div>
         <div className="p-6 rounded-lg bg-gradient-to-b from-slate-950">
-          <h3 className="text-2xl font-bold mb-2">50+</h3>
+          <h3 className="text-2xl font-monobold mb-2">50+</h3>
           <p className="text-foreground/60">Events & Workshops</p>
         </div>
         <div className="p-6 rounded-lg bg-gradient-to-b from-slate-950">
-          <h3 className="text-2xl font-bold mb-2">5000+</h3>
+          <h3 className="text-2xl font-monobold mb-2">5000+</h3>
           <p className="text-foreground/60">Annual Participants</p>
         </div>
       </div>

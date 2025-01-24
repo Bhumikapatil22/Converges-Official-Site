@@ -16,7 +16,7 @@ export function RulesSection({ rules }: RulesSectionProps) {
       transition={{ duration: 0.6, delay: 0.4 }}
       className="space-y-4"
     >
-      <h2 className="text-2xl font-bold">Rules</h2>
+      <h2 className="text-2xl font-monobold">Rules</h2>
       <ScrollArea className="h-[200px] card-background rounded-lg p-4">
         <ul className="space-y-3">
           {rules.map((rule, index) => (

@@ -40,7 +40,11 @@ export function EventsSection() {
     <>
       {/* Include Google Fonts */}
       <style jsx global>{`
-        @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+        .orbitron-font {
+          font-family: "Orbitron", sans-serif;
+        }
       `}</style>
 
       <section id="events" className="relative bg-transparent py-20">
@@ -52,7 +56,7 @@ export function EventsSection() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl md:text-5xl font-[Orbitron] mb-4 text-green-500">
+            <h2 className="text-4xl md:text-5xl orbitron-font mb-4 text-green-500">
               Events
             </h2>
             <p className="text-green-200 font-mono max-w-2xl mx-auto">

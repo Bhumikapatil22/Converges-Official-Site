@@ -38,7 +38,7 @@ const Gallery: React.FC<GalleryProps> = ({ images, title, subTitle }) => {
   return (
     <section id="gallery" className="container mx-auto px-4 py-16">
       <motion.h2
-        className="text-4xl md:text-5xl text-green-400 m-10 font-bold text-center mb-2"
+        className="text-4xl md:text-5xl text-green-400 m-10 font-monobold text-center mb-2"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}  
         transition={{ duration: 0.5 }}

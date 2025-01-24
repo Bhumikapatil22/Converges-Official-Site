@@ -46,12 +46,17 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-4">
           {/* Logo and Institute Info */}
           <div className="space-y-4">
-            <img
-              src="/utils/converges_white.png"
-              alt="Converges logo"
-              className="h-25 w-auto"
-              ref={logoRef}
-            />
+            <div className="flex items-center">
+              <Image
+                src="/utils/converges_white.png"
+                alt="Converges Logo"
+                width={180}
+                height={120}
+                className="object-contain h-auto w-auto"
+                ref={logoRef}
+                priority
+              />
+            </div>
             <p className="font-mono text-muted-foreground">
               R. C. Patel Institute of Technology, Shirpur
               <br />
@@ -137,15 +142,13 @@ export function Footer() {
                 </a>
               ))}
             </div>
-            <p className="text-sm text-green-500 font-mono mt-4">
-                 Website Visits: 1,234
-            </p>
+            
           </div>
         </div>
         <hr className="mt-3 h-[3px] bg-gradient-to-r from-transparent via-green-600 to-transparent animate-pulse" />
 
         {/* Copyright */}
-        <div className="pt-2 font-bold text-center text-muted-foreground">
+        <div className="pt-2 font-monobold text-center text-muted-foreground">
           <p className="font-mono">
             © RCPIT Converges2K25. All Rights Reserved {new Date().getFullYear()}
           </p>
@@ -155,7 +158,7 @@ export function Footer() {
               href="https://akatsukicodingclub.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className={`inline-flex items-center gap-2 text-muted-foreground font-extrabold transition-all ${
+              className={`inline-flex items-center gap-2 text-muted-foreground font-monoextrabold transition-all ${
                 isInView ? "animate-pulse" : ""
               }`}
             >

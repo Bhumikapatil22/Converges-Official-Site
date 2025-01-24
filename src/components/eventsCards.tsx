@@ -22,7 +22,7 @@ export function EventCard({ name, department, description, date }: EventCardProp
     >
       <Card className="p-6 h-full flex flex-col">
        
-        <h3 className="text-2xl font-bold mb-2">{name}</h3>
+        <h3 className="text-2xl font-mono mb-2">{name}</h3>
         <div className="flex items-center text-muted-foreground mb-2">
           <Users className="w-4 h-4 mr-2" />
           <span>{department}</span>

@@ -23,7 +23,7 @@ export function RoundDetails({ rounds }: RoundDetailsProps) {
       transition={{ duration: 0.6, delay: 0.3 }}
       className="space-y-6"
     >
-      <h2 className="text-2xl font-bold">Rounds</h2>
+      <h2 className="text-2xl font-monobold">Rounds</h2>
       <div className="space-y-4">
         {rounds.map((round, index) => (
           <motion.div
@@ -35,7 +35,7 @@ export function RoundDetails({ rounds }: RoundDetailsProps) {
           >
             <Target className="w-6 h-6 text-green-600 mt-1" />
             <div>
-              <h3 className="font-semibold text-lg text-justify">
+              <h3 className="font-monosemibold text-lg text-justify">
                 Round {index + 1}: {round.name}
               </h3>
               <p className="text-muted-foreground text-justify">

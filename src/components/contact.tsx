@@ -63,7 +63,7 @@ export function ContactSection() {
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   className="border border-green-500 bg-card p-4 rounded-lg space-y-3"
                 >
-                  <h4 className="font-semibold">{coordinator.name}</h4>
+                  <h4 className="font-monosemibold">{coordinator.name}</h4>
                   <div className="flex items-center space-x-2 text-muted-foreground">
                     <Phone className="w-4 h-4 text-green-500 " />
                     <a

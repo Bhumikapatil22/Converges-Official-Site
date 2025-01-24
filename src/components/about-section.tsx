@@ -102,15 +102,15 @@ export function AboutSection() {
           >
             <div className="p-6 rounded-lg bg-gradient-to-b from-green-950">
               <h3 className="text-2xl font-mono mb-2">10+</h3>
-              <p className="text-foreground/60">Years of Excellence</p>
+              <p className="font-mono text-foreground/60">Years of Excellence</p>
             </div>
             <div className="p-6 rounded-lg bg-gradient-to-b from-green-950">
               <h3 className="text-2xl font-mono mb-2">50+</h3>
-              <p className="text-foreground/60">Events & Workshops</p>
+              <p className=" font-mono text-foreground/60">Events & Workshops</p>
             </div>
             <div className="p-6 rounded-lg bg-gradient-to-b from-green-950">
               <h3 className="text-2xl font-mono mb-2">5000+</h3>
-              <p className="text-foreground/60">Annual Participants</p>
+              <p className="font-mono text-foreground/60">Annual Participants</p>
             </div>
           </motion.div>
         </motion.div>

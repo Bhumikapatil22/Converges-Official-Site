@@ -28,7 +28,7 @@ export function HeroContent() {
 
         {/* Title and Subtitle */}
         <h1
-          className="text-2xl md:text-4xl font-bold text-white"
+          className="text-2xl md:text-4xl font-monobold text-white"
           style={{ fontFamily: "'Orbitron', sans-serif" }}
         >
           R. C. Patel Institute of Technology, Shirpur
@@ -50,7 +50,7 @@ export function HeroContent() {
       >
         <a href="#events" aria-label="Explore Events">
           <button
-            className="px-5 py-2 text-white font-semibold rounded-full border border-[rgb(160,30,95)] hover:scale-105 transition-transform"
+            className="px-5 py-2 text-white font-monosemibold rounded-full border border-[rgb(160,30,95)] hover:scale-105 transition-transform"
             style={{ fontFamily: "'Orbitron', sans-serif" }}
           >
             Explore Events

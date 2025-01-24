@@ -23,7 +23,7 @@ export function EventHeader({ name, department }: EventHeaderProps) {
           onError={(e) => (e.currentTarget.src = "/utils/default-logo.png")} // Set a default logo if the image doesn't load
         />
       </div> */}
-      <h1 className="text-4xl font-semibold">{name}</h1>
+      <h1 className="text-4xl font-monosemibold">{name}</h1>
       <p className="text-xl text-muted-foreground">{department}</p>
     </motion.div>
   );

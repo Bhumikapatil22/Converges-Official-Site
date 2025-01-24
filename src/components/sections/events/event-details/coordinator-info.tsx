@@ -36,7 +36,7 @@ export function CoordinatorInfo({ coordinators }: CoordinatorInfoProps) {
       transition={{ duration: 0.6, delay: 0.5 }}
       className="space-y-6"
     >
-      <h2 className="text-2xl font-bold">Event Coordinators</h2>
+      <h2 className="text-2xl font-monobold">Event Coordinators</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Student Coordinators Section */}
@@ -44,7 +44,7 @@ export function CoordinatorInfo({ coordinators }: CoordinatorInfoProps) {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <User className="w-5 h-5 text-green-600" />
-              <h3 className="font-semibold">Student Coordinators</h3>
+              <h3 className="font-monosemibold">Student Coordinators</h3>
             </div>
             {validStudentCoordinators.map((coordinator, index) => (
               <motion.div
@@ -54,7 +54,7 @@ export function CoordinatorInfo({ coordinators }: CoordinatorInfoProps) {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className="card-background p-3 rounded-lg"
               >
-                <p className="font-medium">{coordinator.name}</p>
+                <p className="font-monomedium">{coordinator.name}</p>
                 <p className="text-sm text-muted-foreground">{coordinator.contact}</p>
               </motion.div>
             ))}
@@ -66,7 +66,7 @@ export function CoordinatorInfo({ coordinators }: CoordinatorInfoProps) {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <GraduationCap className="w-5 h-5 text-green-600" />
-              <h3 className="font-semibold">Faculty Coordinators</h3>
+              <h3 className="font-monosemibold">Faculty Coordinators</h3>
             </div>
             {validFacultyCoordinators.map((coordinator, index) => (
               <motion.div
@@ -76,7 +76,7 @@ export function CoordinatorInfo({ coordinators }: CoordinatorInfoProps) {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className="card-background p-3 rounded-lg"
               >
-                <p className="font-medium">{coordinator.name}</p>
+                <p className="font-monomedium">{coordinator.name}</p>
                 <p className="text-sm text-muted-foreground">{coordinator.contact}</p>
               </motion.div>
             ))}

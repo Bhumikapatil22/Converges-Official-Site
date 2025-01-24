@@ -44,7 +44,7 @@
 //         {/* Title and Department */}
 //         <div className="absolute inset-0 p-4 flex flex-col justify-between">
 //           <div className="bg-black bg-opacity-50 text-center">
-//             <h3 className="text-xl font-bold">{name}</h3>
+//             <h3 className="text-xl font-monobold">{name}</h3>
 //             <p className="text-sm">{department}</p>
 //           </div>
 //         </div>

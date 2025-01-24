@@ -30,7 +30,7 @@ export function Timeline({ timelineData }: TimelineProps) {
       <div id="schedule" className="bg-black">
         <div className="max-w-4xl mx-auto py-8 md:px-4">
           <div
-            className="flex text-4xl md:text-5xl font-bold justify-center my-20 text-green-500"
+            className="flex text-4xl md:text-5xl font-monobold justify-center my-20 text-green-500"
             style={{ fontFamily: "'Orbitron', sans-serif" }}
           >
             <h1>Event Schedule</h1>

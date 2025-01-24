@@ -55,7 +55,7 @@ export default function Home() {
       <div className="relative inset-0">
         {/* Background Image with Overlay */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-fixed z-0"
+          className=" font-mono absolute inset-0 bg-cover bg-center bg-fixed z-0"
           style={{
             backgroundImage: 'url("/utils/bg.png")',
           }}

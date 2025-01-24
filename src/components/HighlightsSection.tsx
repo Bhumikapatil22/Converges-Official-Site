@@ -51,7 +51,7 @@
 //       transition={{ duration: 0.5 }}
 //     >
 //       <motion.h1
-//         className="text-4xl font-bold mb-6 text-white"
+//         className="text-4xl font-monobold mb-6 text-white"
 //         initial={{ opacity: 0, y: -50 }}
 //         animate={{ opacity: 1, y: 0 }}
 //         exit={{ opacity: 0, y: 50 }}
@@ -105,7 +105,7 @@
 //               />
 //             )}
 //             <div
-//               className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-sm font-semibold p-2"
+//               className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-sm font-monosemibold p-2"
 //               style={{ textShadow: "0px 0px 4px rgba(255, 255, 255, 0.8)" }}
 //             >
 //               {item.title}
@@ -165,7 +165,7 @@
 //                 ></video>
 //               )}
 //               <div
-//                 className="absolute top-4 left-4 right-4 text-white text-lg font-bold bg-black bg-opacity-60 p-2 rounded-md text-center"
+//                 className="absolute top-4 left-4 right-4 text-white text-lg font-monobold bg-black bg-opacity-60 p-2 rounded-md text-center"
 //                 style={{ textShadow: "0px 0px 4px rgba(255, 255, 255, 0.8)" }}
 //               >
 //                 {selectedItem.title}
@@ -262,7 +262,7 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({
     >
       {/* Main Heading */}
       <motion.h1
-        className="text-4xl font-extrabold mb-6  text-green-500 text-center py-5"
+        className="text-5xl font-monoextrabold mb-6  text-green-500 text-center py-5"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 50 }}
@@ -273,7 +273,7 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({
       </motion.h1>
 
       {/* Description */}
-      <p className="text-lg  text-green-500 mb-8 sm:max-w-3xl mx-auto px-4 font-mono">
+      <p className="text-lg  text-red-300 mb-8 sm:max-w-3xl mx-auto px-4 font-mono">
         Immerse in the energy of Converges, where innovation meets creativity!
       </p>
 
@@ -312,7 +312,7 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({
               />
             )}
             <div
-              className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-sm font-semibold p-2"
+              className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-sm font-monosemibold p-2"
               style={{ textShadow: "0px 0px 4px rgba(255, 255, 255, 0.8)" }}
             >
               {item.title}
@@ -326,17 +326,17 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({
         {visibleCount < items.length && (
           <button
             onClick={handleLoadMore}
-            className="bg-gradient-to-r from-green-500 to-green-700 text-white hover:from-green-600 hover:to-green-800 shadow-md shadow-green-500/50 hover:shadow-lg hover:shadow-green-600/60 transition-all py-2 px-4 rounded flex items-center justify-center"
+            className=" font-mono bg-gradient-to-r from-green-500 to-green-700 text-white hover:from-green-600 hover:to-green-800 shadow-md shadow-green-500/50 hover:shadow-lg hover:shadow-green-600/60 transition-all py-2 px-4 rounded flex items-center justify-center"
           >
-            Load More
+            Load More...
           </button>
         )}
         {batchCount > 1 && (
           <button
             onClick={handleShowLess}
-            className="bg-gradient-to-r from-green-600 to-green-800 text-white hover:from-green-700 hover:to-green-900 shadow-md shadow-green-600/50 hover:shadow-lg hover:shadow-green-700/60 transition-all py-2 px-4 rounded flex items-center justify-center"
+            className=" font-mono bg-gradient-to-r from-green-600 to-green-800 text-white hover:from-green-700 hover:to-green-900 shadow-md shadow-green-600/50 hover:shadow-lg hover:shadow-green-700/60 transition-all py-2 px-4 rounded flex items-center justify-center"
           >
-            Show Less
+            Show Less...
           </button>
         )}
       </div>
@@ -402,7 +402,7 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({
                 <ChevronRight size={20} />
               </button>
               <div
-                className="absolute top-4 left-4 right-4 text-white text-lg font-bold bg-black bg-opacity-60 p-2 rounded-md text-center"
+                className="absolute top-4 left-4 right-4 text-white text-lg font-mono bg-black bg-opacity-60 p-2 rounded-md text-center"
                 style={{ textShadow: "0px 0px 4px rgba(255, 255, 255, 0.8)" }}
               >
                 {selectedItem.title}

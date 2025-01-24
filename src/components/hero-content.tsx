@@ -43,7 +43,7 @@ export function HeroContent() {
 
         {/* Title and Subtitle */}
         <h1
-          className="text-2xl md:text-4xl font-bold text-white"
+          className="text-2xl md:text-4xl font-monobold text-white"
           style={{ fontFamily: "'Orbitron', sans-serif" }}
         >
           R. C. Patel Institute of Technology, Shirpur

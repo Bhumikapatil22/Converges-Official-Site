@@ -31,7 +31,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
         } shadow-xl w-8 h-8 rounded-full`}
         aria-label={`Time marker for ${title}`}
       >
-        <h1 className="mx-auto font-semibold text-lg text-white">
+        <h1 className="mx-auto font-monosemibold text-lg text-white">
           {icon || <Clock className="w-5 h-5" />}
         </h1>
       </div>
@@ -40,14 +40,14 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
           isPastEvent ? "bg-gray-800" : "bg-black"
         } rounded-lg shadow-xl w-5/12 px-6 py-4`}
       >
-        <h3 className="mb-3 font-bold text-white text-xl">{title}</h3>
+        <h3 className="mb-3 font-mono text-white text-xl">{title}</h3>
         <time
-          className="mb-3 font-normal leading-none text-gray-400 text-sm"
+          className="mb-3 font-mono leading-none text-gray-400 text-sm"
           dateTime={time}
         >
           {time}
         </time>
-        <p className="text-sm font-medium leading-snug tracking-wide text-gray-200">
+        <p className="text-sm font-mono leading-snug tracking-wide text-gray-200">
           {description}
         </p>
       </div>
@@ -62,7 +62,7 @@ interface TimelineProps {
 const EventTimeline: React.FC<TimelineProps> = ({ events }) => {
   return (
     <div className="container mx-auto w-full h-full">
-      <h2 className="text-3xl font-bold text-center mb-8 text-white">
+      <h2 className="text-3xl font-monobold text-center mb-8 text-white">
         Event Timeline
       </h2>
       <div className="relative wrap overflow-hidden p-10 h-full">
