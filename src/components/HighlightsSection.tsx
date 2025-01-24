@@ -65,7 +65,8 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({
   }, [items, batchCount]);
 
   return (
-    <motion.div
+    <motion.div 
+      id="highlights"
       className="p-4 text-center font-mono bg-transparent"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
