@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 
 export function Footer() {
-  const logoRef = useRef(null);
+  const logoRef = useRef<HTMLDivElement | null>(null);
   const [isInView, setIsInView] = useState(false);
 
   useEffect(() => {
@@ -35,17 +35,13 @@ export function Footer() {
 
     return () => {
       if (logoRef.current) {
-        // eslint-disable-next-line react-hooks/exhaustive-deps
         observer.unobserve(logoRef.current);
       }
     };
   }, []);
 
   return (
-    <footer
-      className="bg-transparent px-14"
-      style={{ backgroundColor: "#0f0f0f" }}
-    >
+    <footer className="bg-transparent px-14" style={{ backgroundColor: "#0f0f0f" }}>
       <div className="container mx-auto pt-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-4">
           {/* Logo and Institute Info */}
@@ -54,8 +50,9 @@ export function Footer() {
               src="/utils/converges_white.png"
               alt="Converges logo"
               className="h-24 w-auto"
+              ref={logoRef}
             />
-            <p className="font-mono space-y-3 text-muted-foreground">
+            <p className="font-mono text-muted-foreground">
               R. C. Patel Institute of Technology, Shirpur
               <br />
               (An Autonomous Institute)
@@ -65,34 +62,32 @@ export function Footer() {
           {/* Useful Links */}
           <div className="space-y-4">
             <h3 className="text-xl font-mono">Useful Links</h3>
-            <ul className=" font-mono space-y-2">
-              {["Home", "About us", "Events", "Schedule", "Contact"].map(
-                (link) => (
-                  <li key={link}>
-                    <Link
-                      href={`/${link.toLowerCase().replace(" ", "-")}`}
-                      className="text-muted-foreground hover:text-green-400 font-mono transition-colors"
-                    >
-                      {link}
-                    </Link>
-                  </li>
-                )
-              )}
+            <ul className="font-mono space-y-2">
+              {["Home", "About us", "Events", "Schedule", "Contact"].map((link) => (
+                <li key={link}>
+                  <Link
+                    href={`/${link.toLowerCase().replace(" ", "-")}`}
+                    className="text-muted-foreground hover:text-green-400 font-mono transition-colors"
+                  >
+                    {link}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Contact Info */}
           <div className="space-y-4">
             <h3 className="text-xl font-mono">Contact Us</h3>
-            <div className=" font-mono space-y-3 text-muted-foreground">
-              <p className=" font-mono flex items-start space-x-2">
+            <div className="font-mono space-y-3 text-muted-foreground">
+              <p className="flex items-start space-x-2">
                 <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
                 <span>
                   Near Nimzari Naka, Shahada Road, Shirpur Dist. Dhule (M.S.)
                   Maharashtra, India - 425405
                 </span>
               </p>
-              <p className="font-mono flex items-center space-x-2">
+              <p className="flex items-center space-x-2">
                 <Phone className="w-5 h-5" />
                 <a href="callto:02563259600">(02563) 259600, 801, 802</a>
               </p>
@@ -108,7 +103,7 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Social Links */}
+          {/* Social Links and Visit Counter */}
           <div className="space-y-4">
             <h3 className="text-xl font-mono">Follow Us</h3>
             <div className="flex space-x-4">
@@ -142,6 +137,9 @@ export function Footer() {
                 </a>
               ))}
             </div>
+            <p className="text-sm text-green-500 font-mono mt-4">
+                 Website Visits: 1,234
+            </p>
           </div>
         </div>
         <hr className="mt-3 h-[3px] bg-gradient-to-r from-transparent via-green-600 to-transparent animate-pulse" />
@@ -149,8 +147,7 @@ export function Footer() {
         {/* Copyright */}
         <div className="pt-2 font-bold text-center text-muted-foreground">
           <p className="font-mono">
-            © RCPIT Converges2K25. All Rights Reserved{" "}
-            {new Date().getFullYear().toString()}
+            © RCPIT Converges2K25. All Rights Reserved {new Date().getFullYear()}
           </p>
           <p className="flex justify-center items-center gap-2 font-mono">
             Designed & Developed By{" "}
@@ -158,7 +155,9 @@ export function Footer() {
               href="https://akatsukicodingclub.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className={`inline-flex items-center gap-2 text-muted-foreground font-extrabold transition-all ${isInView}`}
+              className={`inline-flex items-center gap-2 text-muted-foreground font-extrabold transition-all ${
+                isInView ? "animate-pulse" : ""
+              }`}
             >
               <Image
                 src="/images/akatsukilogo.png"

@@ -1,7 +1,10 @@
 "use client";
 import Image from "next/image";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { MultiStepLoader } from "@/components/ui/multi-step-loader";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { TypewriterEffect } from "../ui/typewriter-effect";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { text } from "stream/consumers";
 import { Typewriter } from "react-simple-typewriter";
 import { useEffect, useState } from "react";
@@ -26,8 +29,10 @@ const loadingStates = [
   },
 ];
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const LoadingPage = ({ loading }: { loading: boolean }) => {
   const [progress, setProgress] = useState(0);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [currentStep, setCurrentStep] = useState(0);
 
   useEffect(() => {
@@ -84,7 +89,7 @@ const LoadingPage = ({ loading }: { loading: boolean }) => {
         className="transition-opacity"
       />
       <p
-        className="  sm:text-4xl text-2xl mt-3 font-bold"
+        className="  sm:text-4xl text-2xl mt-3 font-mono"
         style={{ fontFamily: "Orbitron" }}
       >
         <Typewriter
