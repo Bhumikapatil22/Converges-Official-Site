@@ -56,7 +56,7 @@ export const reviews = [
   },
   {
     name: "Mitesh Chaudhari",
-    username: "@pooja",
+    username: "@mitesh",
     body: "Waste-to-Watt was inspiring! Turning waste into energy was a brilliant concept.",
     img: "/utils/mitesh.jpg",
   },
