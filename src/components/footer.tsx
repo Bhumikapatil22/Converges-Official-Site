@@ -15,10 +15,12 @@ import {
 } from "lucide-react";
 
 export function Footer() {
-  const logoRef = useRef<HTMLDivElement | null>(null);
+  const logoRef = useRef<HTMLImageElement | null>(null);
   const [isInView, setIsInView] = useState(false);
 
   useEffect(() => {
+    const currentLogoRef = logoRef.current; // Save the current value of the ref
+  
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsInView(entry.isIntersecting);
@@ -28,20 +30,21 @@ export function Footer() {
         threshold: 0.1,
       }
     );
-
-    if (logoRef.current) {
-      observer.observe(logoRef.current);
+  
+    if (currentLogoRef) {
+      observer.observe(currentLogoRef);
     }
-
+  
     return () => {
-      if (logoRef.current) {
-        observer.unobserve(logoRef.current);
+      if (currentLogoRef) {
+        observer.unobserve(currentLogoRef); // Use the saved value in cleanup
       }
     };
   }, []);
+  
 
   return (
-    <footer className="bg-transparent px-14" style={{ backgroundColor: "#0f0f0f" }}>
+    <footer className=" px-14" >
       <div className="container mx-auto pt-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-4">
           {/* Logo and Institute Info */}

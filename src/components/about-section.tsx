@@ -3,7 +3,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Calendar, Clock, MapPin } from "lucide-react";
 import { Typewriter } from "react-simple-typewriter";
 
 export function AboutSection() {
@@ -76,22 +75,9 @@ export function AboutSection() {
               need to give a new dimension to our efforts to catch up with the
               rapid strides being made in technology.
             </p>
-            <div className="flex ">
-              <div className="space-y-1">
-                <div className="flex items-center gap-3">
-                  <MapPin className="w-5 h-5 text-green-500" />
-                  <span>R. C. Patel Institute of Technology, Shirpur</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Calendar className="w-5 h-5 text-green-500" />
-                  <span>February 15-17, 2025</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Clock className="w-5 h-5 text-green-500" />
-                  <span>9:00 AM - 5:00 PM</span>
-                </div>
-              </div>
-            </div>
+              
+              
+            
           </motion.div>
 
           <motion.div

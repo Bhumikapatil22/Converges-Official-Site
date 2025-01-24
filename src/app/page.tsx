@@ -5,9 +5,9 @@ import { AboutSection } from "../components/about-section";
 import { EventsSection } from "../components/sections/events";
 import { Footer } from "../components/footer";
 import { ContactSection } from "../components/contact";
-import { Timeline } from "@/components/eventTimeline";
+// import { Timeline } from "@/components/eventTimeline";
 import { MapSection } from "@/components/map-section";
-import { events } from "@/data/timeline";
+// import { events } from "@/data/timeline";
 import { MarqueeDemo } from "@/components/Marquee";
 import { reviews } from "@/data/marqueedata";
 // import EventTimeline from '@/components/EventTimline';
@@ -24,8 +24,7 @@ import { reviews } from "@/data/marqueedata";
 // import { MapSection } from "@/components/map-section";
 // import { slides } from "@/data";
 import HighlightsSection from "@/components/HighlightsSection";
-import LoadingPage from "@/components/loader";
-import { useEffect } from "react";
+
 // import { events } from "@/data/timeline";
 // import HighlightsSection from "@/components/HighlightsSection";
 
@@ -66,16 +65,17 @@ export default function Home() {
         {/* Foreground Content */}
         <div className="relative z-30">
           <EventsSection />
-          <Timeline timelineData={events} />
+          {/* <Timeline timelineData={events} /> */}
+          <HighlightsSection items={highlights} />
+          <MapSection />
+      <MarqueeDemo reviews={reviews} />
+      <ContactSection />
         </div>
       </div>
 
       {/* <EventsSection /> */}
-      <HighlightsSection items={highlights} />
       {/* <Timeline timelineData={events} /> */}
-      <MapSection />
-      <MarqueeDemo reviews={reviews} />
-      <ContactSection />
+      
       <Footer />
       {/* <div className="relative inset-0">
         <div

@@ -10,25 +10,17 @@ export function ContactSection() {
       phone: "+91 9075827810",
       email: "omrakeshpatil@gmail.com",
     },
-    {
-      name: "Pruthviraj Sharma",
-      phone: "+91 9763807108",
-      email: "sharmapruthvi55@gmail.com",
-    },
+    
     {
       name: "Prathmesh Mali",
       phone: "+91 9922552891",
       email: "pmsir2003@gmail.com",
     },
-    {
-      name: "Sachin Dabhade",
-      phone: "+91 9325654147",
-      email: "datapolaris.cse.rcpit@gmail.com",
-    },
+   
   ];
 
   return (
-    <section id="contact" className="font-mono py-20 bg-background">
+    <section id="contact" className="font-mono py-20 bg-transparent">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

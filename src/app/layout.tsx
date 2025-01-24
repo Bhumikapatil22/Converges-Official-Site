@@ -10,11 +10,6 @@ import LoadingPage from "@/components/loader";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// export const metadata: Metadata = {
-//   title: "Converges - Annual Tech Fest",
-//   description: "Experience the future of technology at Converges",
-// };
-
 export default function RootLayout({
   children,
 }: {
@@ -33,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <title>Converges'25-RCPIT Tech Fest</title>
+        <title>Converges&apos;25-RCPIT Tech Fest</title>
         <meta
           name="description"
           content="Experience the future of technology at Converges"

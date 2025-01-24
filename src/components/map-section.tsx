@@ -5,7 +5,7 @@ import { MapPin, GraduationCap, Building } from "lucide-react";
 
 export function MapSection() {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-transparent">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
