@@ -20,7 +20,7 @@ export function MapSection() {
           >
             Our Campus
           </h2>
-          <p className="text-red-200 font-mono">
+          <p className="text-white font-mono">
             Visit us at our state-of-the-art campus
           </p>
         </motion.div>
