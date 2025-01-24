@@ -25,8 +25,8 @@ export function Navigation() {
     { href: "/", label: "Home" },
     { href: "#about", label: "About" },
     { href: "#events", label: "Events" },
-    { href: "#schedule", label: "Schedule" },
-    { href: "#gallery", label: "Gallery" },
+    // { href: "#schedule", label: "Schedule" },
+    { href: "#highlights", label: "Highlights" },
     { href: "#contact", label: "Contact" },
   ];
 
