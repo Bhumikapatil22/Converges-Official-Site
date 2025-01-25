@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "react-feather";
-import Image from "next/image"; // Import Image from next/image
+import Image from "next/image";
 
 interface HighlightItem {
   type: "photo" | "video";
@@ -52,8 +52,6 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({
   };
 
   const selectedItem = selectedIndex !== null ? items[selectedIndex] : null;
-
-  // Play videos automatically when batchCount or items change
   useEffect(() => {
     videoRefs.current.forEach((video) => {
       if (video) {
@@ -73,9 +71,8 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      {/* Main Heading */}
       <motion.h1
-        className="text-5xl font-extrabold mb-6 text-green-500 py-5"
+        className="text-4xl md:text-5xl mb-6 text-green-500 py-5"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 50 }}
@@ -84,13 +81,9 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({
       >
         {title}
       </motion.h1>
-
-      {/* Description */}
       <p className="text-lg text-white mb-8 sm:max-w-3xl mx-auto px-4">
         Immerse in the energy of Converges, where innovation meets creativity!
       </p>
-
-      {/* Item Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {items.slice(0, visibleCount).map((item, index) => (
           <motion.div
@@ -133,8 +126,6 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({
           </motion.div>
         ))}
       </div>
-
-      {/* Load More / Show Less Buttons */}
       <div className="flex justify-center mt-6 space-x-4">
         {visibleCount < items.length && (
           <button
@@ -153,8 +144,6 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({
           </button>
         )}
       </div>
-
-      {/* Modal for Selected Item */}
       <AnimatePresence>
         {selectedItem && (
           <motion.div
@@ -200,7 +189,7 @@ export const HighlightsSection: React.FC<HighlightsSectionProps> = ({
                 onClick={handlePrevious}
                 disabled={selectedIndex === 0}
                 style={{
-                  border: "2px solid rgba(255, 255, 255, 0.7)", // Optional border for visibility
+                  border: "2px solid rgba(255, 255, 255, 0.7)",
                   opacity: selectedIndex === 0 ? 0.5 : 1,
                 }}
               >

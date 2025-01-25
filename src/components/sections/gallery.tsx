@@ -101,4 +101,3 @@ const Gallery: React.FC<GalleryProps> = ({ images, title, subTitle }) => {
 }
 
 export default Gallery
-

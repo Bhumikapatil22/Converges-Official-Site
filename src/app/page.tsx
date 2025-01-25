@@ -29,19 +29,19 @@ import HighlightsSection from "@/components/HighlightsSection";
 // import HighlightsSection from "@/components/HighlightsSection";
 
 export default function Home() {
-  const highlights: { type: "photo" | "photo"; src: string; title: string }[] =
+  const highlights: { type: "photo" | "video"; src: string; title: string }[] =
     [
-      { type: "video", src: "/images/convergesvideo24.mp4", title: "Converges 24" },
+      { type: "video", src: "/images/convergesvideo24.mp4", title: "Converges'24" },
       { type: "photo", src: "/images/converges13.jpg", title: "Converges'13" },
       { type: "photo", src: "/images/6.jpg", title: "Converges'17" },
-      { type: "photo", src: "/images/22.jpg", title: "Amazing Akatsuki" },
-      { type: "photo", src: "/images/20.jpg", title: "Converges'24" },
+      { type: "photo", src: "/images/22.jpg", title: "Detective Returns" },
+      { type: "photo", src: "/images/20.jpg", title: "Amazing Akatsuki" },
       { type: "photo", src: "/images/13.jpg", title: "Winners'24" },
       { type: "photo", src: "/images/14.jpg", title: "Team'24" },
       { type: "photo", src: "/images/3.jpg", title: "Robo Race" },
       { type: "photo", src: "/images/roborace.jpg", title: "Robo Race" },
       { type: "photo", src: "/images/17.jpg", title: "Inauguration'24" },
-      { type: "photo", src: "/images/chromatic.jpg", title: "Amazing Akatsuki" },
+      { type: "photo", src: "/images/chromatic.jpg", title: "Detectives" },
       { type: "photo", src: "/images/1.jpg", title: "Inauguration" },
       { type: "photo", src: "/images/11.jpg", title: "Flashmob" },
       { type: "photo", src: "/images/12.jpg", title: "Winner Team" },
