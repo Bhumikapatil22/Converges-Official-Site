@@ -12,17 +12,7 @@ import { MarqueeDemo } from "@/components/Marquee";
 import { reviews } from "@/data/marqueedata";
 // import EventTimeline from '@/components/EventTimline';
 
-// export default function Home() {
 
-// import { HeroSection } from "../components/hero-section";
-// import { AboutSection } from "../components/about-section";
-// import { EventsSection } from "../components/sections/events";
-// import Images from "@/components/sections/gallery";
-// import { Footer } from "../components/footer";
-// import { ContactSection } from "../components/contact";
-// import { Timeline } from "@/components/eventTimeline";
-// import { MapSection } from "@/components/map-section";
-// import { slides } from "@/data";
 import HighlightsSection from "@/components/HighlightsSection";
 
 // import { events } from "@/data/timeline";

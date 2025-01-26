@@ -44,7 +44,7 @@ export function Footer() {
   
 
   return (
-    <footer className=" px-14" >
+    <footer className=" px-8 md:px-14" >
       <div className="container mx-auto pt-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-4">
           {/* Logo and Institute Info */}
@@ -66,15 +66,14 @@ export function Footer() {
               (An Autonomous Institute)
             </p>
           </div>
-
           {/* Useful Links */}
-          <div className="space-y-4">
+          <div className="md:space-y-4 mt-4 md:mt-0 ">
             <h3 className="text-xl font-mono">Useful Links</h3>
             <ul className="font-mono space-y-2">
-              {["Home", "About us", "Events", "Schedule", "Contact"].map((link) => (
+              {["Home", "About", "Events", "Highlights", "Contact"].map((link) => (
                 <li key={link}>
                   <Link
-                    href={`/${link.toLowerCase().replace(" ", "-")}`}
+                    href={`#${link.toLowerCase().replace(" ", "-")}`}
                     className="text-muted-foreground hover:text-green-400 font-mono transition-colors"
                   >
                     {link}
@@ -85,7 +84,7 @@ export function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-4">
+          <div className="md:space-y-4 mt-4 md:mt-0 ">
             <h3 className="text-xl font-mono">Contact Us</h3>
             <div className="font-mono space-y-3 text-muted-foreground">
               <p className="flex items-start space-x-2">
@@ -112,8 +111,8 @@ export function Footer() {
           </div>
 
           {/* Social Links and Visit Counter */}
-          <div className="space-y-4">
-            <h3 className="text-xl font-mono">Follow Us</h3>
+          <div className="md:space-y-4 mt-4 md:mt-0 ">
+            <h3 className="text-xl font-mono mb-2 md:mb-0">Follow Us</h3>
             <div className="flex space-x-4">
               {[
                 {
