@@ -1,5 +1,6 @@
 export const slides = [
   '/images/3.jpg',
+  // '/images/3.jpg',
   '/images/14.jpeg',
   '/images/13.jpeg',
   '/images/11.jpeg',
