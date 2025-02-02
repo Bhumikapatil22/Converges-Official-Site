@@ -6,30 +6,17 @@ import { Button } from "./ui/button";
 import { Typewriter } from "react-simple-typewriter";
 
 export function HeroContent() {
-  // const [isHovered, setIsHovered] = useState(true);
-
-  // const handleMouseEnter = () => {
-  //   setIsHovered(true);
-  // };
-
-  // const handleMouseLeave = () => {
-  //   setIsHovered(false);
-  // };
-
   return (
     <section
       className="flex flex-col items-center justify-center h-full text-center px-4 space-y-6"
       aria-label="Hero Section"
     >
-      {/* Include Google Fonts */}
-
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
         className="inset-0 z-30 space-y-2"
       >
-        {/* Logo */}
         <div className="flex justify-center">
           <Image
             src="/utils/converges_white.png"
@@ -39,8 +26,12 @@ export function HeroContent() {
             priority
           />
         </div>
-
-        {/* Title and Subtitle */}
+        <h2
+          className="text-xl md:text-xl text-green-400"
+          style={{ fontFamily: "'Orbitron', sans-serif" }}
+        >
+          A NATIONAL LEVEL TECHNICAL SYMPOSIUM
+        </h2>
         <h1
           className="text-2xl md:text-4xl font-monobold text-white"
           style={{ fontFamily: "'Orbitron', sans-serif" }}
@@ -54,7 +45,6 @@ export function HeroContent() {
           An Autonomous Institute
         </p>
       </motion.div>
-      {/* Buttons */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -67,8 +57,6 @@ export function HeroContent() {
             variant="outline"
             style={{ fontFamily: "Orbitron" }}
             className="border-green-800 hover:bg-sky-500/10 relative"
-            // onMouseEnter={handleMouseEnter}
-            // onMouseLeave={handleMouseLeave}
           >
             <Typewriter
               words={["Explore Events"]}
