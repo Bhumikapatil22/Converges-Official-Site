@@ -24,6 +24,7 @@ export function HeroContent() {
             alt="Converges Logo"
             priority
           />
+          
         </div>
 
         {/* Title and Subtitle */}

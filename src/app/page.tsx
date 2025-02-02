@@ -26,10 +26,17 @@ export default function Home() {
         src: "/images/convergesvideo24.mp4",
         title: "Converges'24",
       },
-      { type: "photo", src: "/images/converges13.jpg", title: "Converges'13" },
       { type: "photo", src: "/images/6.jpg", title: "Converges'17" },
+      { type: "photo", src: "/images/converges13.jpg", title: "Converges'13" },
       { type: "photo", src: "/images/22.jpg", title: "Detective Returns" },
       { type: "photo", src: "/images/20.jpg", title: "Amazing Akatsuki" },
+      { type: "photo", src: "/images/codecraze2.jpg", title: "GDG RCPIT" },
+      { type: "photo", src: "/images/codecraze1.jpg", title: "GDG Codecraze Hackathon" },
+      { type: "photo", src: "/images/strangercode1.jpg", title: "Data Polaris" },
+      { type: "photo", src: "/images/strangercode2.jpg", title: "Stranger Code" },
+      { type: "photo", src: "/images/civista.jpg", title: "Civista" },
+      
+      
       { type: "photo", src: "/images/13.jpg", title: "Winners'24" },
       { type: "photo", src: "/images/14.jpg", title: "Team'24" },
       { type: "photo", src: "/images/3.jpg", title: "Robo Race" },
