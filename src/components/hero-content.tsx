@@ -27,13 +27,13 @@ export function HeroContent() {
           />
         </div>
         <h2
-          className="text-xl md:text-xl text-green-400"
-          style={{ fontFamily: "'Orbitron', sans-serif" }}
+          className="text-xl md:text-xl font-mono text-green-400"
+          
         >
           A NATIONAL LEVEL TECHNICAL SYMPOSIUM
         </h2>
         <h1
-          className="text-2xl md:text-4xl font-monobold text-white"
+          className="text-2xl md:text-4xl  text-white"
           style={{ fontFamily: "'Orbitron', sans-serif" }}
         >
           R. C. Patel Institute of Technology, Shirpur
