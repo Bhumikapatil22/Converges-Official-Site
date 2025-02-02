@@ -702,7 +702,7 @@ export const eventsData = [
     "name": "The Animeverse",
     "slug": "matrix-showdown",
     "year": "2025",
-    "department": "Computer Department",
+    "department": "Computer Engineering",
     "description": "An exciting event featuring multiple rounds including strategic Tic-Tac-Toe challenges, Binary decoding, and coding sprints. It tests both problem-solving skills and speed in various formats.",
     "teamSize": "3-4",
     "entryFee": "200/-",
@@ -749,7 +749,7 @@ export const eventsData = [
     "name": "Muggles Mystery",
     "slug": "muggles-mystery",
     "year": "2025",
-    "department": "Computer Department",
+    "department": "Computer Engineering",
     "description": "An exciting event filled with a blend of physical games, technical challenges, and deduction-based gameplay. Teams will face rounds that test their coding skills, problem-solving abilities, and teamwork under pressure.",
     "teamSize": "4",
     "entryFee": "200/-",
@@ -947,6 +947,45 @@ export const eventsData = [
     "registrationLink": "./docs/ELECTROMANIA_BRAIN_CHARGE.pdf"
   },
   {
+    "id": 33,
+    "logo": "/utils/9.jpeg",
+    "name": "CodeCraze 2.0 – 24-Hour Hackathon",
+    "slug": "codecraze-1",
+    "year": "2025",
+    "department": "GDG RCPIT & Fetch AI",
+    "description": "CodeCraze 2.0 is an Among Us-themed 24-hour hackathon designed to challenge participants with real-world problem statements focused on ethics, AI, Web Development, and IoT. The event fosters innovation, teamwork, and problem-solving while pushing the boundaries of technology.",
+    "teamSize": 4,
+    "entryFee": "₹300/-",
+    "rounds": [
+      {
+        "name": "Phase 1: Online Elimination Round",
+        "description": "Teams submit an idea presentation (PPT), and the top 40 teams are shortlisted for the final hackathon."
+      },
+      {
+        "name": "Phase 2: Offline Hackathon",
+        "description": "A 24-hour coding marathon where shortlisted teams develop a working prototype based on problem statements."
+      }
+    ],
+    "rules": [
+      "Teams must consist of exactly 4 members.",
+      "Participants must remain in their designated areas after 8 PM.",
+      "At least two team members must be present at their table at all times.",
+      "Strictly no plagiarism – originality is mandatory."
+    ],
+    "coordinators": {
+      "student": [
+        { "name": "Sanjeevani P. Rajput", "contact": "9322026207" },
+        { "name": "Akshay G. Girase", "contact": "9834698994" },
+        { "name": "Harshal S. Shewale", "contact": "8766535974" }
+      ],
+      "faculty": [
+        { "name": "Prof. Atul D. Mairale", "contact": "9503665364" },
+        { "name": "Prof. Yogeshkumar R. Pathak", "contact": "9421528936" }
+      ]
+    },
+    "registrationLink": "/"
+  },
+  {
     "id": 25,
     "logo": "/utils/11.jpeg",
     "name": "Electromania - ElectroToy",
@@ -954,8 +993,8 @@ export const eventsData = [
     "year": "2025",
     "department": "Electrical Engineering",
     "description": "Unleash your creativity and engineering skills! Design and build an innovative toy powered by electrical principles. Showcase your technical expertise, creativity, and problem-solving abilities in this exciting challenge.",
-    "teamSize": "3",
-    "entryFee": "Rs. 100/-",
+    "teamSize": "4",
+    "entryFee": "Rs. 200/-",
     "rounds": [
       {
         "name": "Toy Design and Construction",
@@ -1008,7 +1047,7 @@ export const eventsData = [
     "department": "Mechanical Engineering",
     "description": "An exciting event where participants showcase their engineering and design skills by building a glider from scratch using provided materials. Teams compete to achieve the best performance in terms of flight time, structural stability, and weight of the glider.",
     "teamSize": "2-4 members",
-    "entryFee": "Not specified",
+    "entryFee": "200/-",
     "eventDetails": {
       "location": "College Campus Ground (Area: 50m × 30m)",
       "constructionTime": "1.5 hours",
@@ -1244,83 +1283,82 @@ export const eventsData = [
 },
 
 {
-    id: 31,
-    logo: "/utils/12.jpeg",
-    name: "Trade Tech",
-    slug: "trade-tech-1",
-    year: "2025",
-    department: "Civil Engineering",
-    description: "Participate in 'Trade Tech,' a technical event focused on the fundamentals of stock trading, portfolio building, and market analysis. Collaborate with the StockGro app to learn, practice, and compete in a simulated trading environment using 10 lakh virtual paper money provided within the app.",
-    teamSize: "Individual",
-    entryFee: "150/-",
-    rounds: [
-      {
-        name: "Event Duration",
-        description: "The event will start on 27th February 2025 at 9:35 AM and end on 28th February 2025 at 3:35 PM."
-      },
-      {
-        name: "Performance Evaluation",
-        description: "Participants will compete based on portfolio performance, risk management, and the ability to complete challenges such as achieving target returns or minimizing losses."
-      }
-    ],
-    rules: [
-      "Participation is individual only—team participation is not allowed.",
-      "Each participant will receive 10 lakh virtual paper money in the StockGro app.",
-      "Registration for each participant is mandatory, and on-the-spot registrations will not be accepted.",
-      "A live leaderboard will display participants' performance on a smart board throughout the event.",
-      "Winners will be announced both in the StockGro app and on the event registration portal after the event concludes.",
-      "Only the StockGro app can be used for trading activities during the event.",
-      "Participants must ensure they have downloaded and set up the StockGro app prior to the event.",
-      "Participants must strictly adhere to event rules; any unethical behavior or app manipulation will result in immediate disqualification.",
-      "The leaderboard will reflect live updates, but the final winner list is subject to verification by event organizers.",
-      "The decision of the judges and event organizers will be final and binding.",
-      "Prizes will be awarded to the top three participants based on portfolio performance, effective risk management, and adherence to event challenges."
-    ],
-    coordinators: {
-      student: [
-        { name: "Dhiraj Sahebrao Sonawane", contact: "8208292495" },
-        { name: "Mayuri Kailas Saner", contact: "9403429221" },
-        { name: "Krishna Prakash Jamadar", contact: "9922770711" }
-      ],
-      faculty: [
-        { name: "Prof Dr. M. N. Patil", contact: "8108433995" }
-      ]
-    },
-    registrationLink: "" // Link not mentioned in the content
-},
-{
-  id: 32,
-  logo: "/utils/d.jpeg",
-  name: "Model Making",
-  slug: "model-making",
+  id: 31,
+  logo: "/utils/12.jpeg",
+  name: "Trade Tech",
+  slug: "trade-tech-1",
   year: "2025",
-  department: "Applied Science And Humanities",
-  description: "Participate in the 'Model Making' event, where participants are required to create original and innovative models that address a scientific concept or technological innovation. Showcase your creativity and technical skills while competing for exciting prizes!",
-  teamSize: "3",
-  entryFee: "200/-",
+  department: "Civil Engineering",
+  description: "Participate in 'Trade Tech,' a technical event focused on the fundamentals of stock trading, portfolio building, and market analysis. Collaborate with the StockGro app to learn, practice, and compete in a simulated trading environment using 10 lakh virtual paper money provided within the app.",
+  teamSize: "Individual",
+  entryFee: "150/-",
   rounds: [
     {
-      name: "Model Creation",
-      description: "Teams will work together to design and create a model that effectively addresses a scientific concept or technological innovation. The model must be original and innovative, with no plagiarism or copying of pre-existing designs."
+      name: "Event Duration",
+      description: "The event will start on 27th February 2025 at 9:35 AM and end on 28th February 2025 at 3:35 PM."
+    },
+    {
+      name: "Performance Evaluation",
+      description: "Participants will compete based on portfolio performance, risk management, and the ability to complete challenges such as achieving target returns or minimizing losses."
     }
   ],
   rules: [
-    "This event is exclusively for students under the age of 19.",
-    "The model must be original and innovative. Plagiarism or copying from pre-existing designs is prohibited.",
-    "The model should effectively address a scientific concept or technological innovation.",
-    "The event will take place in the Drawing Hall.",
-    "The top three teams will be awarded prizes: 1st place - 5000 INR, 2nd place - 3000 INR, 3rd place - 1000 INR."
+    "Participation is individual only—team participation is not allowed.",
+    "Each participant will receive 10 lakh virtual paper money in the StockGro app.",
+    "Registration for each participant is mandatory, and on-the-spot registrations will not be accepted.",
+    "A live leaderboard will display participants' performance on a smart board throughout the event.",
+    "Winners will be announced both in the StockGro app and on the event registration portal after the event concludes.",
+    "Only the StockGro app can be used for trading activities during the event.",
+    "Participants must ensure they have downloaded and set up the StockGro app prior to the event.",
+    "Participants must strictly adhere to event rules; any unethical behavior or app manipulation will result in immediate disqualification.",
+    "The leaderboard will reflect live updates, but the final winner list is subject to verification by event organizers.",
+    "The decision of the judges and event organizers will be final and binding.",
+    "Prizes will be awarded to the top three participants based on portfolio performance, effective risk management, and adherence to event challenges."
   ],
   coordinators: {
     student: [
-      { name: "Kadam Vivek Samadhan", contact: "9420826211" },
-      { name: "Behere Tushar Pravin", contact: "7756830954" }
+      { name: "Dhiraj Sahebrao Sonawane", contact: "8208292495" },
+      { name: "Mayuri Kailas Saner", contact: "9403429221" },
+      { name: "Krishna Prakash Jamadar", contact: "9922770711" }
     ],
     faculty: [
-      { name: "J S Shaikh", contact: "9764287564" },
-      // { name: "J S Shaikh", contact: "9764287564" }
+      { name: "Prof Dr. M. N. Patil", contact: "8108433995" }
     ]
   },
   registrationLink: "" // Link not mentioned in the content
+},
+{
+id: 32,
+logo: "/utils/d.jpeg",
+name: "Model Making",
+slug: "model-making",
+year: "2025",
+department: "Applied Science And Humanities",
+description: "Participate in the 'Model Making' event, where participants are required to create original and innovative models that address a scientific concept or technological innovation. Showcase your creativity and technical skills while competing for exciting prizes!",
+teamSize: "3",
+entryFee: "200/-",
+rounds: [
+  {
+    name: "Model Creation",
+    description: "Teams will work together to design and create a model that effectively addresses a scientific concept or technological innovation. The model must be original and innovative, with no plagiarism or copying of pre-existing designs."
+  }
+],
+rules: [
+  "This event is exclusively for students under the age of 19.",
+  "The model must be original and innovative. Plagiarism or copying from pre-existing designs is prohibited.",
+  "The model should effectively address a scientific concept or technological innovation.",
+  "The event will take place in the Drawing Hall.",
+  "The top three teams will be awarded prizes: 1st place - 5000 INR, 2nd place - 3000 INR, 3rd place - 1000 INR."
+],
+coordinators: {
+  student: [
+    { name: "Kadam Vivek Samadhan", contact: "9420826211" },
+    { name: "Behere Tushar Pravin", contact: "7756830954" }
+  ],
+  faculty: [
+    { name: "J S Shaikh", contact: "9764287564" }
+  ]
+},
+registrationLink: "" // Link not mentioned in the content
 },
 ];
