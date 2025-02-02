@@ -31,6 +31,7 @@ export default function EventPage({ params }: { params: { slug: string } }) {
       <div className="fixed top-0 left-0 w-full h-full font-mono bg-black bg-opacity-80 -z-5"></div>
 
       {/* Scrolling Content */}
+      
       <div className="relative z-10 container  font-mono mx-auto px-4 pt-20 pb-12">
         <EventDetails event={event} /> {/* Assuming EventDetails expects an event prop */}
       </div>
