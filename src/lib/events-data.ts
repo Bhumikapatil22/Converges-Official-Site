@@ -801,7 +801,7 @@ export const eventsData = [
     "name": "Squid Maze",
     "slug": "squid-maze",
     "year": "2025",
-    "department": "GDG Rcpit",
+    "department": "Data Science",
     "description": "An intense survival challenge inspired by the Squid Game series, where teams face a series of traditional Korean games and technical tasks. The event tests participants' precision, memory, coding skills, and creativity, culminating in a digital Dalgona Candy challenge with bonus points for animations.",
     "teamSize": "4",
     "entryFee": "200/-",
