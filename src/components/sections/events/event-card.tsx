@@ -145,7 +145,9 @@ export function EventCard({
 
         {/* Description Sliding In */}
         <div className="absolute bottom-0 left-0 w-full p-4 bg-black/50 backdrop-blur-sm rounded-b-lg transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
-          <p className="text-gray-200 font-mono text-sm text-center">{description}</p>
+          <p className="text-gray-200 font-mono text-sm text-center">
+            {description}
+          </p>
         </div>
       </motion.div>
 

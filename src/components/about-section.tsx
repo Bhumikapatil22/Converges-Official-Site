@@ -25,7 +25,6 @@ export function AboutSection() {
       ref={containerRef}
       className="to-black min-h-screen relative py-20"
     >
-      
       <div className="container mx-auto px-4">
         <motion.div ref={ref} style={{ opacity }} className="max-w-5xl mx-auto">
           <motion.h2
@@ -60,24 +59,16 @@ export function AboutSection() {
             className="space-y-6 font-mono text-slate-300 text-lg text-foreground/80"
           >
             <p className="text-justify">
-              Over the last few decades we are witnessing remarkable advances
-              and explosive growth in new technologies that are changing the
-              world very fast.
+              Recent decades have seen rapid technological advancements,
+              transforming the world at an unprecedented pace. Key sectors like
+              Electronics, Telecommunication, Mechanical, Computer, and IT are
+              driving innovation to address 21st-century challenges.
               <br />
               <br />
-              Electronics & Tele-communication, Mechanical, Computer, and
-              Information Technology sectors are indeed playing a significant
-              role in facing the technological challenges of the 21st century.
-              <br />
-              <br />A number of Engineering colleges, Universities, and Research
-              Institutes are promoting all aspects of academics at national and
-              international levels. Still, it is felt that there is a strong
-              need to give a new dimension to our efforts to catch up with the
-              rapid strides being made in technology.
+              While numerous institutions promote academic excellence globally,
+              there is a pressing need to enhance efforts to keep pace with the
+              fast-evolving tech landscape.
             </p>
-              
-              
-            
           </motion.div>
 
           <motion.div
@@ -88,15 +79,21 @@ export function AboutSection() {
           >
             <div className="p-6 rounded-lg bg-gradient-to-b from-green-950">
               <h3 className="text-2xl font-mono mb-2">10+</h3>
-              <p className="font-mono text-foreground/60">Years of Excellence</p>
+              <p className="font-mono text-foreground/60">
+                Years of Excellence
+              </p>
             </div>
             <div className="p-6 rounded-lg bg-gradient-to-b from-green-950">
               <h3 className="text-2xl font-mono mb-2">50+</h3>
-              <p className=" font-mono text-foreground/60">Events & Workshops</p>
+              <p className=" font-mono text-foreground/60">
+                Events & Workshops
+              </p>
             </div>
             <div className="p-6 rounded-lg bg-gradient-to-b from-green-950">
               <h3 className="text-2xl font-mono mb-2">5000+</h3>
-              <p className="font-mono text-foreground/60">Annual Participants</p>
+              <p className="font-mono text-foreground/60">
+                Annual Participants
+              </p>
             </div>
           </motion.div>
         </motion.div>

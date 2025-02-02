@@ -12,8 +12,8 @@ import { MarqueeDemo } from "@/components/Marquee";
 import { reviews } from "@/data/marqueedata";
 // import EventTimeline from '@/components/EventTimline';
 
-
 import HighlightsSection from "@/components/HighlightsSection";
+import PrizeSection from "@/components/PrizeSection";
 
 // import { events } from "@/data/timeline";
 // import HighlightsSection from "@/components/HighlightsSection";
@@ -21,7 +21,11 @@ import HighlightsSection from "@/components/HighlightsSection";
 export default function Home() {
   const highlights: { type: "photo" | "video"; src: string; title: string }[] =
     [
-      { type: "video", src: "/images/convergesvideo24.mp4", title: "Converges'24" },
+      {
+        type: "video",
+        src: "/images/convergesvideo24.mp4",
+        title: "Converges'24",
+      },
       { type: "photo", src: "/images/converges13.jpg", title: "Converges'13" },
       { type: "photo", src: "/images/6.jpg", title: "Converges'17" },
       { type: "photo", src: "/images/22.jpg", title: "Detective Returns" },
@@ -43,7 +47,7 @@ export default function Home() {
     <main className="min-h-screen w-[calc(100vw-3%)]">
       <HeroSection />
       <AboutSection />
-
+      
       {/* Background Section */}
       <div className="relative inset-0">
         {/* Background Image with Overlay */}
@@ -58,18 +62,19 @@ export default function Home() {
         </div>
         {/* Foreground Content */}
         <div className="relative z-30">
+        <PrizeSection />
           <EventsSection />
           {/* <Timeline timelineData={events} /> */}
           <HighlightsSection items={highlights} />
           <MapSection />
-      <MarqueeDemo reviews={reviews} />
-      <ContactSection />
+          <MarqueeDemo reviews={reviews} />
+          <ContactSection />
         </div>
       </div>
 
       {/* <EventsSection /> */}
       {/* <Timeline timelineData={events} /> */}
-      
+
       <Footer />
       {/* <div className="relative inset-0">
         <div
