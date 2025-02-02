@@ -1317,7 +1317,8 @@ export const eventsData = [
       { name: "Behere Tushar Pravin", contact: "7756830954" }
     ],
     faculty: [
-      { name: "J S Shaikh", contact: "9764287564" }
+      { name: "J S Shaikh", contact: "9764287564" },
+      // { name: "J S Shaikh", contact: "9764287564" }
     ]
   },
   registrationLink: "" // Link not mentioned in the content
