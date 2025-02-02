@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
-import { Trophy } from "lucide-react";
+import { delay, motion } from "framer-motion";
 
 const PrizeSection = () => {
   const [showCelebration, setShowCelebration] = useState(false);
@@ -34,31 +33,31 @@ const PrizeSection = () => {
           animation: "glow 3s infinite alternate",
         }}
       >
+        {/* 3D Rotating Trophy */}
         <motion.div
           className="flex justify-center mb-4 sm:mb-6"
           onClick={handleTrophyClick}
           whileTap={{ scale: 0.95 }}
         >
-          <motion.div
-            className="relative"
+          <motion.img
+            src="/images/—Pngtree—trophy cup champion trophy_14866270.png"
+            alt="Trophy"
+            className="w-50 h-50 sm:w-48 sm:h-48"
+            style={{
+              filter: "drop-shadow(0px 0px 10px rgba(255, 215, 0, 0.8))", // Adds a glow effect
+            }}
             animate={{
-              opacity: 1,
-              scale: [1, 1.05, 1],
-              filter: [
-                "brightness(1)",
-                "brightness(1.5) saturate(1.3)",
-                "brightness(1)",
-              ],
+              rotateY: [0, 360], // Full Rotation
             }}
             transition={{
-              duration: 3,
-              repeat: Infinity,
-              repeatType: "reverse",
+              duration: 5,
+              repeat:Infinity, // Infinite Rotation
+              ease: "linear",
             }}
-          >
-            <Trophy className="w-20 h-20 sm:w-28 sm:h-28 text-yellow-400 drop-shadow-[0_0_15px_rgba(250,204,21,0.5)]" />
-          </motion.div>
+          />
         </motion.div>
+
+        {/* Prize Amount */}
         <motion.div
           className="text-center text-2xl sm:text-3xl font-bold font-mono text-yellow-400 mb-2 sm:mb-4"
           initial={{ opacity: 0 }}
@@ -76,8 +75,11 @@ const PrizeSection = () => {
       {showCelebration && (
         <div className="fixed inset-0 pointer-events-none z-50">
           {[...Array(20)].map((_, i) => (
-            <motion.div
+            <motion.img
               key={i}
+              src="/images/—Pngtree—trophy cup champion trophy_14866270.png"
+              alt="Trophy"
+              className="w-8 h-8 sm:w-10 sm:h-10"
               initial={{
                 opacity: 0,
                 scale: 0,
@@ -103,10 +105,7 @@ const PrizeSection = () => {
                 duration: 2.5,
                 ease: "easeInOut",
               }}
-              className="fixed"
-            >
-              <Trophy className="text-yellow-400 w-6 h-6 sm:w-8 sm:h-8" />
-            </motion.div>
+            />
           ))}
         </div>
       )}
