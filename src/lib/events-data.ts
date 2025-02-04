@@ -708,28 +708,23 @@ export const eventsData = [
     "entryFee": "200/-",
     "rounds": [
       {
-        "name": "X-O Blitz",
-        "description": "A large Tic-Tac-Toe grid where teams alternate placing X or O on the grid, trying to align three identical symbols to win. If blocked by the opponent, teams can replace their symbols. The game is played three times, with 50 points for the winner and 0 points for the loser."
-      },
-      {
-        "name": "Binary Unlocked",
-        "description": "One player from each team runs to the Binary Number Station, receives an 8-digit binary number, and converts it to decimal, hexadecimal, or another format. The player who enters the correct result first earns 50 points for their team, while the other team receives 25 points."
+        "name":"Matrix Showdown",
+        "description": "Task 1: Imagine a massive Tic-Tac-Toe grid on the ground! Teams take turns running to place their X or O, trying to get three in a row to win. But here’s the twist, if the other team blocks you, you can replace your symbol and turn the game around. The game is played three times and the winning team in each round earns 50 points silver overload!\n\nTask 2: One player from each team sprints to the Number Station and gets a random number. Once they return, the required format for conversion (decimal, hexadecimal, etc.) will be given on the spot. The first player to submit the correct answer wins 50 points, while the other team gets 25 points for trying! Speed and accuracy are key!",
       },
       {
         "name": "CodeSprint 50",
-        "description": "Teams solve coding problems within the allotted time. Points are awarded based on the difficulty of the problems solved. The combined points from Round 1 and Round 2 will determine the chances of advancing to Round 3."
+        "description": "Teams solve coding problems within the allotted time. Points are awarded based on the difficulty of the problems solved. The points from Round 2 will determine the chances of advancing to Round 3."
       },
       {
         "name": "The Veil of Endpoints",
-        "description": "Details for this round will be provided on site. It promises to challenge participants with advanced tasks related to endpoints and data management."
+        "description": "Details for this round will be provided on site. It promises to challenge participants with advanced tasks related to endpoints and data management."
       }
     ],
     "rules": [
-      "Teams must consist of 4 members.",
-      "All members must actively participate in each round.",
-      "Points are awarded for performance in each round, with bonus points carried forward.",
-      "Cheating, collusion, or unfair practices will result in immediate disqualification.",
-      "Each round has a strict time limit. Exceeding the time limit will result in penalties.",
+      "All teams must be present and ready at their designated stations on time to avoid penalties and substitutions are not allowed.",
+      "Cheating or disrupting another team will result in immediate disqualification.",
+      "Teams must follow all instructions from coordinators and referees and arguing with event officials may lead to penalties or disqualification.",
+      "Each task has a strict time limit, and delays will result in point deductions or disqualification."
     ],
     "coordinators": {
       "student": [
@@ -739,10 +734,11 @@ export const eventsData = [
       "faculty": [
         { "name": "Prof M. M. Mahajan", "contact": "9096970969" },
         { "name": "Prof S. U. More", "contact": "8983158798" }
-      ] 
+      ]
     },
     "registrationLink": ""
-  },
+  }
+   ,
   {
     "id": 21,
     "logo": "/utils/b.jpeg",
