@@ -27,10 +27,10 @@ export function HeroContent() {
           />
         </div>
         <h2
-          className="text-base md:text-xl font-mono text-green-400"
+          className="text-lg md:text-xl font-mono text-green-400"
           
         >
-          A NATIONAL LEVEL TECHNICAL SYMPOSIUM
+          A National Level Technical Symposium
         </h2>
         <h1
           className="text-2xl md:text-4xl  text-white"
