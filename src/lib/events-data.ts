@@ -1357,4 +1357,58 @@ coordinators: {
 },
 registrationLink: "" // Link not mentioned in the content
 },
+{
+  "id": 33,
+  "logo": "/utils/last player.jpg",
+  "name": "The Last Player",
+  "slug": "the-last-player",
+  "year": "2025",
+  "department": "ENTC Department",
+  "description": "An intense survival challenge inspired by the Squid Game series, where teams face real-life Squid Game-inspired challenges. The event tests participants' soft skills and creativity, culminating in a real Dalgona candy challenge with extra fun games.",
+  "teamSize": "1",
+  "entryFee": "50/-",
+  "prizePool": "5000 INR",
+  "rounds": [
+    {
+      "name": "Green Light, Red Light",
+      "description": "The caller shouts 'Green Light!' and turns around. Players move toward the caller but must freeze when 'Red Light!' is called. Anyone caught moving after 'Red Light' will be sent back to the starting line."
+    },
+    {
+      "name": "Mingle Game",
+      "description": "Players must quickly change positions and form groups when called, making the game dynamic and unpredictable."
+    },
+    {
+      "name": "Tug of War",
+      "description": "A traditional strength-based game where two opposing teams pull on opposite ends of a rope, trying to pull the other team across a designated line."
+    },
+    {
+      "name": "Dalgona Candy Challenge",
+      "description": "Inspired by Squid Game, players must carefully carve out shapes from Dalgona candy without breaking it."
+    },
+    {
+      "name": "Special Round 1",
+      "description": "To be announced on the spot."
+    },
+    {
+      "name": "Special Round 2",
+      "description": "To be announced on the spot."
+    }
+  ],
+  "rules": [
+    "Each team must consist of only 1 member.",
+    "Each round will have a strict time limit.",
+    "The last remaining player will be declared the winner.",
+    "Coordinators have the authority to modify rules on the spot."
+  ],
+  "coordinators": {
+    "student": [
+      { "name": "Vedent Kakuste", "contact": "9922551640" },
+      { "name": "Durgesh Jadhav", "contact": "7972847460" }
+    ],
+    "faculty": [
+      { "name": "B.V Patil", "contact": "9423943172" }
+    ]
+  },
+  "registrationLink": ""
+},
 ];
