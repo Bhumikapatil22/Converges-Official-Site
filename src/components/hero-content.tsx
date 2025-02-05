@@ -27,7 +27,7 @@ export function HeroContent() {
           />
         </div>
         <h2
-          className="text-lg md:text-xl font-mono text-green-400"
+          className="text-base md:text-xl font-mono text-green-400"
           
         >
           A NATIONAL LEVEL TECHNICAL SYMPOSIUM
