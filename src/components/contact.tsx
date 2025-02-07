@@ -6,17 +6,20 @@ import { MapPin, Phone, Mail } from "lucide-react";
 export function ContactSection() {
   const studentCoordinators = [
     {
-      name: "Om Patil",
-      phone: "+91 9075827810",
-      email: "omrakeshpatil@gmail.com",
+      name: "Chinmay Khainar",
+      phone: "+91 84466 33294",
+      email: "chinmay.khairnar.756@gmail.com",
     },
-    
     {
-      name: "Prathmesh Mali",
-      phone: "+91 9922552891",
-      email: "pmsir2003@gmail.com",
+      name: "Ninad Patil",
+      phone: "+91 95797 76916",
+      email: "pninad1203@gmail.com",
     },
-   
+    {
+      name: "Dikshita Patil",
+      phone: "+91 94212 32971",
+      email: "dikshiita22@gmail.com",
+    },
   ];
 
   return (

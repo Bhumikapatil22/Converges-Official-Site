@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
 import {
   Facebook,
   X,
@@ -20,7 +21,7 @@ export function Footer() {
 
   useEffect(() => {
     const currentLogoRef = logoRef.current; // Save the current value of the ref
-  
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsInView(entry.isIntersecting);
@@ -30,21 +31,20 @@ export function Footer() {
         threshold: 0.1,
       }
     );
-  
+
     if (currentLogoRef) {
       observer.observe(currentLogoRef);
     }
-  
+
     return () => {
       if (currentLogoRef) {
         observer.unobserve(currentLogoRef); // Use the saved value in cleanup
       }
     };
   }, []);
-  
 
   return (
-    <footer className=" px-8 md:px-14" >
+    <footer className=" px-8 md:px-14">
       <div className="container mx-auto pt-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-4">
           {/* Logo and Institute Info */}
@@ -70,16 +70,18 @@ export function Footer() {
           <div className="md:space-y-4 mt-4 md:mt-0 ">
             <h3 className="text-xl font-mono">Useful Links</h3>
             <ul className="font-mono space-y-2">
-              {["Home", "About", "Events", "Highlights", "Contact"].map((link) => (
-                <li key={link}>
-                  <Link
-                    href={`#${link.toLowerCase().replace(" ", "-")}`}
-                    className="text-muted-foreground hover:text-green-400 font-mono transition-colors"
-                  >
-                    {link}
-                  </Link>
-                </li>
-              ))}
+              {["Home", "About", "Events", "Highlights", "Contact"].map(
+                (link) => (
+                  <li key={link}>
+                    <Link
+                      href={`#${link.toLowerCase().replace(" ", "-")}`}
+                      className="text-muted-foreground hover:text-green-400 font-mono transition-colors"
+                    >
+                      {link}
+                    </Link>
+                  </li>
+                )
+              )}
             </ul>
           </div>
 
@@ -104,7 +106,7 @@ export function Footer() {
                   href="mailto:director@rcpit.ac.in"
                   className="hover:text-green-400 transition-colors"
                 >
-                  director@rcpit.ac.in
+                  converges@rcpit.ac.in
                 </a>
               </p>
             </div>
@@ -144,15 +146,45 @@ export function Footer() {
                 </a>
               ))}
             </div>
-            
           </div>
         </div>
         <hr className="mt-3 h-[3px] bg-gradient-to-r from-transparent via-green-600 to-transparent animate-pulse" />
 
         {/* Copyright */}
-        <div className="pt-2 font-monobold text-center text-muted-foreground">
+        <div className="pt-6 pb-4 text-center text-muted-foreground font-mono space-y-2">
+          <p className="text-lg font-bold">&copy; 2025 RCPIT Converges</p>
+          <p className="text-base font-medium">Designed & Developed by</p>
+          <div className="flex justify-center items-center text-gray-500 gap-3 mt-2 transition-all animate-pulse">
+            <a
+              href="https://akatsuki.rcpit.ac.in//"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`flex items-center gap-2 text-muted-foreground font-mono transition-all ${
+                isInView ? "animate-pulse" : ""
+              }`}
+            >
+              <Image
+                src="/images/akatsukilogo.png"
+                alt="Akatsuki Logo"
+                width={40}
+                height={40}
+                className={`transition-all ${isInView ? "animate-pulse" : ""}`}
+                priority
+              />
+              Akatsuki Coding Club
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+{
+  /* <div className="pt-2 font-monobold text-center text-muted-foreground"> 
           <p className="font-mono">
-            © RCPIT Converges2K25. All Rights Reserved {new Date().getFullYear()}
+            © RCPIT Converges2K25. All Rights Reserved{" "}
+            {new Date().getFullYear()}
           </p>
           <p className="flex justify-center items-center gap-2 font-mono">
             Designed & Developed By{" "}
@@ -160,22 +192,19 @@ export function Footer() {
               href="https://akatsukicodingclub.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className={`inline-flex items-center gap-2 text-muted-foreground font-monoextrabold transition-all ${
+              className={inline-flex items-center gap-2 text-muted-foreground font-monoextrabold transition-all ${
                 isInView ? "animate-pulse" : ""
-              }`}
+              }}
             >
               <Image
                 src="/images/akatsukilogo.png"
                 alt="Akatsuki Logo"
                 width={28}
                 height={28}
-                className={`transition-all ${isInView ? "animate-blink" : ""}`}
+                className={transition-all ${isInView ? "animate-blink" : ""}}
                 priority
               />
             </a>
           </p>
-        </div>
-      </div>
-    </footer>
-  );
+        </div> */
 }

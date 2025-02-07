@@ -23,15 +23,17 @@ export function Navigation() {
 
   const navItems = [
     { href: "/", label: "Home" },
-    { href: "#about", label: "About" },
-    { href: "#events", label: "Events" },
+    { href: "/#about", label: "About" },
+    { href: "/#events", label: "Events" },
     // { href: "#schedule", label: "Schedule" },
     { href: "#highlights", label: "Highlights" },
     { href: "#contact", label: "Contact" },
   ];
 
   const handleLinkClick = (
-    e: React.MouseEvent<HTMLAnchorElement> | React.TouchEvent<HTMLAnchorElement>,
+    e:
+      | React.MouseEvent<HTMLAnchorElement>
+      | React.TouchEvent<HTMLAnchorElement>,
     href: string
   ) => {
     if (href.startsWith("#")) {
@@ -52,10 +54,10 @@ export function Navigation() {
     <>
       {/* Include Google Fonts */}
       <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap");
 
         .navbar {
-          font-family: 'Orbitron', sans-serif;
+          font-family: "Orbitron", sans-serif;
         }
 
         .typewriter {
@@ -63,7 +65,8 @@ export function Navigation() {
           white-space: nowrap;
           overflow: hidden;
           border-right: 2px solid currentColor;
-          animation: typing 1.5s steps(30) forwards, blink 0.75s step-end infinite;
+          animation: typing 1.5s steps(30) forwards,
+            blink 0.75s step-end infinite;
         }
 
         @keyframes typing {
@@ -121,9 +124,7 @@ export function Navigation() {
                   className="text-foreground/80 hover:text-foreground transition-colors"
                 >
                   <span
-                    className={cn(
-                      activeIndex === index ? "typewriter" : ""
-                    )}
+                    className={cn(activeIndex === index ? "typewriter" : "")}
                   >
                     {item.label}
                   </span>
@@ -166,9 +167,7 @@ export function Navigation() {
                   className="block px-3 py-2 text-foreground/80 hover:text-foreground transition-colors"
                 >
                   <span
-                    className={cn(
-                      activeIndex === index ? "typewriter" : ""
-                    )}
+                    className={cn(activeIndex === index ? "typewriter" : "")}
                   >
                     {item.label}
                   </span>

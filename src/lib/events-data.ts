@@ -34,7 +34,7 @@ export const eventsData = [
         { name: "", contact: "" }
       ]
     },
-    registrationLink: "https://unstop.com/hackathons/stranger-code-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-895713?lb=jOvn68re&fbclid=PAY2xjawHrouZleHRuA2FlbQIxMQABpv4KBT6Le8n8vKhtzhHHHxdRJ8BbFDaMJU6lU-s-i4ZCs9BMhZCuHNBGZQ_aem_kzOlcjsHtZkqbryrfCSjLw"
+    registrationLink: ""
   }, 
   {
     id: 2,
@@ -74,7 +74,7 @@ export const eventsData = [
         { name: "Prof. M. M. Mahajan", contact: "+91 " }
       ]
     },
-    registrationLink: "https://unstop.com/competitions/detectives-returns-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-897805?lb=jOvn68re&fbclid=PAY2xjawHrsXZleHRuA2FlbQIxMQABpshJctFK9ypL5vUubkf8T_3doQsAjPjzWC-BX_KgQytX_HWBp3AI4tf-AQ_aem_HhPLRfzQBb6pDiqbXQezAQ"
+    registrationLink: ""
   },
   {
     id: 3,
@@ -114,7 +114,7 @@ export const eventsData = [
         { name: "", contact: "" }
       ]
     },
-    registrationLink: "https://unstop.com/events/path-breaker-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-896957",
+    registrationLink: "",
   },
   {
     id: 4,
@@ -154,7 +154,7 @@ export const eventsData = [
         { name: "", contact: "" }
       ]
     },
-    registrationLink: "https://unstop.com/events/tech-expo-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-898837?lb=jOvn68re",
+    registrationLink: "",
   },
   {
     id: 5,
@@ -193,7 +193,7 @@ export const eventsData = [
         { name: "", contact: "" }
       ]
     },
-    registrationLink: "https://unstop.com/quiz/civista-civil-quiz-challenge-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-897473"
+    registrationLink: ""
   },
   {
     id: 6,
@@ -232,7 +232,7 @@ export const eventsData = [
         { name: "Tilok Bhandari", contact: "+91 9420583249" }
       ]
     },
-    registrationLink: "https://unstop.com/o/npPFzGt?lb=jOvn68re"
+    registrationLink: ""
   },
   {
     id: 7,
@@ -269,7 +269,7 @@ export const eventsData = [
         { name: "Not Provided", contact: "Not Provided" }
       ]
     },
-    registrationLink: "https://unstop.com/competitions/civista-boat-float-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-897465"
+    registrationLink: ""
   },
   {
     id: 8,
@@ -305,12 +305,12 @@ export const eventsData = [
         { name: "Not Provided", contact: "Not Provided" }
       ]
     },
-    registrationLink: "https://unstop.com/competitions/civista-bridgominia-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-897437"
+    registrationLink: ""
   },
   {
     id: 9,
     logo: "/utils/9.jpeg",
-    name: "Codecraze",
+    name: "Codecraze-1",
     slug: "codecraze",
     year: "2024",
     department: "GDSC RCPIT",
@@ -339,7 +339,7 @@ export const eventsData = [
         { name: "Nikesh", contact: "+91 9307101041" }
       ]
     },
-    registrationLink: "https://unstop.com/hackathons/codecraze-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-895331?lb=jOvn68re&fbclid=PAZXh0bgNhZW0CMTEAAabDwVgfDMoup7q98zWmfj9ls0QW9Gifc5lg0shVpYfi_YMBdVegZ_EHmAg_aem_C3oHVOaxBxwCOVUSNvz-9Q"
+    registrationLink: ""
   },
   {
     id: 10,
@@ -375,7 +375,7 @@ export const eventsData = [
         { name: "Not Provided", "contact": "Not Provided" }
       ]
     },
-    registrationLink: "https://unstop.com/competitions/elektrax-waste-to-watt-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-897012"
+    registrationLink: ""
   },
   {
     id: 11,
@@ -414,7 +414,7 @@ export const eventsData = [
         { name: "", contact: "" }
       ]
     },
-    registrationLink: "https://unstop.com/competitions/elektrax-electrotoy-making-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-897372"
+    registrationLink: ""
   },
   {
     id: 12,
@@ -450,7 +450,7 @@ export const eventsData = [
         { name: "", contact: "" }
       ]
     },
-    registrationLink: "https://unstop.com/competitions/trade-tech-converges-2024-r-c-patel-institute-of-technology-shirpur-maharashtra-895497"
+    registrationLink: ""
   },
   {
     id: 13,
@@ -481,7 +481,7 @@ export const eventsData = [
         { name: "", contact: "" }
       ]
     },
-    registrationLink: "https://forms.google.com/ai-summit"
+    registrationLink: ""
   },
   {
     id: 14,
@@ -517,7 +517,7 @@ export const eventsData = [
         { name: "", contact: "" }
       ]
     },
-    registrationLink: "https://forms.google.com/cyber-security-workshop"
+    registrationLink: ""
   },
   {
     id: 15,
@@ -557,7 +557,7 @@ export const eventsData = [
         { name: "", contact: "" }
       ]
     },
-    registrationLink: "https://forms.google.com/cyber-security-workshop"
+    registrationLink: ""
   },
   {
     id: 16,
@@ -659,7 +659,7 @@ export const eventsData = [
       ],
       faculty: [] // Faculty coordinators not mentioned
     },
-    registrationLink: "./docs/madforcad.pdf"
+    registrationLink: ""
   },
   {
     id: 19,
@@ -693,7 +693,7 @@ export const eventsData = [
       ],
       faculty: [] // Faculty coordinators not mentioned
     },
-    registrationLink: "./docs/ROBO.pdf"
+    registrationLink: ""
   },
 
   {
@@ -713,7 +713,7 @@ export const eventsData = [
       },
       {
         "name": "CodeSprint 50",
-        "description": "Teams solve coding problems within the allotted time. Points are awarded based on the difficulty of the problems solved. The points from Round 2 will determine the chances of advancing to Round 3."
+        "description": "Embark on a thrilling adventure to Solve the Coding Odyssey in the fast-paced world of CodeSprint 50 Teams will race against time to solve exciting coding challenges, with points awarded based on the complexity of each problem. The points earned in Round 2 will decide which teams will advance to Round 3, where new and exciting challenges await. It's a journey of strategy, teamwork, and quick thinking, where every solved problem brings you closer to victory."
       },
       {
         "name": "The Veil of Endpoints",
@@ -733,38 +733,38 @@ export const eventsData = [
       ],
       "faculty": [
         { "name": "Prof M. M. Mahajan", "contact": "9096970969" },
-        { "name": "Prof S. U. More", "contact": "8983158798" }
+        { "name": "Prof Sagar. U. More", "contact": "8983158798" }
       ]
     },
     "registrationLink": ""
   }
    ,
-  {
+   {
     "id": 21,
     "logo": "/utils/b.jpeg",
     "name": "Muggles Mystery",
     "slug": "muggles-mystery",
     "year": "2025",
-    "department": "Computer Engineering",
+    "department": "Computer Department",
     "description": "An exciting event filled with a blend of physical games, technical challenges, and deduction-based gameplay. Teams will face rounds that test their coding skills, problem-solving abilities, and teamwork under pressure.",
     "teamSize": "4",
-    "entryFee": "200/-",
+    "entryFee": "250/-",
     "rounds": [
       {
-        "name": "Ddakji Round",
-        "description": "A two-part round inspired by Squid Game. Part 1 involves flipping your opponent's card by smashing your own onto it. In Part 2, teams toss balls into buckets with different point values (Hogwarts: 10 points, Gryffindor: 5 points, Harry: 15 points) to score points for the next round."
+        "name": "Trust the Trail",
+        "description": "A two-part round. In the first part, one player from each team will be blindfolded while their teammates guide them through an obstacle course using only verbal instructions. At a time, four teams will compete, racing to cross all hurdles successfully. The slowest team or the one with the most mistakes will be eliminated in each round until the final champion emerges. In Part 2, teams toss balls into buckets with different point values (Hogwarts: 10 points, Gryffindor: 5 points, Harry: 15 points) to score points for the next round."
       },
       {
         "name": "Technical Round",
-        "description": "A three-part challenge focusing on technical skills. Part 1 is Error Finding in Code, where teams correct faulty code. Part 2 is solving a series of PDF puzzles (word searches, logic grids). Part 3 involves creating a simple, responsive webpage using Bootstrap in 20 minutes."
+        "description": "A three-part challenge focusing on technical skills. Part 1: Error Finding in Code - Participants are presented with faulty code snippets. The goal is to identify and correct the errors within a set time. Part 2: PDF Puzzle Solving - Teams are given a PDF file containing puzzles (e.g., word searches, logic grids). They must solve these puzzles in the shortest time. Part 3: Bootstrap Coding - Participants are tasked to create a simple, responsive webpage using Bootstrap in 20 minutes."
       },
       {
         "name": "Who is the Spy?",
-        "description": "A deduction and strategy game where one team member is secretly assigned the role of a spy. The team must use clues to identify the spy within the time limit, earning points for correct identification."
+        "description": "Deduction and Strategy game. Each team has four members. One member will secretly be assigned the role of a 'spy.' Other members will be given clues to find the spy. Each team will get only 2 attempts to guess the spy. Teams earn points for correctly identifying the spy within a time limit."
       },
       {
-        "name": "Treasure Hunt Round",
-        "description": "Teams solve puzzles sequentially to find clues leading to a treasure. The first team to find the treasure wins bonus points or special prizes."
+        "name": "Mystery Round",
+        "description": "On-site details will be disclosed."
       }
     ],
     "rules": [
@@ -782,11 +782,11 @@ export const eventsData = [
     "coordinators": {
       "student": [
         { "name": "Mrunalini Shinde", "contact": "9356281621" },
-        { "name": "Dhananjay marathe", "contact": "7058467482" }
+        { "name": "Dhananjay Marathe", "contact": "7058467482" }
       ],
       "faculty": [
-        { "name": "P. A. Agrawal", "contact": "7776002593" },
-        { "name": "D. S. Potdar", "contact": "9970856082" }
+        { "name": "Prof. P. A. Agrawal", "contact": "7776002593" },
+        { "name": "Prof. D. S. Potdar", "contact": "9970856082" }
       ]
     },
     "registrationLink": ""
@@ -800,7 +800,7 @@ export const eventsData = [
     "department": "Data Science Department",
     "description": "An intense survival challenge inspired by the Squid Game series, where teams face a series of traditional Korean games and technical tasks. The event tests participants' precision, memory, coding skills, and creativity, culminating in a digital Dalgona Candy challenge with bonus points for animations.",
     "teamSize": "4",
-    "entryFee": "200/-",
+    "entryFee": "150/-",
     "rounds": [
       {
         "name": "The Skill Arena",
@@ -868,11 +868,11 @@ export const eventsData = [
     "coordinators": {
       "student": [
         { "name": "Borse Kapil", "contact": "9373802375" },
-        { "name": "Patil Kapil S.", "contact": "9370392866" }
+        { "name": "Patil Kapil", "contact": "9370392866" }
       ],
       "faculty": [
-        { "name": "P. S. Patil", "contact": "8275591853" },
-        { "name": "C. J. Chitte", "contact": "9403550286" }
+        { "name": "Prof. P. S. Patil", "contact": "8275591853" },
+        { "name": "Prof. C. J. Chitte", "contact": "9403550286" }
       ],
     },
     "registrationLink": "./docs/BRIDGOMANIA.pdf"
@@ -881,7 +881,7 @@ export const eventsData = [
   {
     "id": 24,
     "logo": "/utils/c.jpeg",
-    "name": "Electromania - Brain Charge",
+    "name": "ElectroMania - Brain Charge",
     "slug": "electromania-brain-charge",
     "year": "2025",
     "department": "Electrical Engineering",
@@ -913,7 +913,7 @@ export const eventsData = [
       "   - If the same person from another team gives the answer, that team will be disqualified.",
       "   - Selected teams will be promoted to the second round (final round).",
       "For the Tech-Hunt Round:",
-      "   - Teams have a maximum of 45 minutes to solve each clue.",
+      "   - Teams have a maximum of 45 minutes to solve clue.",
       "   - All clues must be collected by the team at the end.",
       "   - Results will be declared based on the time taken to solve the clues.",
       "   - If any clue is missing, it is the team's responsibility.",
@@ -943,10 +943,10 @@ export const eventsData = [
     "registrationLink": "./docs/ELECTROMANIA_BRAIN_CHARGE.pdf"
   },
   {
-    "id": 33,
-    "logo": "/utils/9.jpeg",
+    "id": 34,
+    "logo": "/utils/CodeCrazeHack.jpg",
     "name": "CodeCraze 2.0 – 24-Hour Hackathon",
-    "slug": "codecraze-1",
+    "slug": "codecraze-",
     "year": "2025",
     "department": "GDG RCPIT & Fetch AI",
     "description": "CodeCraze 2.0 is an Among Us-themed 24-hour hackathon designed to challenge participants with real-world problem statements focused on ethics, AI, Web Development, and IoT. The event fosters innovation, teamwork, and problem-solving while pushing the boundaries of technology.",
@@ -954,12 +954,12 @@ export const eventsData = [
     "entryFee": "₹300/-",
     "rounds": [
       {
-        "name": "Phase 1: Online Elimination Round",
-        "description": "Teams submit an idea presentation (PPT), and the top 40 teams are shortlisted for the final hackathon."
+        "name": "Phase 1- Online Elimination Round",
+        "description": "Online Elimination Round – Teams submit an idea presentation (PPT), and the top 40 teams are shortlisted."
       },
       {
-        "name": "Phase 2: Offline Hackathon",
-        "description": "A 24-hour coding marathon where shortlisted teams develop a working prototype based on problem statements."
+        "name": "Phase 2- Offline Hackathon",
+        "description": "Offline Hackathon – A 24-hour coding marathon where shortlisted teams develop a working prototype based on problem statements."
       }
     ],
     "rules": [
@@ -984,7 +984,7 @@ export const eventsData = [
   {
     "id": 25,
     "logo": "/utils/11.jpeg",
-    "name": "Electromania - ElectroToy",
+    "name": "ElectroMania - ElectroToy",
     "slug": "electromania-electrotoy",
     "year": "2025",
     "department": "Electrical Engineering",
@@ -997,12 +997,12 @@ export const eventsData = [
         "description": "Design and build an innovative toy powered by electrical and electronic principles. Participants will showcase their creativity, technical skills, and problem-solving abilities within a 90-minute time frame."
       },
       {
-        "name": "Presentation and Judging",
+        "name": "Performance and Judging",
         "description": "Participants will present the functionality and features of their electric toys to the judges and attendees. The final result will be judged based on creativity, functionality, and adherence to safety standards."
       }
     ],
     "rules": [
-      "Participants can form teams with 3 students per team.",
+      "Participants can form teams with 4 students per team.",
       "Safety is a priority. Participants must adhere to safety standards and use necessary safety gear.",
       "Participants must arrange their own materials for making the toy. The event organizer will not provide any materials.",
       "The time duration for building the toy is 90 minutes. No additional time will be given.",
@@ -1043,7 +1043,7 @@ export const eventsData = [
     "department": "Mechanical Engineering",
     "description": "An exciting event where participants showcase their engineering and design skills by building a glider from scratch using provided materials. Teams compete to achieve the best performance in terms of flight time, structural stability, and weight of the glider.",
     "teamSize": "2-4 members",
-    "entryFee": "200/-",
+    "entryFee": "500/-",
     "eventDetails": {
       "location": "College Campus Ground (Area: 50m × 30m)",
       "constructionTime": "1.5 hours",
@@ -1079,8 +1079,8 @@ export const eventsData = [
     "coordinators": {
       "student": [
         {
-          "name": "Ninad Patil",
-          "contact": "9579776916"
+          "name": "Rohit Pawar",
+          "contact": "8010245411"
         },
         {
           "name": "Chetan Mahule",
@@ -1131,12 +1131,12 @@ export const eventsData = [
     ],
     coordinators: {
       student: [
-        { name: "Sachin Saner", contact: "Not Provided" },
-        { name: "Sanket Kumbhar", contact: "Not Provided" }
+        { name: "Sachin Saner", contact: "8080657194" },
+        { name: "Sanket Kumbhar", contact: "8626027675" }
       ],
       faculty: [
-        { name: "Prof. P.D. Jamadar", contact: "Not Provided" },
-        { name: "Dr. K.A. Saner", contact: "Not Provided" }
+        { name: "Prof. P. D. Jamadar", contact: "7507071071" },
+        { name: "Dr. K. A. Saner", contact: "7588997171" }
       ]
     },
     registrationLink: "./docs/WATER_ROCKET_CHALLENGE.pdf"
@@ -1167,9 +1167,13 @@ export const eventsData = [
       "In case of any disputes, the decision of event heads and judges will be final and binding to all.",
       "In case of scores being tied, the team with minimum time taken will be the winner.",
       "Participants are mandated to exclusively utilize Google Search as the sole permissible tool for obtaining information.",
-      "Use of any AI-based tools is prohibited.",
+      "Use of any AI-based tools or Google lense is prohibited.",
       "Participants must carry their college ID card.",
-      "Participants must be present on time at the given venue."
+      "Only one desktop will be provided for each participating team.",
+      "Participants must be present on time at the given venue.",
+      "The top-performing team qualifies for the Second Round.",
+      "The number of teams that qualify for the Second Round depends on the total number of teams participating.",
+      "No need to bring a laptop, tab, or mobile GOOGLER Team will provide",
     ],
     coordinators: {
       student: [
@@ -1189,9 +1193,9 @@ export const eventsData = [
     slug: "robo-fifa",
     year: "2025",
     department: "Electronics & Telecommmunication Engineering",
-    description: "Build a robot that can kick a ball into the opponent's goal. The challenge is to create an effective mechanism to score goals while staying within the size, weight, and safety rules. Use your creativity to outplay the other team and score the most goals.",
+    description: "Build a robot that can kick a ball into the opponent's goal. The challenge is to create an effective mechanism (Robotic Bot) to score goals while staying within the size, weight, and safety rules. Use your creativity to outplay the other team and score the most goals.",
     teamSize: "2-3", 
-    entryFee: "200", 
+    entryFee: "250/-", 
     rounds: [
       {
         name: "Qualification Round",
@@ -1225,7 +1229,7 @@ export const eventsData = [
         { name: "Ganesh Patil", contact: "9325662197" } 
       ],
       faculty: [
-        { name: "Anup Jaiswal", contact: "9922823138" },
+        { name: "Prof. Anup Jaiswal", contact: "9922823138" },
             ]
     },
     registrationLink: "" // Link not mentioned in the content
@@ -1241,7 +1245,7 @@ export const eventsData = [
     department: "Civil Engineering",
     description: "In this competition, participants will demonstrate their creativity and engineering skills by constructing a boat-like model using Thermocol sheets. The objective is to design and build a boat that can support a certain weight without drowning in water, enhancing their knowledge about concepts like buoyancy and flotation.",
     teamSize: "4",
-    entryFee: "400/-",
+    entryFee: "300/-",
     rounds: [
       {
         name: "First Round",
@@ -1285,9 +1289,9 @@ export const eventsData = [
   slug: "trade-tech-1",
   year: "2025",
   department: "Civil Engineering",
-  description: "Participate in 'Trade Tech,' a technical event focused on the fundamentals of stock trading, portfolio building, and market analysis. Collaborate with the StockGro app to learn, practice, and compete in a simulated trading environment using 10 lakh virtual paper money provided within the app.",
+  description: "Participate in Trade Tech, a technical event focused on the fundamentals of stock trading, portfolio building, and market analysis. Collaborate with the StockGro app to learn, practice, and compete in a simulated trading environment using 10 lakh virtual paper money provided within the app.",
   teamSize: "Individual",
-  entryFee: "150/-",
+  entryFee: "100/-",
   rounds: [
     {
       name: "Event Duration",
@@ -1302,7 +1306,7 @@ export const eventsData = [
     "Participation is individual only—team participation is not allowed.",
     "Each participant will receive 10 lakh virtual paper money in the StockGro app.",
     "Registration for each participant is mandatory, and on-the-spot registrations will not be accepted.",
-    "A live leaderboard will display participants' performance on a smart board throughout the event.",
+    "A live leaderboard will display participant's performance on a smart board throughout the event.",
     "Winners will be announced both in the StockGro app and on the event registration portal after the event concludes.",
     "Only the StockGro app can be used for trading activities during the event.",
     "Participants must ensure they have downloaded and set up the StockGro app prior to the event.",
@@ -1318,7 +1322,8 @@ export const eventsData = [
       { name: "Krishna Prakash Jamadar", contact: "9922770711" }
     ],
     faculty: [
-      { name: "Prof Dr. M. N. Patil", contact: "8108433995" }
+      { name: "Dr. M. N. Patil", contact: "8108433995" },
+      {name:"Prof. T. S. Bhamare",contact:"9767270758"}
     ]
   },
   registrationLink: "" // Link not mentioned in the content
@@ -1352,14 +1357,14 @@ coordinators: {
     { name: "Behere Tushar Pravin", contact: "7756830954" }
   ],
   faculty: [
-    { name: "J S Shaikh", contact: "9764287564" }
+    { name: "Prof. J. S. Shaikh", contact: "9764287564" }
   ]
 },
 registrationLink: "" // Link not mentioned in the content
 },
 {
   "id": 33,
-  "logo": "/utils/last player.jpg",
+  "logo": "/utils/lastplayer.jpg",
   "name": "The Last Player",
   "slug": "the-last-player",
   "year": "2025",
@@ -1371,7 +1376,7 @@ registrationLink: "" // Link not mentioned in the content
   "rounds": [
     {
       "name": "Green Light, Red Light",
-      "description": "The caller shouts 'Green Light!' and turns around. Players move toward the caller but must freeze when 'Red Light!' is called. Anyone caught moving after 'Red Light' will be sent back to the starting line."
+      "description": "Green Light! and turns around, allowing players to move forward. When Red Light! is called, players must freeze immediately—if the doll sees any movement, the player is eliminated. However, if a player stops without moving when the doll looks, they can continue from the same position once it turns away"
     },
     {
       "name": "Mingle Game",
@@ -1396,17 +1401,21 @@ registrationLink: "" // Link not mentioned in the content
   ],
   "rules": [
     "Each team must consist of only 1 member.",
+    "Only 100 slots available—secure your spot now!",
     "Each round will have a strict time limit.",
     "The last remaining player will be declared the winner.",
-    "Coordinators have the authority to modify rules on the spot."
+    "Coordinators have the authority to modify rules on the spot.",
+    "Participants engaging in misbehavior will be immediately eliminated from the game."
   ],
   "coordinators": {
     "student": [
       { "name": "Vedent Kakuste", "contact": "9922551640" },
-      { "name": "Durgesh Jadhav", "contact": "7972847460" }
+      { "name": "Durgesh Jadhav", "contact": "7972847460" },
+      { "name": "Prachi Patil", "contact": "9552683950" }
     ],
     "faculty": [
-      { "name": "B.V Patil", "contact": "9423943172" }
+      {"name":"Prof. B. V. Patil", "contact": "9423943172"},
+      {"name":"Prof. T. H. Jaware", "contact":"7588001699"}
     ]
   },
   "registrationLink": ""
