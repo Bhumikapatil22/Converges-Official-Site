@@ -27,8 +27,8 @@ export function HeroContent() {
           />
         </div>
         <h2
-          className="text-lg md:text-xl font-mono text-green-400"
-          
+          className="text-sm md:text-xl font-mono text-green-400"
+          style={{ fontFamily: "'Orbitron', sans-serif" }}
         >
           A National Level Technical Symposium
         </h2>
