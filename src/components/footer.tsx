@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 import {
   Facebook,
   X,
