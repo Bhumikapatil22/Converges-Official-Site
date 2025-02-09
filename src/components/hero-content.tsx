@@ -8,46 +8,35 @@ import { Typewriter } from "react-simple-typewriter";
 export function HeroContent() {
   return (
     <section
-      className="flex flex-col items-center justify-center h-full text-center px-4 space-y-6"
+      className="flex flex-col items-center justify-start min-h-screen text-center px-4 pt-10"
       aria-label="Hero Section"
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="inset-0 z-30 space-y-1"
+        className="z-30 space-y-0"
       >
-        <div className="flex flex-col items-center">
+        {/* Logo Section */}
+        <div className="flex flex-col items-center mt-[-20px]">
           <Image
-            src="/utils/converges_white.png"
-            width={400}
-            height={400}
+            src="/utils/Powered By.png"
+            width={480} // Reduced size
+            height={360}
             alt="Converges Logo"
             priority
           />
-        
-          <div className="flex flex-col items-center mt-4">
-            <p className="text-sm md:text-lg font-mono text-yellow-400">
-              Powered By
-            </p>
-            <Image
-              src="/utils/Unstop_Logo.png"
-              width={100}
-              height={50}
-              alt="Sponsor Logo"
-              className="mt-2"
-            />
-          </div>
         </div>
 
+        {/* Text Content */}
         <h2
-          className="text-sm md:text-xl font-mono text-green-400"
+          className="text-sm md:text-xl font-mono text-green-400 mt-2"
           style={{ fontFamily: "'Orbitron', sans-serif" }}
         >
           A National Level Technical Symposium
         </h2>
         <h1
-          className="text-2xl md:text-4xl text-white"
+          className="text-1xl md:text-4xl text-white"
           style={{ fontFamily: "'Orbitron', sans-serif" }}
         >
           R. C. Patel Institute of Technology, Shirpur
@@ -59,11 +48,13 @@ export function HeroContent() {
           An Autonomous Institute
         </p>
       </motion.div>
+
+      {/* Button Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.8 }}
-        className="inset-0 z-30 mt-4"
+        className="z-30 mt-6"
       >
         <a href="#events" aria-label="Explore Events">
           <Button
