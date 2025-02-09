@@ -15,17 +15,31 @@ export function HeroContent() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="inset-0 z-30 space-y-2"
+        className="inset-0 z-30 space-y-1"
       >
-        <div className="flex justify-center">
+        <div className="flex flex-col items-center">
           <Image
             src="/utils/converges_white.png"
             width={400}
-            height={600}
+            height={400}
             alt="Converges Logo"
             priority
           />
+        
+          <div className="flex flex-col items-center mt-4">
+            <p className="text-sm md:text-lg font-mono text-yellow-400">
+              Powered By
+            </p>
+            <Image
+              src="/utils/Unstop_Logo.png"
+              width={100}
+              height={50}
+              alt="Sponsor Logo"
+              className="mt-2"
+            />
+          </div>
         </div>
+
         <h2
           className="text-sm md:text-xl font-mono text-green-400"
           style={{ fontFamily: "'Orbitron', sans-serif" }}
@@ -33,7 +47,7 @@ export function HeroContent() {
           A National Level Technical Symposium
         </h2>
         <h1
-          className="text-2xl md:text-4xl  text-white"
+          className="text-2xl md:text-4xl text-white"
           style={{ fontFamily: "'Orbitron', sans-serif" }}
         >
           R. C. Patel Institute of Technology, Shirpur

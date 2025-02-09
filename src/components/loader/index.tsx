@@ -88,6 +88,7 @@ const LoadingPage = ({ loading }: { loading: boolean }) => {
         priority
         className="transition-opacity"
       />
+      
       <p
         className="  sm:text-4xl text-xl text-center mt-3 font-mono"
         style={{ fontFamily: "Orbitron" }}

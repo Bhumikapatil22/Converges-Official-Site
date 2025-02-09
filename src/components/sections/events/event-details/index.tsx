@@ -41,6 +41,7 @@ export function EventDetails({ event }: EventDetailsProps) {
        <div className="flex justify-center">
         <Image className="w-3/4 md:w-1/4 box-s" width={200} height={200} src="/utils/converges_white.png" alt="RCPIT Logo" />
         </div>
+        
       <EventHeader name={event.name} department={event.department} />
       <EventInfo description={event.description} teamSize={event.teamSize} entryFee={event.entryFee} />
       <RoundDetails rounds={event.rounds} />
