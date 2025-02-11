@@ -19,25 +19,12 @@ export function HeroContent() {
       >
         <div className="flex flex-col items-center">
           <Image
-            src="/utils/converges_white.png"
+            src="/utils/new_unstoplogo.png"
             width={400}
             height={400}
             alt="Converges Logo"
             priority
           />
-        
-          <div className="flex flex-col items-center mt-4">
-            <p className="text-sm md:text-lg font-mono text-yellow-400">
-              Powered By
-            </p>
-            <Image
-              src="/utils/Unstop_Logo.png"
-              width={100}
-              height={50}
-              alt="Sponsor Logo"
-              className="mt-2"
-            />
-          </div>
         </div>
 
         <h2
