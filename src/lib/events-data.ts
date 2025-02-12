@@ -1232,7 +1232,7 @@ export const eventsData = [
         { name: "Prof. Anup Jaiswal", contact: "9922823138" },
             ]
     },
-    registrationLink: "" // Link not mentioned in the content
+    registrationLink: "https://unstop.com/o/LgCIowD?lb=6N7e3EaT&utm_medium=Share&utm_source=shortUrl" // Link not mentioned in the content
   },
   
  
