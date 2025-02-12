@@ -103,7 +103,7 @@ export function Footer() {
               <p className="flex items-center space-x-2">
                 <Mail className="w-5 h-5" />
                 <a
-                  href="mailto:director@rcpit.ac.in"
+                  href="mailto:converges@rcpit.ac.in"
                   className="hover:text-green-400 transition-colors"
                 >
                   converges@rcpit.ac.in

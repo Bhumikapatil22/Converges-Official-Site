@@ -95,6 +95,7 @@ interface EventCardProps {
   description: string;
   registrationLink: string;
   logo: string;
+  showRegisterButton: boolean; // New prop to control button visibility
 }
 
 export function EventCard({
@@ -104,17 +105,18 @@ export function EventCard({
   description,
   registrationLink,
   logo,
+  showRegisterButton,
 }: EventCardProps) {
   const router = useRouter();
 
   const handleRegisterClick = (e: React.MouseEvent) => {
-    e.stopPropagation(); // Prevent card click action
-    router.push(registrationLink); // Navigate to the registration link
+    e.stopPropagation();
+    router.push(registrationLink);
   };
 
   const handleViewDetailsClick = (e: React.MouseEvent) => {
-    e.stopPropagation(); // Prevent card click action
-    router.push(`/events/${slug}`); // Navigate to the event details page
+    e.stopPropagation();
+    router.push(`/events/${slug}`);
   };
 
   return (
@@ -124,7 +126,6 @@ export function EventCard({
         whileHover={{ scale: 1.02 }}
         transition={{ duration: 0.2 }}
       >
-        {/* Card Background */}
         <div className="absolute inset-0 bg-[#020617] rounded-lg overflow-hidden">
           <Image
             src={logo}
@@ -135,7 +136,6 @@ export function EventCard({
           />
         </div>
 
-        {/* Title and Department */}
         <div className="absolute inset-0 p-4 flex flex-col justify-between">
           <div className="bg-black bg-opacity-50 text-center">
             <h3 className="text-xl font-mono">{name}</h3>
@@ -143,7 +143,6 @@ export function EventCard({
           </div>
         </div>
 
-        {/* Description Sliding In */}
         <div className="absolute bottom-0 left-0 w-full p-4 bg-black/50 backdrop-blur-sm rounded-b-lg transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
           <p className="text-gray-200 font-mono text-sm text-center">
             {description}
@@ -151,21 +150,19 @@ export function EventCard({
         </div>
       </motion.div>
 
-      {/* Buttons Below Card */}
       <div className="mt-4 flex justify-center gap-4">
-        {/* Register Button with Shining Effect */}
-        <Button
-          size="lg"
-          variant="outline"
-          style={{ fontFamily: "Orbitron" }}
-          onClick={handleRegisterClick}
-          className="border-green-800 hover:bg-sky-500/10 bg-transparent relative"
-        >
-          {/* <span className="absolute inset-0 border-2 border-green-500 rounded-full animate-pulse opacity-30"></span> */}
-          <span className="relative z-10">Register</span>
-        </Button>
+        {showRegisterButton && (
+          <Button
+            size="lg"
+            variant="outline"
+            style={{ fontFamily: "Orbitron" }}
+            onClick={handleRegisterClick}
+            className="border-green-800 hover:bg-sky-500/10 bg-transparent relative"
+          >
+            <span className="relative z-10">Register</span>
+          </Button>
+        )}
 
-        {/* View Details Button with Shining Effect */}
         <Button
           size="lg"
           variant="outline"
@@ -173,7 +170,6 @@ export function EventCard({
           onClick={handleViewDetailsClick}
           className="border-green-800 hover:bg-sky-500/10 relative bg-transparent"
         >
-          {/* <span className="absolute inset-0 border-2 border-green-500 rounded-full animate-pulse opacity-30"></span> */}
           <span className="relative z-10">View Details</span>
         </Button>
       </div>

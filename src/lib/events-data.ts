@@ -736,7 +736,7 @@ export const eventsData = [
         { "name": "Prof Sagar. U. More", "contact": "8983158798" }
       ]
     },
-    "registrationLink": ""
+    "registrationLink": "https://unstop.com/p/the-animeverse-converges-2k25-r-c-patel-institute-of-technology-shirpur-maharashtra-1397099"
   }
    ,
    {
@@ -789,7 +789,7 @@ export const eventsData = [
         { "name": "Prof. D. S. Potdar", "contact": "9970856082" }
       ]
     },
-    "registrationLink": ""
+    "registrationLink": "https://unstop.com/p/muggle-mystery-converges-2k25-r-c-patel-institute-of-technology-shirpur-maharashtra-1397872"
   },
   {
     "id": 22,
@@ -834,7 +834,7 @@ export const eventsData = [
         { "name": "Prof Y. R. Pathak", "contact": "9421528936" }
       ]
     },
-    "registrationLink": "./docs/SQUID_MAZE.pdf"
+    "registrationLink": "https://unstop.com/p/squide-maze-survive-the-game-conquer-the-challenges-converges-2k25-rcpatel-shirpur-1397074"
   },
   {
     "id": 23,
@@ -875,7 +875,7 @@ export const eventsData = [
         { "name": "Prof. C. J. Chitte", "contact": "9403550286" }
       ],
     },
-    "registrationLink": "./docs/BRIDGOMANIA.pdf"
+    "registrationLink": "https://unstop.com/p/bridgomania-converges-2k25-rcpatel-shirpur-1397086"
   },
   
   {
@@ -940,7 +940,7 @@ export const eventsData = [
         }
       ]
     },
-    "registrationLink": "./docs/ELECTROMANIA_BRAIN_CHARGE.pdf"
+    "registrationLink": "https://unstop.com/p/brain-charge-converges-2k25-r-c-patel-institute-of-technology-shirpur-maharashtra-1397100"
   },
   {
     "id": 34,
@@ -979,7 +979,7 @@ export const eventsData = [
         { "name": "Prof. Yogeshkumar R. Pathak", "contact": "9421528936" }
       ]
     },
-    "registrationLink": "/"
+    "registrationLink": "https://unstop.com/o/nAes8LX?lb=6N7e3EaT&utm_medium=Share&utm_source=shortUrl"
   },
   {
     "id": 25,
@@ -1032,7 +1032,7 @@ export const eventsData = [
         }
       ]
     },
-    "registrationLink": "./docs/ELECTROMANIA_ELECTROTOY.pdf"
+    "registrationLink": "https://unstop.com/p/electro-toy-converges-2k25-r-c-patel-institute-of-technology-shirpur-maharashtra-1397098"
   },
   {
     "id": 26,
@@ -1094,7 +1094,7 @@ export const eventsData = [
         },
       ]
     },
-    "registrationLink": "./docs/AERO_GLIDING_COMPETITION.pdf"
+    "registrationLink": "https://unstop.com/p/aero-gliding-competition-converges-2k25-r-c-patel-institute-of-technology-shirpur-maharashtra-1397882"
   },
   {
     id: 27,
@@ -1139,7 +1139,7 @@ export const eventsData = [
         { name: "Dr. K. A. Saner", contact: "7588997171" }
       ]
     },
-    registrationLink: "./docs/WATER_ROCKET_CHALLENGE.pdf"
+    registrationLink: "https://unstop.com/p/water-rocket-challenges-converges-2k25-rcpatel-shirpur-1397090"
   },
   
   {
@@ -1184,7 +1184,7 @@ export const eventsData = [
         { name: "Dr. K. A. Saner", contact: "7588997171" }
       ]
     },
-    registrationLink: "" 
+    registrationLink: "https://unstop.com/p/googler-converges-2k25-rcpatel-shirpur-1397083" 
   },
   {
     id: 29,
@@ -1279,7 +1279,7 @@ export const eventsData = [
         { name: "Prof. Y. N. Sonawane", contact: "7387769224" }
       ]
     },
-    registrationLink: "" // Link not mentioned in the content
+    registrationLink: "https://unstop.com/p/boat-float-converges-2k25-r-c-patel-institute-of-technology-shirpur-maharashtra-1397088" // Link not mentioned in the content
 },
 
 {
@@ -1326,7 +1326,7 @@ export const eventsData = [
       {name:"Prof. T. S. Bhamare",contact:"9767270758"}
     ]
   },
-  registrationLink: "" // Link not mentioned in the content
+  registrationLink: "https://unstop.com/p/tradetech-converges-2k25-rcpatel-shirpur-1397089" // Link not mentioned in the content
 },
 {
 id: 32,
@@ -1360,7 +1360,7 @@ coordinators: {
     { name: "Prof. J. S. Shaikh", contact: "9764287564" }
   ]
 },
-registrationLink: "" // Link not mentioned in the content
+registrationLink: "https://unstop.com/p/model-making-competition-converges-2k25-r-c-patel-institute-of-technology-shirpur-maharashtra-1397095"
 },
 {
   "id": 33,
@@ -1418,6 +1418,6 @@ registrationLink: "" // Link not mentioned in the content
       {"name":"Prof. T. H. Jaware", "contact":"7588001699"}
     ]
   },
-  "registrationLink": ""
+  "registrationLink": "https://unstop.com/p/the-last-player-converges-2k25-r-c-patel-institute-of-technology-shirpur-maharashtra-1397093"
 },
 ];

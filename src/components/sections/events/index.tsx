@@ -107,7 +107,7 @@ export function EventsSection() {
                 animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <EventCard {...event} />
+                <EventCard {...event} showRegisterButton={Number(event.year) === 2025} />
               </motion.div>
             ))}
           </div>
