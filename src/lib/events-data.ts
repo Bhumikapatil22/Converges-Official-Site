@@ -709,7 +709,7 @@ export const eventsData = [
     "rounds": [
       {
         "name":"Matrix Showdown",
-        "description": "Task 1: Imagine a massive Tic-Tac-Toe grid on the ground! Teams take turns running to place their X or O, trying to get three in a row to win. But here’s the twist, if the other team blocks you, you can replace your symbol and turn the game around. The game is played three times and the winning team in each round earns 50 points silver overload!\n\nTask 2: One player from each team sprints to the Number Station and gets a random number. Once they return, the required format for conversion (decimal, hexadecimal, etc.) will be given on the spot. The first player to submit the correct answer wins 50 points, while the other team gets 25 points for trying! Speed and accuracy are key!",
+        "description": "Task 1: Imagine a massive Tic-Tac-Toe grid on the ground! Teams take turns running to place their X or O, trying to get three in a row to win. But here’s the twist, if the other team blocks you, you can replace your symbol and turn the game around. The game is played three times and the winning team in each round earns 50 points silver overload!\n\nTask 2: One player from each team sprints to the Number Station and gets a random number. Once they return, the format for conversion is revealed on the spot. The first player to submit the correct answer wins 50 points, while the other team gets 25 points for trying! Speed and accuracy are key!",
       },
       {
         "name": "CodeSprint 50",
