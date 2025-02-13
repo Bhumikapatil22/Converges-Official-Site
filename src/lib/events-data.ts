@@ -717,13 +717,9 @@ export const eventsData = [
       },
       {
         "name": "The Chamber of Secrets",
-        "description": "In the final trial of your journey, you step into the Chamber of Secrets—a place shrouded in mystery, where whispers of power, deception, and hidden knowledge echo through the shadows.
-Nothing here is as it seems. The air crackles with tension, deals are made in hushed voices, and only those with the sharpest minds will emerge victorious. Will you uncover the truth, or will you be lost in the maze of secrets?
-What lies within this enigmatic chamber?
-What challenges await those who dare to enter?
-No one knows… and no one will—until the time comes.
-One thing is certain—this is not just a test of skill; it’s a battle of strategy, intelligence, and bold decision-making. Your choices will define your fate, and the stakes have never been higher.
-Are you ready to embrace the unknown?
+        "description": "A hidden challenge. A test of strategy, deception, and decision-making. Nothing is as it seems inside the Chamber of Secrets—where only the sharpest minds will prevail.
+The final mystery remains locked… until the moment arrives.
+Will you dare to step in?
 
 The Chamber opens soon. Prepare yourself."
       }
