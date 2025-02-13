@@ -716,8 +716,16 @@ export const eventsData = [
         "description": "Embark on a thrilling adventure to Solve the Coding Odyssey in the fast-paced world of CodeSprint 50 Teams will race against time to solve exciting coding challenges, with points awarded based on the complexity of each problem. The points earned in Round 2 will decide which teams will advance to Round 3, where new and exciting challenges await. It's a journey of strategy, teamwork, and quick thinking, where every solved problem brings you closer to victory."
       },
       {
-        "name": "The Veil of Endpoints",
-        "description": "Details for this round will be provided on site. It promises to challenge participants with advanced tasks related to endpoints and data management."
+        "name": "The Chamber of Secrets",
+        "description": "In the final trial of your journey, you step into the Chamber of Secrets—a place shrouded in mystery, where whispers of power, deception, and hidden knowledge echo through the shadows.
+Nothing here is as it seems. The air crackles with tension, deals are made in hushed voices, and only those with the sharpest minds will emerge victorious. Will you uncover the truth, or will you be lost in the maze of secrets?
+What lies within this enigmatic chamber?
+What challenges await those who dare to enter?
+No one knows… and no one will—until the time comes.
+One thing is certain—this is not just a test of skill; it’s a battle of strategy, intelligence, and bold decision-making. Your choices will define your fate, and the stakes have never been higher.
+Are you ready to embrace the unknown?
+
+The Chamber opens soon. Prepare yourself."
       }
     ],
     "rules": [
