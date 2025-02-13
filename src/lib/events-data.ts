@@ -717,11 +717,11 @@ export const eventsData = [
       },
       {
         "name": "The Chamber of Secrets",
-        "description": "A hidden challenge. A test of strategy, deception, and decision-making. Nothing is as it seems inside the Chamber of Secrets—where only the sharpest minds will prevail.
-The final mystery remains locked… until the moment arrives.
-Will you dare to step in?
+        "description": `A hidden challenge. A test of strategy, deception, and decision-making. Nothing is as it seems inside the Chamber of Secrets—where only the sharpest minds will prevail.
 
-The Chamber opens soon. Prepare yourself."
+The final mystery remains locked… until the moment arrives.
+
+Will you dare to step in?`
       }
     ],
     "rules": [
