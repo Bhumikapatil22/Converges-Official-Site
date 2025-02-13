@@ -713,7 +713,7 @@ export const eventsData = [
       },
       {
         "name": "CodeSprint 50",
-        "description": "Embark on a thrilling adventure to Solve the Coding Odyssey in the fast-paced world of CodeSprint 50 Teams will race against time to solve exciting coding challenges, with points awarded based on the complexity of each problem. The points earned in Round 2 will decide which teams will advance to Round 3, where new and exciting challenges await. It's a journey of strategy, teamwork, and quick thinking, where every solved problem brings you closer to victory."
+        "description": "Embark on a thrilling adventure to Solve the Coding Odyssey in the fast-paced world of CodeSprint 50 Teams will race against time to solve exciting coding challenges, with points awarded based on the complexity of each problem. The points earned in Round 2 will decide which teams will advance to Round 3, where new and exciting challenges await. It's a journey of strategy, teamwork, and quick thinking, where every solved problem brings you closer to victory. Solve strategically, maximize your score, and secure your place in the mysterious Chamber of Secrets."
       },
       {
         "name": "The Chamber of Secrets",
