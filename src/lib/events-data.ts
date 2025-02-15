@@ -737,7 +737,7 @@ Will you dare to step in?`
       ],
       "faculty": [
         { "name": "Prof M. M. Mahajan", "contact": "9096970969" },
-        { "name": "Prof Sagar. U. More", "contact": "8983158798" }
+        { "name": "Prof Sagar U. More", "contact": "8983158798" }
       ]
     },
     "registrationLink": "https://unstop.com/p/the-animeverse-converges-2k25-r-c-patel-institute-of-technology-shirpur-maharashtra-1397099"
@@ -808,7 +808,7 @@ Will you dare to step in?`
     "rounds": [
       {
         "name": "The Skill Arena",
-        "description": "A 2-hour round featuring three games inspired by traditional Korean games. Teams will compete in Flying Stone, Jegi, and Ddakji. Each game tests precision, strategy, and skill, with a unique link to the next round's digital task. Performance in these games determines which teams advance to the next round."
+        "description": "A 2-hour round featuring three games inspired by traditional Korean games. Teams will compete in Flying Stone, jagi Hula Hoop Ring, and Ddakji. Each game tests precision, strategy, and skill, with a unique link to the next round's digital task. Performance in these games determines which teams advance to the next round."
       },
       {
         "name": "Dalgona Candy Digital Challenge",
@@ -831,7 +831,7 @@ Will you dare to step in?`
     "coordinators": {
       "student": [
         { "name": "Kalesh Patil", "contact": "7559166455" },
-        { "name": "Samiksha kharche", "contact": "90218 29921 " }
+        { "name": "Paresh Mahirrao", "contact": "9767319522" }
       ],
       "faculty": [
         { "name": "Prof A. D. Mairale", "contact": "9503665364" },
@@ -1047,7 +1047,7 @@ Will you dare to step in?`
     "department": "Mechanical Engineering",
     "description": "An exciting event where participants showcase their engineering and design skills by building a glider from scratch using provided materials. Teams compete to achieve the best performance in terms of flight time, structural stability, and weight of the glider.",
     "teamSize": "2-4 members",
-    "entryFee": "500/-",
+    "entryFee": "300/-",
     "eventDetails": {
       "location": "College Campus Ground (Area: 50m × 30m)",
       "constructionTime": "1.5 hours",
