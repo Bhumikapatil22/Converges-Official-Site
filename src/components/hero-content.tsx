@@ -24,6 +24,7 @@ export function HeroContent() {
             height={400}
             alt="Converges Logo"
             priority
+            unoptimized
           />
         </div>
 
