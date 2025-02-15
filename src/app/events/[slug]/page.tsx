@@ -9,6 +9,7 @@ type EventType = {
   name: string;
   logo: string;
   department: string;
+  year: string;
   description: string;
   teamSize: string;
   entryFee: string;

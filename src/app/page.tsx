@@ -35,8 +35,6 @@ export default function Home() {
       { type: "photo", src: "/images/strangercode1.jpg", title: "Data Polaris" },
       { type: "photo", src: "/images/strangercode2.jpg", title: "Stranger Code" },
       { type: "photo", src: "/images/civista.jpg", title: "Civista" },
-      
-      
       { type: "photo", src: "/images/13.jpg", title: "Winners'24" },
       { type: "photo", src: "/images/14.jpg", title: "Team'24" },
       { type: "photo", src: "/images/3.jpg", title: "Robo Race" },

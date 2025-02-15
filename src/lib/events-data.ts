@@ -700,7 +700,7 @@ export const eventsData = [
     "id": 20,
     "logo": "/utils/a.jpeg",
     "name": "The Animeverse",
-    "slug": "matrix-showdown",
+    "slug": "animeverse",
     "year": "2025",
     "department": "Computer Engineering",
     "description": "An exciting event featuring multiple rounds including strategic Tic-Tac-Toe challenges, Binary decoding, and coding sprints. It tests both problem-solving skills and speed in various formats.",

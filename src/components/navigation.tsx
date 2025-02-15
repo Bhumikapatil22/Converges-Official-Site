@@ -26,8 +26,8 @@ export function Navigation() {
     { href: "/#about", label: "About" },
     { href: "/#events", label: "Events" },
     // { href: "#schedule", label: "Schedule" },
-    { href: "#highlights", label: "Highlights" },
-    { href: "#contact", label: "Contact" },
+    { href: "/#highlights", label: "Highlights" },
+    { href: "/#contact", label: "Contact" },
   ];
 
   const handleLinkClick = (

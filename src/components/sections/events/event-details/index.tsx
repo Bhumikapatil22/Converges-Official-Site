@@ -13,6 +13,7 @@ export interface EventDetailsProps {
   event: {
     name: string;
     logo:string;
+    year: string;
     department: string;
     description: string;
     teamSize: string;
@@ -47,7 +48,7 @@ export function EventDetails({ event }: EventDetailsProps) {
       <RoundDetails rounds={event.rounds} />
       <RulesSection rules={event.rules} />
       <CoordinatorInfo coordinators={event.coordinators} />
-      <RegisterButton link={event.registrationLink} />
+      {(Number(event.year) === 2025) && <RegisterButton link={event.registrationLink} />}
     </motion.div>
   );
 }

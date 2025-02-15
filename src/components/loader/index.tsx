@@ -1,52 +1,37 @@
 "use client";
 import Image from "next/image";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { MultiStepLoader } from "@/components/ui/multi-step-loader";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { TypewriterEffect } from "../ui/typewriter-effect";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { text } from "stream/consumers";
 import { Typewriter } from "react-simple-typewriter";
 import { useEffect, useState } from "react";
+import { Orbitron } from "next/font/google";
+
+// Preload font for better performance
+const orbitron = Orbitron({ subsets: ["latin"], weight: ["400", "600", "800"] });
+
 const loadingStates = [
-  {
-    text: "Bringing Ideas to Life",
-  },
-  {
-    text: "Engineering Creativity",
-  },
-  {
-    text: "Building Connections",
-  },
-  {
-    text: "Innovating for Tomorrow",
-  },
-  {
-    text: "Exploring New Horizons",
-  },
-  {
-    text: "Ready to Converge!",
-  },
+  "Bringing Ideas to Life",
+  "Engineering Creativity",
+  "Building Connections",
+  "Innovating for Tomorrow",
+  "Exploring New Horizons",
+  "Ready to Converge!",
 ];
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const LoadingPage = ({ loading }: { loading: boolean }) => {
+const LoadingPage = () => {
   const [progress, setProgress] = useState(0);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [currentStep, setCurrentStep] = useState(0);
 
   useEffect(() => {
-    const interval = 100;
-    const progressIncrement = 100 / ((10 * 1000) / interval);
+    const totalTime = 5000; // Faster loading (4s instead of 10s)
+    const interval = 50; // Smoother updates
+    const increment = 100 / (totalTime / interval);
 
     const timer = setInterval(() => {
       setProgress((prev) => {
-        const nextProgress = prev + progressIncrement;
-        if (nextProgress >= 100) {
+        if (prev + increment >= 100) {
           clearInterval(timer);
           return 100;
         }
-        return nextProgress;
+        return prev + increment;
       });
     }, interval);
 
@@ -54,19 +39,15 @@ const LoadingPage = ({ loading }: { loading: boolean }) => {
   }, []);
 
   useEffect(() => {
-    const stepInterval = 10000 / loadingStates.length;
     const stepTimer = setInterval(() => {
       setCurrentStep((prev) => (prev + 1) % loadingStates.length);
-    }, stepInterval);
+    }, 800); // Faster text transitions
 
     return () => clearInterval(stepTimer);
   }, []);
+
   return (
-    <div className="h-screen w-screen flex flex-col items-center justify-center">
-      <style jsx global>{`
-        @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap");
-      `}</style>
-      
+    <div className="h-screen w-screen flex flex-col items-center justify-center overflow-hidden">
       <video
         className="absolute -z-10 top-0 left-0 w-full h-full object-cover"
         autoPlay
@@ -75,11 +56,11 @@ const LoadingPage = ({ loading }: { loading: boolean }) => {
         playsInline
       >
         <source
-          //src="https://res.cloudinary.com/dkoxvg4cc/video/upload/v1737572135/hjr1fjwht69fwk1mrqwt.mp4"
+          src="https://res.cloudinary.com/dkoxvg4cc/video/upload/v1737572135/hjr1fjwht69fwk1mrqwt.mp4"
           type="video/mp4"
         />
-        Your browser does not support the video tag.
       </video>
+
       <Image
         src="/utils/converges_white.png"
         width={400}
@@ -88,27 +69,26 @@ const LoadingPage = ({ loading }: { loading: boolean }) => {
         priority
         className="transition-opacity"
       />
-      
-      <p
-        className="  sm:text-4xl text-xl text-center mt-3 font-mono"
-        style={{ fontFamily: "Orbitron" }}
-      >
+
+      <p className={`sm:text-4xl text-xl text-center mt-3 ${orbitron.className}`}>
         <Typewriter
           words={["Unrevealing the Pulse of Next-Gen Tech..."]}
           loop={1}
           cursor
-          cursorStyle
-          typeSpeed={70}
-          deleteSpeed={50}
-          delaySpeed={2000}
+          typeSpeed={50}
+          deleteSpeed={30}
+          delaySpeed={1500}
         />
       </p>
+
       <div className="w-[50vw] mt-7 h-1 bg-transparent overflow-hidden">
         <div
-          className="h-full bg-green-600 transition-all duration-100 ease-linear"
+          className="h-full bg-green-600 transition-all duration-75 ease-linear"
           style={{ width: `${progress}%` }}
         ></div>
       </div>
+
+      <p className="mt-2 text-sm text-gray-300">{loadingStates[currentStep]}</p>
     </div>
   );
 };
