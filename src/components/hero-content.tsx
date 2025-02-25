@@ -20,15 +20,18 @@ export function HeroContent() {
         <Image
           src="/utils/PHGS Logo White 1.jpg"
           alt="PHGS Logo"
-          width={200}
+          width={180}
           height={100}
           className="w-[120px] md:w-[180px] lg:w-[220px] h-auto mb-4"
+          
         />
+        <h2>Presents</h2>
+        
     
 
         <div className="flex flex-col items-center">
           <Image
-            src="/utils/new_unstoplogo.png"
+            src="/utils/convergeswithsponsor.png"
             width={350}
             height={350}
             alt="Converges Logo"
