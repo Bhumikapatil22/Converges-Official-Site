@@ -17,15 +17,7 @@ export function HeroContent() {
         transition={{ duration: 0.8, delay: 0.2 }}
         className="inset-0 z-30 space-y-4 flex flex-col items-center"
       >
-        <Image
-          src="/utils/PHGS Logo White 1.jpg"
-          alt="PHGS Logo"
-          width={180}
-          height={100}
-          className="w-[120px] md:w-[180px] lg:w-[220px] h-auto mb-4"
-          
-        />
-        <h2>Presents</h2>
+      
         
     
 
@@ -37,7 +29,7 @@ export function HeroContent() {
             alt="Converges Logo"
             priority
             unoptimized
-            className="w-[250px] md:w-[300px] lg:w-[350px] h-auto"
+            className="w-[500px]   md:w-[300px] lg:w-[500px] h-auto"
           />
         </div>
 
