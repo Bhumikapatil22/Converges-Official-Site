@@ -13,10 +13,11 @@ export function VideoBackground() {
       >
          <source src="/utils/codeplayback" type="video/mp4" /> 
         {/* Opted for cloudinary video */}
-        <source
+       {/* <source
           src="https://res.cloudinary.com/dkoxvg4cc/video/upload/v1737572135/hjr1fjwht69fwk1mrqwt.mp4"
           type="video/mp4"
-        />
+        /> */}
+
         Your browser does not support the video tag.
       </video>
       {/* Overlay Content */}
