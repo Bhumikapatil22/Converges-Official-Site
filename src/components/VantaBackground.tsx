@@ -11,7 +11,7 @@ export function VideoBackground() {
         muted
         playsInline
       >
-         <source src="/utils/codeplayback" type="video/mp4" /> 
+         <source src="/utils/codeplayback.mp4" type="video/mp4" /> 
         {/* Opted for cloudinary video */}
        {/* <source
           src="https://res.cloudinary.com/dkoxvg4cc/video/upload/v1737572135/hjr1fjwht69fwk1mrqwt.mp4"
